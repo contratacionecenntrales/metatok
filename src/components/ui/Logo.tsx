@@ -1,0 +1,50 @@
+import { cn } from "@/lib/utils";
+
+const MARK_PATH =
+  "M5308 6527 c-93 -35 -123 -60 -658 -532 -162 -143 -470 -413 -685 -600 -214 -187 -523 -457 -685 -600 -162 -143 -392 -345 -510 -450 -257 -225 -474 -421 -584 -526 -59 -57 -78 -80 -70 -89 16 -16 454 -24 678 -12 l188 11 47 36 c25 20 172 148 326 284 154 136 399 351 545 476 146 126 330 288 410 360 183 166 445 393 488 423 18 13 36 22 41 20 5 -2 -13 -61 -40 -131 -81 -212 -254 -693 -297 -827 -113 -352 -69 -522 159 -610 99 -38 146 -38 226 -1 128 61 218 129 1123 851 1107 882 1308 1040 1327 1040 12 0 23 -67 64 -395 48 -395 99 -798 105 -832 9 -60 36 -58 -818 -61 l-777 -3 -288 -252 c-369 -323 -380 -334 -364 -350 9 -9 284 -11 1294 -9 l1282 3 71 44 c185 115 233 222 221 485 -3 69 -33 343 -66 610 -33 267 -78 645 -101 840 -22 195 -47 398 -55 450 -26 159 -79 246 -183 297 -51 25 -68 28 -157 28 -167 0 -120 31 -1015 -685 -983 -787 -1192 -949 -1197 -933 -4 11 54 187 240 733 181 531 185 549 168 632 -26 131 -77 198 -191 251 -51 25 -80 31 -145 34 -51 2 -93 -2 -117 -10z";
+
+export function LogoMark({ className, id = "mt" }: { className?: string; id?: string }) {
+  const gradId = `${id}-bg`;
+  return (
+    <svg
+      viewBox="0 0 1024 1024"
+      fill="none"
+      className={cn("h-9 w-9 shrink-0", className)}
+      role="img"
+      aria-label="MetaTok.ai"
+    >
+      <defs>
+        <radialGradient id={gradId} cx="70%" cy="10%" r="100%">
+          <stop offset="0%" stopColor="#1b3e7e" />
+          <stop offset="10%" stopColor="#173671" />
+          <stop offset="20%" stopColor="#122d63" />
+          <stop offset="30%" stopColor="#0e2555" />
+          <stop offset="40%" stopColor="#0b1d48" />
+          <stop offset="55%" stopColor="#09183c" />
+          <stop offset="65%" stopColor="#081431" />
+          <stop offset="78%" stopColor="#060f26" />
+          <stop offset="88%" stopColor="#050b1b" />
+          <stop offset="100%" stopColor="#040711" />
+        </radialGradient>
+      </defs>
+      <rect x="0" y="0" width="1024" height="1024" rx="225" ry="225" fill={`url(#${gradId})`} />
+      <g transform="translate(0,1024) scale(0.1,-0.1)" fill="#ffffff" stroke="none">
+        <path d={MARK_PATH} />
+      </g>
+    </svg>
+  );
+}
+
+export function Logo({ className, markClassName }: { className?: string; markClassName?: string }) {
+  return (
+    <span className={cn("inline-flex items-center gap-2.5", className)}>
+      <span className="relative inline-flex">
+        <LogoMark className={markClassName} />
+        <span className="absolute inset-0 -z-10 animate-pulse-slow rounded-[22%] bg-cyan-400/40 blur-lg" />
+      </span>
+      <span className="font-display text-lg font-semibold tracking-tight text-white">
+        MetaTok<span className="text-cyan-400">.ai</span>
+      </span>
+    </span>
+  );
+}
