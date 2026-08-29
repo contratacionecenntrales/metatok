@@ -35,15 +35,28 @@ export function LogoMark({ className, id = "mt" }: { className?: string; id?: st
   );
 }
 
-export function Logo({ className, markClassName }: { className?: string; markClassName?: string }) {
+export function Logo({
+  className,
+  markClassName,
+  variant = "light",
+}: {
+  className?: string;
+  markClassName?: string;
+  variant?: "light" | "dark";
+}) {
   return (
     <span className={cn("inline-flex items-center gap-2.5", className)}>
       <span className="relative inline-flex">
         <LogoMark className={markClassName} />
-        <span className="absolute inset-0 -z-10 animate-pulse-slow rounded-[22%] bg-cyan-400/40 blur-lg" />
+        <span className="absolute inset-0 -z-10 animate-pulse-slow rounded-[22%] bg-brand-400/30 blur-lg" />
       </span>
-      <span className="font-display text-lg font-semibold tracking-tight text-white">
-        MetaTok<span className="text-cyan-400">.ai</span>
+      <span
+        className={cn(
+          "font-display text-lg font-bold tracking-tight",
+          variant === "light" ? "text-ink" : "text-white",
+        )}
+      >
+        MetaTok<span className="text-brand-500">.ai</span>
       </span>
     </span>
   );

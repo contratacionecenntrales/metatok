@@ -2,19 +2,19 @@ import { cn } from "@/lib/utils";
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-type ButtonVariant = "primary" | "secondary" | "ghost";
+type ButtonVariant = "primary" | "secondary" | "ghost" | "dark";
 type ButtonSize = "md" | "lg";
 
 const base =
-  "relative inline-flex items-center justify-center gap-2 rounded-xl font-semibold tracking-tight transition-all duration-300 whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-cyan-400/60 disabled:opacity-50 disabled:pointer-events-none";
+  "relative inline-flex items-center justify-center gap-2 rounded-xl font-semibold tracking-tight transition-all duration-300 whitespace-nowrap focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-brand-400 disabled:opacity-50 disabled:pointer-events-none";
 
 const variants: Record<ButtonVariant, string> = {
   primary:
-    "bg-gradient-to-r from-cyan-400 via-cyan-400 to-emerald-400 text-obsidian shadow-[0_0_0_1px_rgba(34,211,238,0.4),0_8px_30px_-8px_rgba(34,211,238,0.65)] hover:shadow-[0_0_0_1px_rgba(34,211,238,0.6),0_12px_40px_-6px_rgba(34,211,238,0.85)] hover:-translate-y-0.5 active:translate-y-0",
+    "bg-gradient-to-r from-brand-500 to-brand-700 text-white shadow-brand hover:brightness-110 hover:-translate-y-0.5 active:translate-y-0",
   secondary:
-    "glass-panel text-slate-100 hover:bg-white/[0.08] hover:border-white/20 hover:-translate-y-0.5",
-  ghost:
-    "text-slate-300 hover:text-white hover:bg-white/5",
+    "border border-[#e4e0f7] bg-white text-ink hover:border-brand-300 hover:text-brand-700 hover:-translate-y-0.5",
+  ghost: "text-ink-soft hover:text-brand-600 hover:bg-brand-50",
+  dark: "bg-ink text-white hover:bg-black hover:-translate-y-0.5",
 };
 
 const sizes: Record<ButtonSize, string> = {
