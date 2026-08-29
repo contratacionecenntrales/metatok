@@ -25,7 +25,7 @@ const FOOTER_LINKS = {
 
 export function Footer() {
   return (
-    <footer className="border-t border-[#ece9f7] bg-white">
+    <footer className="border-t border-[#e1e8f7] bg-white">
       <Container className="grid gap-12 py-16 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div className="flex flex-col gap-5">
           <Logo />
@@ -61,7 +61,7 @@ export function Footer() {
         ))}
       </Container>
 
-      <div className="border-t border-[#ece9f7]">
+      <div className="border-t border-[#e1e8f7]">
         <Container className="flex flex-col items-center justify-between gap-3 py-6 sm:flex-row">
           <p className="text-xs text-ink-soft">
             © {new Date().getFullYear()} MetaTok AI — Todos los derechos reservados.

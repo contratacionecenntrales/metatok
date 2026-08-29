@@ -103,7 +103,7 @@ export function Contacto() {
                       name={field.name}
                       type={field.type}
                       required={field.required}
-                      className="w-full rounded-xl border border-[#ece9f7] bg-white px-4 py-2.5 text-sm text-ink outline-none transition-colors focus:border-brand-400 focus:ring-2 focus:ring-brand-100"
+                      className="w-full rounded-xl border border-[#e1e8f7] bg-white px-4 py-2.5 text-sm text-ink outline-none transition-colors focus:border-brand-400 focus:ring-2 focus:ring-brand-100"
                     />
                   </div>
                 ))}
@@ -115,7 +115,7 @@ export function Contacto() {
                     id="automatizar"
                     name="automatizar"
                     rows={4}
-                    className="w-full rounded-xl border border-[#ece9f7] bg-white px-4 py-2.5 text-sm text-ink outline-none transition-colors focus:border-brand-400 focus:ring-2 focus:ring-brand-100"
+                    className="w-full rounded-xl border border-[#e1e8f7] bg-white px-4 py-2.5 text-sm text-ink outline-none transition-colors focus:border-brand-400 focus:ring-2 focus:ring-brand-100"
                   />
                 </div>
                 <div className="sm:col-span-2">

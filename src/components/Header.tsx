@@ -73,7 +73,7 @@ export function Header() {
       <header
         className={cn(
           "w-full border-b transition-all duration-300",
-          scrolled ? "glass-nav-light border-[#ece9f7]" : "border-transparent bg-white",
+          scrolled ? "glass-nav-light border-[#e1e8f7]" : "border-transparent bg-white",
         )}
       >
         <Container className="flex h-18 items-center justify-between py-3.5">
@@ -104,7 +104,7 @@ export function Header() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 8 }}
                         transition={{ duration: 0.15 }}
-                        className="absolute left-0 top-full w-64 rounded-2xl border border-[#ece9f7] bg-white p-2 shadow-xl shadow-brand-900/5"
+                        className="absolute left-0 top-full w-64 rounded-2xl border border-[#e1e8f7] bg-white p-2 shadow-xl shadow-brand-900/5"
                       >
                         {item.children.map((child) => (
                           <a
@@ -138,7 +138,7 @@ export function Header() {
             >
               Iniciar sesión
             </a>
-            <span className="mx-1 h-5 w-px bg-[#ece9f7]" />
+            <span className="mx-1 h-5 w-px bg-[#e1e8f7]" />
             <span className="rounded-lg px-2.5 py-2 text-sm font-semibold text-ink-soft">ES</span>
             <Button href="#contacto" size="md">
               Crear mi agente
@@ -164,7 +164,7 @@ export function Header() {
               animate={{ opacity: 1, height: "auto" }}
               exit={{ opacity: 0, height: 0 }}
               transition={{ duration: 0.25, ease: "easeInOut" }}
-              className="overflow-hidden border-t border-[#ece9f7] bg-white lg:hidden"
+              className="overflow-hidden border-t border-[#e1e8f7] bg-white lg:hidden"
             >
               <Container className="flex flex-col gap-1 py-4">
                 {NAV.map((item) => (
@@ -177,7 +177,7 @@ export function Header() {
                       {item.label}
                     </a>
                     {item.children ? (
-                      <div className="ml-3 flex flex-col gap-0.5 border-l border-[#ece9f7] pl-3">
+                      <div className="ml-3 flex flex-col gap-0.5 border-l border-[#e1e8f7] pl-3">
                         {item.children.map((child) => (
                           <a
                             key={child.href}
@@ -192,7 +192,7 @@ export function Header() {
                     ) : null}
                   </div>
                 ))}
-                <div className="mt-2 flex flex-col gap-3 border-t border-[#ece9f7] pt-4">
+                <div className="mt-2 flex flex-col gap-3 border-t border-[#e1e8f7] pt-4">
                   <a
                     href="https://app.metatok.ai"
                     className="rounded-lg px-3 py-2 text-center text-base font-semibold text-ink-soft hover:text-brand-700"

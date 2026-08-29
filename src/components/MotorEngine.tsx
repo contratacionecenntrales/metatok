@@ -86,7 +86,7 @@ export function MotorEngine() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mx-auto mt-14 grid max-w-3xl grid-cols-3 divide-x divide-[#ece9f7] rounded-2xl border border-[#ece9f7] bg-white py-6 shadow-sm"
+          className="mx-auto mt-14 grid max-w-3xl grid-cols-3 divide-x divide-[#e1e8f7] rounded-2xl border border-[#e1e8f7] bg-white py-6 shadow-sm"
         >
           {ENGINE_STATS.map((stat) => (
             <div key={stat.label} className="flex flex-col items-center px-2 text-center">

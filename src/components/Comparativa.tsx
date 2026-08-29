@@ -26,10 +26,10 @@ export function Comparativa() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, margin: "-60px" }}
           transition={{ duration: 0.6 }}
-          className="mt-14 overflow-x-auto rounded-3xl border border-[#ece9f7] bg-white shadow-sm"
+          className="mt-14 overflow-x-auto rounded-3xl border border-[#e1e8f7] bg-white shadow-sm"
         >
           <div className="min-w-[640px]">
-            <div className="grid grid-cols-3 border-b border-[#ece9f7] bg-surface-tint text-center text-sm font-bold">
+            <div className="grid grid-cols-3 border-b border-[#e1e8f7] bg-surface-tint text-center text-sm font-bold">
               <div className="p-4 text-left text-ink-soft sm:p-5">Característica</div>
               <div className="p-4 text-ink-soft sm:p-5">Bot Tradicional</div>
               <div className="bg-brand-500 p-4 text-white sm:p-5">

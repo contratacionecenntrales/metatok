@@ -95,7 +95,7 @@ export function Hero() {
               {HERO_CHANNELS.map((channel) => (
                 <span
                   key={channel.label}
-                  className="inline-flex items-center gap-2 rounded-full border border-[#ece9f7] bg-white px-3.5 py-1.5 text-sm font-medium text-ink-soft shadow-sm"
+                  className="inline-flex items-center gap-2 rounded-full border border-[#e1e8f7] bg-white px-3.5 py-1.5 text-sm font-medium text-ink-soft shadow-sm"
                 >
                   {channel.kind === "whatsapp" ? (
                     <WhatsAppIcon className="h-4 w-4 text-emerald-500" />
@@ -150,7 +150,7 @@ export function Hero() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: 0.1 }}
-              className="mt-10 grid grid-cols-3 divide-x divide-[#ece9f7] rounded-2xl border border-[#ece9f7] bg-white py-5 shadow-sm"
+              className="mt-10 grid grid-cols-3 divide-x divide-[#e1e8f7] rounded-2xl border border-[#e1e8f7] bg-white py-5 shadow-sm"
             >
               {HERO_STATS.map((stat) => (
                 <div key={stat.label} className="flex flex-col items-center px-2 text-center">
@@ -172,7 +172,7 @@ export function Hero() {
             <div className="relative mx-auto flex max-w-md flex-col items-center">
               <div className="relative">
                 <RobotIllustration className="h-64 w-64 animate-float sm:h-72 sm:w-72" />
-                <span className="absolute -bottom-1 left-1/2 inline-flex -translate-x-1/2 items-center gap-1.5 rounded-full border border-[#ece9f7] bg-white px-3 py-1 text-[11px] font-semibold text-ink-soft shadow-sm">
+                <span className="absolute -bottom-1 left-1/2 inline-flex -translate-x-1/2 items-center gap-1.5 rounded-full border border-[#e1e8f7] bg-white px-3 py-1 text-[11px] font-semibold text-ink-soft shadow-sm">
                   <span className="h-1.5 w-1.5 animate-pulse rounded-full bg-emerald-500" />
                   AI AGENT · Online 24/7
                 </span>
@@ -196,7 +196,7 @@ export function Hero() {
                     </div>
                   ))}
                 </div>
-                <div className="mt-5 grid grid-cols-3 gap-2 border-t border-[#ece9f7] pt-4">
+                <div className="mt-5 grid grid-cols-3 gap-2 border-t border-[#e1e8f7] pt-4">
                   {HERO_METRICS.map((metric) => (
                     <div key={metric.label} className="text-center">
                       <p className="font-display text-lg font-extrabold text-ink">{metric.value}</p>
@@ -214,7 +214,7 @@ export function Hero() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6 }}
-          className="mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-2xl bg-[#ece9f7] sm:grid-cols-4"
+          className="mt-16 grid grid-cols-2 gap-px overflow-hidden rounded-2xl bg-[#e1e8f7] sm:grid-cols-4"
         >
           {HERO_FEATURES.map((feature) => (
             <div key={feature.title} className={cn("flex items-center gap-3 bg-ink px-5 py-5 text-white")}>

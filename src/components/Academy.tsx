@@ -19,7 +19,7 @@ export function Academy() {
               <GraduationCap className="h-3.5 w-3.5" />
               MetaTok Academy
             </span>
-            <span className="inline-flex items-center gap-1.5 rounded-full border border-[#ece9f7] bg-white px-3.5 py-1 text-xs font-bold text-ink-soft">
+            <span className="inline-flex items-center gap-1.5 rounded-full border border-[#e1e8f7] bg-white px-3.5 py-1 text-xs font-bold text-ink-soft">
               <Trophy className="h-3.5 w-3.5" />
               MetaTok Masters
             </span>
@@ -122,7 +122,7 @@ export function Academy() {
               ))}
             </div>
 
-            <div className="mt-6 flex items-center gap-3 rounded-2xl border border-[#ece9f7] p-4">
+            <div className="mt-6 flex items-center gap-3 rounded-2xl border border-[#e1e8f7] p-4">
               <IconBadge icon={Headphones} color="violet" size="sm" />
               <div>
                 <p className="text-sm font-bold text-ink">Soporte experto</p>

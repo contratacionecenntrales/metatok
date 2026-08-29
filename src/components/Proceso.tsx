@@ -26,7 +26,7 @@ export function Proceso() {
         <div className="relative mt-16">
           <div
             aria-hidden
-            className="absolute left-0 right-0 top-6 hidden h-px bg-[repeating-linear-gradient(90deg,#c0adff_0,#c0adff_6px,transparent_6px,transparent_12px)] lg:block"
+            className="absolute left-0 right-0 top-6 hidden h-px bg-[repeating-linear-gradient(90deg,#85acfb_0,#85acfb_6px,transparent_6px,transparent_12px)] lg:block"
           />
           <div className="grid gap-8 lg:grid-cols-4">
             {PROCESO.map((step, index) => (

@@ -39,7 +39,7 @@ export function Sectores() {
                 "inline-flex items-center gap-2 rounded-full border px-4 py-2 text-sm font-semibold transition-colors",
                 activeId === sector.id
                   ? "border-brand-500 bg-brand-500 text-white shadow-brand"
-                  : "border-[#ece9f7] bg-white text-ink-soft hover:border-brand-300 hover:text-brand-700",
+                  : "border-[#e1e8f7] bg-white text-ink-soft hover:border-brand-300 hover:text-brand-700",
               )}
             >
               <sector.icon className="h-4 w-4" />
@@ -84,7 +84,7 @@ export function Sectores() {
             </p>
 
             <div className="mt-8 grid gap-6 lg:grid-cols-3">
-              <div className="rounded-2xl border border-[#ece9f7] p-5">
+              <div className="rounded-2xl border border-[#e1e8f7] p-5">
                 <p className="text-xs font-bold uppercase tracking-wide text-red-500">
                   Estado actual
                 </p>
@@ -104,7 +104,7 @@ export function Sectores() {
                   ))}
                 </ul>
               </div>
-              <div className="rounded-2xl border border-[#ece9f7] p-5">
+              <div className="rounded-2xl border border-[#e1e8f7] p-5">
                 <p className="text-xs font-bold uppercase tracking-wide text-ink-soft">
                   Resultados medios
                 </p>
@@ -122,7 +122,7 @@ export function Sectores() {
               </div>
             </div>
 
-            <div className="mt-8 flex flex-col gap-4 border-t border-[#ece9f7] pt-6 sm:flex-row sm:items-center sm:justify-between">
+            <div className="mt-8 flex flex-col gap-4 border-t border-[#e1e8f7] pt-6 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex flex-wrap gap-2">
                 <span className="mr-1 inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wide text-ink-soft">
                   <Sparkles className="h-3.5 w-3.5 text-brand-500" />

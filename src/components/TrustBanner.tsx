@@ -6,7 +6,7 @@ import { TRUST_LOGOS } from "@/lib/data";
 
 export function TrustBanner() {
   return (
-    <section className="border-y border-[#ece9f7] bg-white py-10">
+    <section className="border-y border-[#e1e8f7] bg-white py-10">
       <Container>
         <motion.p
           initial={{ opacity: 0, y: 10 }}

@@ -15,7 +15,7 @@ export function Beneficios() {
         <div className="relative mt-16">
           <div
             aria-hidden
-            className="absolute left-0 right-0 top-[4.5rem] hidden h-px bg-[repeating-linear-gradient(90deg,#d9cffb_0,#d9cffb_6px,transparent_6px,transparent_12px)] lg:block"
+            className="absolute left-0 right-0 top-[4.5rem] hidden h-px bg-[repeating-linear-gradient(90deg,#b7d1ff_0,#b7d1ff_6px,transparent_6px,transparent_12px)] lg:block"
           />
           <div className="grid gap-8 lg:grid-cols-4">
             {BENEFICIOS.map((item, index) => (

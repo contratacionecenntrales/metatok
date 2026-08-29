@@ -41,7 +41,7 @@ export function Testimonios() {
             >
               <Quote className="h-7 w-7 text-brand-200" />
               <p className="mt-4 flex-1 text-sm leading-relaxed text-ink-soft">“{t.quote}”</p>
-              <div className="mt-6 flex items-center gap-3 border-t border-[#ece9f7] pt-5">
+              <div className="mt-6 flex items-center gap-3 border-t border-[#e1e8f7] pt-5">
                 <span
                   className={`inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-sm font-bold ${AVATAR_COLORS[index % AVATAR_COLORS.length]}`}
                 >

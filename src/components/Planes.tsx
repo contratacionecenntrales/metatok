@@ -33,7 +33,7 @@ export function Planes() {
         />
 
         <div className="mt-10 flex justify-center">
-          <div className="inline-flex flex-wrap justify-center gap-1 rounded-full border border-[#ece9f7] bg-white p-1.5">
+          <div className="inline-flex flex-wrap justify-center gap-1 rounded-full border border-[#e1e8f7] bg-white p-1.5">
             {CYCLES.map((c) => (
               <button
                 key={c.id}

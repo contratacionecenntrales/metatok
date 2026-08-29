@@ -10,7 +10,7 @@ import { cn } from "@/lib/utils";
 
 function FaqItem({ q, a, open, onToggle }: { q: string; a: string; open: boolean; onToggle: () => void }) {
   return (
-    <div className="border-b border-[#ece9f7] px-5 last:border-b-0">
+    <div className="border-b border-[#e1e8f7] px-5 last:border-b-0">
       <button
         type="button"
         onClick={onToggle}
@@ -53,7 +53,7 @@ export function Faq() {
 
         <div className="mt-14 grid gap-4 md:grid-cols-2">
           {columns.map((col, colIndex) => (
-            <div key={colIndex} className="rounded-2xl border border-[#ece9f7] bg-white">
+            <div key={colIndex} className="rounded-2xl border border-[#e1e8f7] bg-white">
               {col.map((item, i) => {
                 const globalIndex = colIndex * mid + i;
                 return (

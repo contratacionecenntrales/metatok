@@ -15,9 +15,9 @@ export default function Image() {
           flexDirection: "column",
           justifyContent: "center",
           padding: "80px",
-          backgroundColor: "#120b2e",
+          backgroundColor: "#0b1730",
           backgroundImage:
-            "radial-gradient(circle at 78% 15%, #7c5cff 0%, #4420ac 42%, #14102b 78%)",
+            "radial-gradient(circle at 78% 15%, #2f66e0 0%, #142f73 42%, #0b1730 78%)",
           fontFamily: "sans-serif",
         }}
       >
@@ -33,13 +33,13 @@ export default function Image() {
               backgroundColor: "#ffffff",
               fontSize: 34,
               fontWeight: 800,
-              color: "#4420ac",
+              color: "#142f73",
             }}
           >
             M
           </div>
           <div style={{ display: "flex", fontSize: 34, fontWeight: 700, color: "#ffffff" }}>
-            MetaTok<span style={{ color: "#c0adff" }}>.ai</span>
+            MetaTok<span style={{ color: "#85acfb" }}>.ai</span>
           </div>
         </div>
 
@@ -62,7 +62,7 @@ export default function Image() {
             display: "flex",
             marginTop: 28,
             fontSize: 28,
-            color: "#e4dcff",
+            color: "#cfdcfa",
             maxWidth: 760,
           }}
         >

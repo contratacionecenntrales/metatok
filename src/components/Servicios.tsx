@@ -26,7 +26,7 @@ export function Servicios() {
           {SERVICIOS_TOP_STATS.map((stat) => (
             <span
               key={stat.label}
-              className="inline-flex items-center gap-2 rounded-full border border-[#ece9f7] bg-white px-4 py-1.5 text-xs font-semibold text-ink-soft shadow-sm"
+              className="inline-flex items-center gap-2 rounded-full border border-[#e1e8f7] bg-white px-4 py-1.5 text-xs font-semibold text-ink-soft shadow-sm"
             >
               <stat.icon className="h-3.5 w-3.5 text-brand-500" />
               {stat.label}
@@ -51,7 +51,7 @@ export function Servicios() {
               <h3 className="mt-5 text-lg font-bold text-ink">{servicio.title}</h3>
               <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-soft">{servicio.desc}</p>
               <p className="mt-4 text-sm font-semibold text-brand-700">{servicio.result}</p>
-              <div className="mt-5 flex items-center justify-between border-t border-[#ece9f7] pt-4">
+              <div className="mt-5 flex items-center justify-between border-t border-[#e1e8f7] pt-4">
                 <span className="inline-flex items-center gap-1.5 text-xs font-semibold text-emerald-600">
                   <span className="h-1.5 w-1.5 rounded-full bg-emerald-500" />
                   Activación inmediata
@@ -90,7 +90,7 @@ export function Servicios() {
           </Button>
         </motion.div>
 
-        <div className="mt-10 grid grid-cols-2 gap-6 border-t border-[#ece9f7] pt-8 sm:grid-cols-4">
+        <div className="mt-10 grid grid-cols-2 gap-6 border-t border-[#e1e8f7] pt-8 sm:grid-cols-4">
           {TRUST_STRIP.map((item) => (
             <div key={item.title} className="flex flex-col items-center text-center">
               <IconBadge icon={item.icon} color="violet" size="sm" />
