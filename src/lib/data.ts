@@ -37,6 +37,7 @@ import {
   Tags,
   Target,
   TrendingUp,
+  Trophy,
   UserCheck,
   Users,
   Workflow,
@@ -440,6 +441,7 @@ export interface Servicio {
   title: string;
   desc: string;
   result: string;
+  flagship?: boolean;
 }
 
 export const SERVICIOS: Servicio[] = [
@@ -448,15 +450,16 @@ export const SERVICIOS: Servicio[] = [
     icon: Bot,
     color: "violet",
     title: "Agentes de IA Conversacional",
-    desc: "Agentes especializados con NLP que entienden intenciones, manejan objeciones y ejecutan estrategias de venta complejas en cada canal de tu negocio.",
+    desc: "Agentes especializados con NLP que entienden intenciones, manejan objeciones y ejecutan estrategias de venta complejas en cada canal de tu negocio. El servicio más contratado y el que más ingresos genera a nuestros clientes.",
     result: "Responde al 100% de tus leads en segundos, no en horas.",
+    flagship: true,
   },
   {
     n: "02",
     icon: Phone,
     color: "pink",
     title: "Voicebots (Agentes de Voz)",
-    desc: "Asistentes de voz ultrarrealistas que realizan y reciben llamadas telefónicas. Atienden objeciones, califican y agendan como un operador humano.",
+    desc: "Asistentes de voz ultrarrealistas que realizan y reciben llamadas telefónicas. Atienden objeciones, califican y agendan como tu mejor comercial, sin descansos ni bajas.",
     result: "Atiende llamadas entrantes sin tiempo de espera 24/7.",
   },
   {
@@ -464,7 +467,7 @@ export const SERVICIOS: Servicio[] = [
     icon: Target,
     color: "blue",
     title: "Cualificación de Leads",
-    desc: "Filtramos y puntuamos cada prospecto en tiempo real para que solo hables con los que tienen intención real de compra.",
+    desc: "Filtramos y puntuamos cada prospecto en tiempo real para que tu equipo solo hable con quienes tienen intención real de compra. Cero tiempo perdido en curiosos.",
     result: "Aumenta tu tasa de cierre hasta un 3× sin más presupuesto.",
   },
   {
@@ -472,7 +475,7 @@ export const SERVICIOS: Servicio[] = [
     icon: Database,
     color: "teal",
     title: "Integración con CRM",
-    desc: "Sincronización bidireccional con tu CRM mediante API. Datos limpios, actualizados y accionables 24/7, sin duplicados ni pérdidas.",
+    desc: "Sincronización bidireccional con tu CRM mediante API. Datos limpios, actualizados y accionables 24/7, sin duplicados, sin fugas y sin depender de nadie.",
     result: "0 horas de carga manual de datos en tu equipo.",
   },
   {
@@ -480,7 +483,7 @@ export const SERVICIOS: Servicio[] = [
     icon: CalendarCheck,
     color: "amber",
     title: "Agendamiento Automático",
-    desc: "Citas en tu calendario sin fricción. El agente negocia el horario, confirma la reunión y envía recordatorios personalizados.",
+    desc: "Citas en tu calendario sin fricción. El agente negocia el horario, confirma la reunión y envía recordatorios personalizados hasta que el cliente se presenta.",
     result: "Hasta +54% más citas agendadas sin intervención humana.",
   },
   {
@@ -488,12 +491,13 @@ export const SERVICIOS: Servicio[] = [
     icon: Workflow,
     color: "ink",
     title: "Flow-works Inteligentes",
-    desc: "Flujos de trabajo que disparan acciones automáticas: cualifican leads, agendan reuniones, actualizan el CRM y nutren prospectos en piloto automático.",
+    desc: "Flujos de trabajo que disparan acciones automáticas: cualifican leads, agendan reuniones, actualizan el CRM y nutren prospectos mientras tu equipo duerme.",
     result: "Tu embudo de ventas funciona solo, 24 horas al día.",
   },
 ];
 
 export const SERVICIOS_TOP_STATS = [
+  { icon: Trophy, label: "#1 en automatización con IA" },
   { icon: Zap, label: "+400% tasa de respuesta" },
   { icon: AlarmClock, label: "24/7 operativo" },
   { icon: Puzzle, label: "Integración omnicanal" },
@@ -504,6 +508,18 @@ export const TRUST_STRIP = [
   { icon: Rocket, title: "Implementación Rápida", desc: "Listo en días, no en meses" },
   { icon: BarChart3, title: "Resultados Reales", desc: "Métricas que impulsan tu negocio" },
   { icon: Headphones, title: "Soporte 24/7", desc: "Estamos contigo siempre" },
+];
+
+export interface LeaderComparison {
+  metric: string;
+  metatok: string;
+  market: string;
+}
+
+export const LEADER_COMPARISON: LeaderComparison[] = [
+  { metric: "Velocidad de respuesta", metatok: "< 60 segundos", market: "Horas (o nunca)" },
+  { metric: "Cobertura horaria", metatok: "24/7/365 real", market: "Horario de oficina" },
+  { metric: "Canales conectados", metatok: "5+ en un solo cerebro", market: "1-2 canales aislados" },
 ];
 
 // ---------- COMPARATIVA ----------
