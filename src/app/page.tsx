@@ -18,10 +18,13 @@ import { Auditoria } from "@/components/Auditoria";
 import { Faq } from "@/components/Faq";
 import { Contacto } from "@/components/Contacto";
 import { Footer } from "@/components/Footer";
+import { FaqJsonLd, ServicesJsonLd } from "@/components/seo/JsonLd";
 
 export default function Home() {
   return (
     <>
+      <FaqJsonLd />
+      <ServicesJsonLd />
       <Header />
       <main className="flex-1">
         <Hero />
