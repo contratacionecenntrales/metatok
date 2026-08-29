@@ -3,6 +3,8 @@ import { LOCALES } from "@/i18n/routing";
 
 const SITE_URL = "https://www.metatok.ai";
 
+export const dynamic = "force-static";
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const languages: Record<string, string> = {};
   LOCALES.forEach((locale) => {
