@@ -1,30 +1,35 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { ArrowRight, Frown, ShieldCheck, Smile, Zap } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { CheckRow, CrossRow } from "@/components/ui/ListRow";
-import { DIAGNOSTICO_ACTUAL, DIAGNOSTICO_METATOK } from "@/lib/data";
+import { getDiagnosticoActual, getDiagnosticoMetatok } from "@/lib/data";
 
 export function Diagnostico() {
+  const t = useTranslations();
+  const actualItems = getDiagnosticoActual(t);
+  const metatokItems = getDiagnosticoMetatok(t);
+
   return (
     <section id="diagnostico" className="bg-surface-tint py-20 sm:py-28">
       <Container>
         <SectionHeading
-          eyebrow="Antes y después"
+          eyebrow={t("diagnostico.eyebrow")}
           title={
             <>
-              ¿Reconoces la situación <br className="hidden sm:block" />
-              de tu negocio hoy?
+              {t("diagnostico.titleLine1")} <br className="hidden sm:block" />
+              {t("diagnostico.titleLine2")}
             </>
           }
           description={
             <>
-              La mayoría de negocios pierde entre un{" "}
-              <span className="font-bold text-brand-700">40% y un 60%</span> de sus leads por falta
-              de respuesta rápida y seguimiento sistemático.
+              {t("diagnostico.descPrefix")}{" "}
+              <span className="font-bold text-brand-700">{t("diagnostico.descHighlight")}</span>{" "}
+              {t("diagnostico.descSuffix")}
             </>
           }
         />
@@ -42,18 +47,20 @@ export function Diagnostico() {
                 <Frown className="h-5 w-5" />
               </span>
               <div>
-                <p className="text-xs font-bold uppercase tracking-wide text-red-500">Situación actual</p>
-                <p className="text-sm font-bold text-ink">Sin automatización</p>
+                <p className="text-xs font-bold uppercase tracking-wide text-red-500">
+                  {t("diagnostico.actualLabel")}
+                </p>
+                <p className="text-sm font-bold text-ink">{t("diagnostico.actualSubLabel")}</p>
               </div>
             </div>
             <ul className="mt-5 flex flex-col gap-3.5">
-              {DIAGNOSTICO_ACTUAL.map((item) => (
+              {actualItems.map((item) => (
                 <CrossRow key={item}>{item}</CrossRow>
               ))}
             </ul>
           </motion.div>
 
-          <div className="pointer-events-none absolute left-1/2 top-1/2 z-10 hidden -translate-x-1/2 -translate-y-1/2 lg:block">
+          <div className="pointer-events-none absolute start-1/2 top-1/2 z-10 hidden -translate-x-1/2 -translate-y-1/2 lg:block rtl:translate-x-1/2">
             <span className="flex h-14 w-14 items-center justify-center rounded-full bg-brand-500 text-sm font-black text-white shadow-brand">
               VS
             </span>
@@ -71,12 +78,14 @@ export function Diagnostico() {
                 <Smile className="h-5 w-5" />
               </span>
               <div>
-                <p className="text-xs font-bold uppercase tracking-wide text-brand-700">Con Metatok</p>
-                <p className="text-sm font-bold text-ink">Automatización activa</p>
+                <p className="text-xs font-bold uppercase tracking-wide text-brand-700">
+                  {t("diagnostico.metatokLabel")}
+                </p>
+                <p className="text-sm font-bold text-ink">{t("diagnostico.metatokSubLabel")}</p>
               </div>
             </div>
             <ul className="mt-5 flex flex-col gap-3.5">
-              {DIAGNOSTICO_METATOK.map((item) => (
+              {metatokItems.map((item) => (
                 <CheckRow key={item}>{item}</CheckRow>
               ))}
             </ul>
@@ -92,16 +101,16 @@ export function Diagnostico() {
         >
           <Button href="#contacto" size="lg">
             <Zap className="h-4 w-4" />
-            Deja de perder leads: auditoría gratuita en 24 h
+            {t("diagnostico.ctaButton")}
             <ArrowRight className="h-4 w-4" />
           </Button>
           <p className="flex flex-wrap items-center justify-center gap-x-5 gap-y-1 text-xs font-medium text-ink-soft">
             <span className="inline-flex items-center gap-1.5">
               <ShieldCheck className="h-3.5 w-3.5 text-emerald-500" />
-              Sin compromiso
+              {t("diagnostico.trust.noCompromise")}
             </span>
-            <span>Sin permanencia</span>
-            <span>Respuesta en menos de 24 h</span>
+            <span>{t("diagnostico.trust.noPermanence")}</span>
+            <span>{t("diagnostico.trust.response")}</span>
           </p>
         </motion.div>
       </Container>

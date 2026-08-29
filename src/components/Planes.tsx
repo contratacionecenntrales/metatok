@@ -2,39 +2,42 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { ArrowRight, Check, Crown } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
-import { BILLING_MULTIPLIER, PLANES, type BillingCycle } from "@/lib/data";
+import { BILLING_MULTIPLIER, getPlanes, type BillingCycle } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
-const CYCLES: { id: BillingCycle; label: string; badge?: string }[] = [
-  { id: "monthly", label: "Mensual" },
-  { id: "quarterly", label: "Trimestral", badge: "Ahorra ~16%" },
-  { id: "yearly", label: "Anual", badge: "Ahorra ~29%" },
-];
-
 export function Planes() {
+  const t = useTranslations();
+  const planes = getPlanes(t);
   const [cycle, setCycle] = useState<BillingCycle>("monthly");
+
+  const cycles: { id: BillingCycle; label: string; badge?: string }[] = [
+    { id: "monthly", label: t("planes.cycles.monthly") },
+    { id: "quarterly", label: t("planes.cycles.quarterly"), badge: t("planes.cycles.quarterlyBadge") },
+    { id: "yearly", label: t("planes.cycles.yearly"), badge: t("planes.cycles.yearlyBadge") },
+  ];
 
   return (
     <section id="planes" className="py-20 sm:py-28">
       <Container>
         <SectionHeading
-          eyebrow="Planes y Precios"
+          eyebrow={t("planes.eyebrow")}
           title={
             <>
-              Invierte en resultados, <br className="hidden sm:block" />
-              no en horas extra
+              {t("planes.titleLine1")} <br className="hidden sm:block" />
+              {t("planes.titleLine2")}
             </>
           }
-          description="Sin permanencia. Sin costes ocultos. Solo escala cuando lo necesites."
+          description={t("planes.description")}
         />
 
         <div className="mt-10 flex justify-center">
           <div className="inline-flex flex-wrap justify-center gap-1 rounded-full border border-[#e1e8f7] bg-white p-1.5">
-            {CYCLES.map((c) => (
+            {cycles.map((c) => (
               <button
                 key={c.id}
                 type="button"
@@ -61,7 +64,7 @@ export function Planes() {
         </div>
 
         <div className="mt-12 grid gap-6 lg:grid-cols-3 lg:items-start">
-          {PLANES.map((plan, index) => {
+          {planes.map((plan, index) => {
             const price = Math.round(plan.basePrice * BILLING_MULTIPLIER[cycle]);
             return (
               <motion.div
@@ -78,10 +81,10 @@ export function Planes() {
                 )}
               >
                 {plan.featured ? (
-                  <div className="absolute -top-4 left-1/2 -translate-x-1/2">
+                  <div className="absolute -top-4 start-1/2 -translate-x-1/2 rtl:translate-x-1/2">
                     <span className="inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-brand-500 to-brand-700 px-4 py-1.5 text-xs font-bold uppercase tracking-wide text-white shadow-brand">
                       <Crown className="h-3.5 w-3.5" />
-                      Más Popular
+                      {t("planes.featuredBadge")}
                     </span>
                   </div>
                 ) : null}
@@ -91,10 +94,10 @@ export function Planes() {
 
                 <div className="mt-5 flex items-end gap-1.5">
                   <span className="font-display text-4xl font-black text-ink">{price}€</span>
-                  <span className="pb-1 text-sm font-medium text-ink-soft">/mes</span>
+                  <span className="pb-1 text-sm font-medium text-ink-soft">{t("planes.perMonth")}</span>
                 </div>
                 {cycle !== "monthly" ? (
-                  <p className="mt-1 text-xs text-ink-soft/70">Facturado según ciclo elegido</p>
+                  <p className="mt-1 text-xs text-ink-soft/70">{t("planes.billedNote")}</p>
                 ) : null}
 
                 <ul className="mt-6 flex flex-1 flex-col gap-3">
@@ -121,12 +124,12 @@ export function Planes() {
         </div>
 
         <p className="mx-auto mt-10 max-w-2xl text-center text-sm text-ink-soft">
-          Todos los planes incluyen acceso a la plataforma Metatok. Sin permanencia ni costes ocultos.
+          {t("planes.footerNote")}
         </p>
         <p className="mt-2 text-center text-sm">
-          <span className="text-ink-soft">¿Necesitas algo específico?</span>{" "}
+          <span className="text-ink-soft">{t("planes.customNeed")}</span>{" "}
           <a href="#contacto" className="font-semibold text-brand-600 hover:text-brand-800">
-            Hablamos de un plan a medida →
+            {t("planes.customCta")}
           </a>
         </p>
       </Container>

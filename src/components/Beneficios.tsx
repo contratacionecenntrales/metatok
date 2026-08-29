@@ -1,24 +1,28 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { IconBadge } from "@/components/ui/IconBadge";
-import { BENEFICIOS } from "@/lib/data";
+import { getBeneficios } from "@/lib/data";
 
 export function Beneficios() {
+  const t = useTranslations();
+  const beneficios = getBeneficios(t);
+
   return (
     <section id="beneficios" className="bg-surface-tint py-20 sm:py-28">
       <Container>
-        <SectionHeading eyebrow="Ventaja Competitiva" title="Por qué MetaTok cambia las reglas" />
+        <SectionHeading eyebrow={t("beneficios.eyebrow")} title={t("beneficios.title")} />
 
         <div className="relative mt-16">
           <div
             aria-hidden
-            className="absolute left-0 right-0 top-[4.5rem] hidden h-px bg-[repeating-linear-gradient(90deg,#b7d1ff_0,#b7d1ff_6px,transparent_6px,transparent_12px)] lg:block"
+            className="absolute inset-x-0 top-[4.5rem] hidden h-px bg-[repeating-linear-gradient(90deg,#b7d1ff_0,#b7d1ff_6px,transparent_6px,transparent_12px)] lg:block"
           />
           <div className="grid gap-8 lg:grid-cols-4">
-            {BENEFICIOS.map((item, index) => (
+            {beneficios.map((item, index) => (
               <motion.div
                 key={item.n}
                 initial={{ opacity: 0, y: 28 }}

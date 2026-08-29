@@ -1,35 +1,40 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { ArrowRight, CheckCircle2, Target } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { IconBadge } from "@/components/ui/IconBadge";
 import { Button } from "@/components/ui/Button";
-import { PROCESO } from "@/lib/data";
+import { getProceso } from "@/lib/data";
 
 export function Proceso() {
+  const t = useTranslations();
+  const steps = getProceso(t);
+
   return (
     <section id="proceso" className="bg-surface-tint py-20 sm:py-28">
       <Container>
         <SectionHeading
-          eyebrow="Del diagnóstico al despliegue"
+          eyebrow={t("proceso.eyebrow")}
           title={
             <>
-              Un proceso de <span className="text-gradient-brand">alta precisión</span> sin
-              improvisación
+              {t("proceso.titlePrefix")}{" "}
+              <span className="text-gradient-brand">{t("proceso.titleHighlight")}</span>{" "}
+              {t("proceso.titleSuffix")}
             </>
           }
-          description="Cada etapa está diseñada para generar resultados medibles y acelerar tu crecimiento."
+          description={t("proceso.description")}
         />
 
         <div className="relative mt-16">
           <div
             aria-hidden
-            className="absolute left-0 right-0 top-6 hidden h-px bg-[repeating-linear-gradient(90deg,#85acfb_0,#85acfb_6px,transparent_6px,transparent_12px)] lg:block"
+            className="absolute inset-x-0 top-6 hidden h-px bg-[repeating-linear-gradient(90deg,#85acfb_0,#85acfb_6px,transparent_6px,transparent_12px)] lg:block"
           />
           <div className="grid gap-8 lg:grid-cols-4">
-            {PROCESO.map((step, index) => (
+            {steps.map((step, index) => (
               <motion.div
                 key={step.n}
                 initial={{ opacity: 0, y: 28 }}
@@ -64,7 +69,7 @@ export function Proceso() {
         >
           <Button href="#contacto" size="lg">
             <Target className="h-4 w-4" />
-            Solicita tu Auditoría Gratuita
+            {t("proceso.ctaButton")}
             <ArrowRight className="h-4 w-4" />
           </Button>
         </motion.div>

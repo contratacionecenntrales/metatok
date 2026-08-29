@@ -1,8 +1,6 @@
 import type { LucideIcon } from "lucide-react";
 import {
   AlarmClock,
-  Award,
-  BarChart3,
   Bot,
   BookOpen,
   Briefcase,
@@ -12,73 +10,81 @@ import {
   CreditCard,
   Database,
   FileText,
-  Gauge,
   Globe,
-  GraduationCap,
   Headphones,
   Hotel,
-  Lock,
-  Mail,
-  MapPin,
   Megaphone,
-  MonitorSmartphone,
   Network,
   Phone,
   PlugZap,
   Puzzle,
-  Repeat,
   Rocket,
   Route,
   Scale,
   ShieldCheck,
   ShoppingCart,
-  Sparkles,
   Stethoscope,
   Tags,
   Target,
   TrendingUp,
   Trophy,
   UserCheck,
-  Users,
   Workflow,
   Zap,
+  BarChart3,
 } from "lucide-react";
 import type { BadgeColor } from "@/components/ui/IconBadge";
 
+type T = (key: string) => string;
+
 // ---------- HERO ----------
 
-export const HERO_STATS = [
-  { value: "100%", label: "Automatización total" },
-  { value: "3.000€", label: "Ahorro por trabajador" },
-  { value: "24/7", label: "Operación continua" },
-];
+export function getHeroStats(t: T) {
+  return [
+    { value: t("hero.stats.automation.value"), label: t("hero.stats.automation.label") },
+    { value: t("hero.stats.savings.value"), label: t("hero.stats.savings.label") },
+    { value: t("hero.stats.operation.value"), label: t("hero.stats.operation.label") },
+  ];
+}
 
-export const HERO_FEATURES: { icon: LucideIcon; title: string; desc: string }[] = [
-  { icon: Zap, title: "Velocidad de respuesta", desc: "Atendemos al instante" },
-  { icon: Bot, title: "Agentes autónomos", desc: "Trabajan 24/7 sin pausas" },
-  { icon: ShieldCheck, title: "RGPD blindado", desc: "Datos seguros y protegidos" },
-  { icon: PlugZap, title: "API abierta", desc: "Conecta con tus herramientas" },
-];
+export function getHeroFeatures(t: T): { icon: LucideIcon; title: string; desc: string }[] {
+  return [
+    { icon: Zap, title: t("hero.features.speed.title"), desc: t("hero.features.speed.desc") },
+    { icon: Bot, title: t("hero.features.autonomous.title"), desc: t("hero.features.autonomous.desc") },
+    { icon: ShieldCheck, title: t("hero.features.gdpr.title"), desc: t("hero.features.gdpr.desc") },
+    { icon: PlugZap, title: t("hero.features.api.title"), desc: t("hero.features.api.desc") },
+  ];
+}
 
-export const HERO_CHANNELS: { icon: LucideIcon; label: string; kind?: "whatsapp" | "instagram" }[] = [
-  { icon: Phone, label: "WhatsApp", kind: "whatsapp" },
-  { icon: Phone, label: "Llamadas" },
-  { icon: Phone, label: "Instagram", kind: "instagram" },
-  { icon: Globe, label: "Web" },
-];
+export function getHeroChannels(
+  t: T,
+): { icon: LucideIcon; label: string; kind?: "whatsapp" | "instagram" }[] {
+  return [
+    { icon: Phone, label: t("hero.channels.whatsapp"), kind: "whatsapp" },
+    { icon: Phone, label: t("hero.channels.calls") },
+    { icon: Phone, label: t("hero.channels.instagram"), kind: "instagram" },
+    { icon: Globe, label: t("hero.channels.web") },
+  ];
+}
 
-export const HERO_FEED: { icon: LucideIcon; label: string; sub: string; color: BadgeColor }[] = [
-  { icon: Headphones, label: "Ticket resuelto", sub: "Soporte · T-892", color: "violet" },
-  { icon: FileText, label: "Factura procesada", sub: "Contabilidad · #A-402", color: "green" },
-  { icon: Megaphone, label: "Post publicado", sub: "Instagram · Contenido", color: "pink" },
-  { icon: UserCheck, label: "Lead cualificado", sub: "Ventas · Score 94", color: "blue" },
-];
+export function getHeroFeed(
+  t: T,
+): { icon: LucideIcon; label: string; sub: string; color: BadgeColor }[] {
+  return [
+    { icon: Headphones, label: t("hero.feed.ticket.label"), sub: t("hero.feed.ticket.sub"), color: "violet" },
+    { icon: FileText, label: t("hero.feed.invoice.label"), sub: t("hero.feed.invoice.sub"), color: "green" },
+    { icon: Megaphone, label: t("hero.feed.post.label"), sub: t("hero.feed.post.sub"), color: "pink" },
+    { icon: UserCheck, label: t("hero.feed.lead.label"), sub: t("hero.feed.lead.sub"), color: "blue" },
+  ];
+}
 
-export const HERO_METRICS = [
-  { value: "142", label: "Tareas/hora" },
-  { value: "5", label: "Dptos. Activos" },
-  { value: "€3k+", label: "Ahorro/mes" },
-];
+export function getHeroMetrics(t: T) {
+  return [
+    { value: "142", label: t("hero.metrics.tasks") },
+    { value: "5", label: t("hero.metrics.depts") },
+    { value: "€3k+", label: t("hero.metrics.savings") },
+  ];
+}
 
 export const TRUST_LOGOS = [
   "Heineken",
@@ -91,130 +97,99 @@ export const TRUST_LOGOS = [
 
 // ---------- PROBLEMA ----------
 
-export const PROBLEMA_ITEMS: { n: string; stat: string; title: string; desc: string }[] = [
-  {
-    n: "1",
-    stat: "70%",
-    title: "Lead frío",
-    desc: "El 70% de los leads se pierden por responder después de 5 minutos. La velocidad lo es todo.",
-  },
-  {
-    n: "2",
-    stat: "1.000",
-    title: "Saturación humana",
-    desc: "Tu equipo humano no puede atender 1.000 chats a la vez. Los agentes MetaTok sí lo hacen.",
-  },
-  {
-    n: "3",
-    stat: "Cero cierre",
-    title: "Sin cierre autónomo",
-    desc: "Los bots comunes solo dan información. Los agentes MetaTok están programados para cerrar.",
-  },
-];
+export function getProblemaItems(t: T): { n: string; stat: string; title: string; desc: string }[] {
+  return ["1", "2", "3"].map((n) => ({
+    n,
+    stat: t(`problema.items.${n}.stat`),
+    title: t(`problema.items.${n}.title`),
+    desc: t(`problema.items.${n}.desc`),
+  }));
+}
 
 // ---------- BENEFICIOS ----------
 
-export const BENEFICIOS: {
-  n: string;
-  icon: LucideIcon;
-  stat: string;
-  statLabel: string;
-  title: string;
-  desc: string;
-}[] = [
-  {
-    n: "01",
-    icon: Zap,
-    stat: "+400%",
-    statLabel: "Tasa de respuesta vs. manual",
-    title: "Respuesta que multiplica oportunidades",
-    desc: "La velocidad y la insistencia correcta convierten conversaciones en ingresos. Menos leads muertos por silencio.",
-  },
-  {
-    n: "02",
-    icon: CreditCard,
-    stat: "3.000€",
-    statLabel: "Ahorro por trabajador",
-    title: "Cero tareas repetitivas",
-    desc: "La IA asume toda la carga operativa. Elimina errores humanos y reduce costes estructurales masivamente.",
-  },
-  {
-    n: "03",
-    icon: AlarmClock,
-    stat: "24/7",
-    statLabel: "Sin interrupciones",
-    title: "Operativo las 24 horas",
-    desc: "Tu negocio nunca duerme. Capta, cualifica y agenda incluso fuera de horario comercial y festivos.",
-  },
-  {
-    n: "04",
-    icon: Puzzle,
-    stat: "5+",
-    statLabel: "Canales integrados",
-    title: "Integración omnicanal total",
-    desc: "Teléfono, Web, WhatsApp, Instagram, Telegram o tu CRM interno vía API. Un ecosistema de texto y voz conectado y coherente.",
-  },
-];
+const BENEFICIOS_ICONS: Record<string, LucideIcon> = {
+  "01": Zap,
+  "02": CreditCard,
+  "03": AlarmClock,
+  "04": Puzzle,
+};
+
+export function getBeneficios(t: T) {
+  return Object.keys(BENEFICIOS_ICONS).map((n) => ({
+    n,
+    icon: BENEFICIOS_ICONS[n],
+    stat: t(`beneficios.items.${n}.stat`),
+    statLabel: t(`beneficios.items.${n}.statLabel`),
+    title: t(`beneficios.items.${n}.title`),
+    desc: t(`beneficios.items.${n}.desc`),
+  }));
+}
 
 // ---------- MOTOR METATOK (ENGINE) ----------
 
-export const ENGINE_FEATURES: { icon: LucideIcon; title: string; desc: string; color: BadgeColor }[] = [
-  {
-    icon: Cpu,
-    title: "Procesamiento Cognitivo en Tiempo Real",
-    desc: "El núcleo V5 analiza intención, sentimiento y contexto en milisegundos. Adapta el guion de ventas dinámicamente basándose en más de 10.000 interacciones previas.",
-    color: "violet",
-  },
-  {
-    icon: Network,
-    title: "Omnicanalidad Total",
-    desc: "WhatsApp, Instagram y Web conectados a un único cerebro central.",
-    color: "blue",
-  },
-  {
-    icon: Database,
-    title: "Sincronización CRM",
-    desc: "Integración nativa bidireccional. Todo queda registrado.",
-    color: "green",
-  },
-  {
-    icon: TrendingUp,
-    title: "Auto-optimización Constante",
-    desc: "El sistema nunca deja de aprender. Realiza pruebas A/B automatizadas en sus propios mensajes para encontrar las combinaciones que generan mayor tasa de respuesta.",
-    color: "pink",
-  },
-];
+export function getEngineFeatures(
+  t: T,
+): { icon: LucideIcon; title: string; desc: string; color: BadgeColor }[] {
+  return [
+    {
+      icon: Cpu,
+      title: t("engine.features.cognitive.title"),
+      desc: t("engine.features.cognitive.desc"),
+      color: "violet",
+    },
+    {
+      icon: Network,
+      title: t("engine.features.omnichannel.title"),
+      desc: t("engine.features.omnichannel.desc"),
+      color: "blue",
+    },
+    {
+      icon: Database,
+      title: t("engine.features.crm.title"),
+      desc: t("engine.features.crm.desc"),
+      color: "green",
+    },
+    {
+      icon: TrendingUp,
+      title: t("engine.features.optimization.title"),
+      desc: t("engine.features.optimization.desc"),
+      color: "pink",
+    },
+  ];
+}
 
-export const ENGINE_STATS = [
-  { value: "< 0.5s", label: "Latencia media" },
-  { value: "99.9%", label: "Uptime garantizado" },
-  { value: "AES-256", label: "Cifrado de datos" },
-];
+export function getEngineStats(t: T) {
+  return [
+    { value: t("engine.stats.latency.value"), label: t("engine.stats.latency.label") },
+    { value: t("engine.stats.uptime.value"), label: t("engine.stats.uptime.label") },
+    { value: t("engine.stats.encryption.value"), label: t("engine.stats.encryption.label") },
+  ];
+}
 
 // ---------- WHITE LABEL ----------
 
-export const WHITE_LABEL_FEATURES: { icon: LucideIcon; title: string; desc: string }[] = [
-  { icon: Tags, title: "Branding completo", desc: "UI, tono, iconografía y experiencia coherente con tu marca." },
-  { icon: Rocket, title: "Publicación oficial", desc: "Despliegue en App Store y Google Play o distribución privada enterprise." },
-  { icon: ShieldCheck, title: "Cumplimiento enterprise", desc: "RGPD, controles de acceso y trazabilidad para operación segura." },
-  { icon: Network, title: "Escala multinicho", desc: "Una base técnica para múltiples verticales sin rehacer producto." },
-];
+export function getWhiteLabelFeatures(t: T): { icon: LucideIcon; title: string; desc: string }[] {
+  return [
+    { icon: Tags, title: t("whiteLabel.features.branding.title"), desc: t("whiteLabel.features.branding.desc") },
+    { icon: Rocket, title: t("whiteLabel.features.publishing.title"), desc: t("whiteLabel.features.publishing.desc") },
+    { icon: ShieldCheck, title: t("whiteLabel.features.compliance.title"), desc: t("whiteLabel.features.compliance.desc") },
+    { icon: Network, title: t("whiteLabel.features.scale.title"), desc: t("whiteLabel.features.scale.desc") },
+  ];
+}
 
-export const WHITE_LABEL_BULLETS = [
-  "Identidad corporativa integral: marca, tonalidad visual y naming alineados a tu negocio.",
-  "Distribución profesional en App Store y Google Play, o canal privado corporativo cuando lo necesites.",
-  "Misma capa cognitiva MetaTok dentro de tu app: agentes que venden, cualifican y agendan 24/7.",
-  "Paneles analíticos y reporting bajo tu white label para medir funnel y equipo comercial.",
-  "Roadmaps y actualizaciones coordinadas sin que tu marca pierda el control narrativo ante el cliente.",
-  "Opciones Enterprise: SLAs, privacidad (RGPD) y gobernanza de datos coherentes con tu compliance.",
-];
+export function getWhiteLabelBullets(t: T): string[] {
+  return [0, 1, 2, 3, 4, 5].map((i) => t(`whiteLabel.bullets.${i}`));
+}
 
-export const WHITE_LABEL_CHAT = [
-  { from: "bot" as const, text: "Hola, soy el asesor de TuMarca. ¿En qué te ayudo? 👋" },
-  { from: "user" as const, text: "Quiero una propuesta para esta semana." },
-  { from: "bot" as const, text: "¡Perfecto! ¿Prefieres reunión por videollamada o presencial?" },
-  { from: "user" as const, text: "Videollamada, any day ✅" },
-];
+export function getWhiteLabelChat(t: T) {
+  return [
+    { from: "bot" as const, text: t("whiteLabel.chat.msg1") },
+    { from: "user" as const, text: t("whiteLabel.chat.msg2") },
+    { from: "bot" as const, text: t("whiteLabel.chat.msg3") },
+    { from: "user" as const, text: t("whiteLabel.chat.msg4") },
+  ];
+}
 
 // ---------- SECTORES ----------
 
@@ -237,200 +212,34 @@ export interface Sector {
   opciones: string[];
 }
 
-export const SECTORES: Sector[] = [
-  {
-    id: "inmobiliarias",
-    icon: Building2,
-    name: "Inmobiliarias y Agencias",
-    badgeStat: "78%",
-    badgeLabel: "elige al que responde primero",
-    headline: "Pierde cero compradores por respuesta tardía.",
-    description:
-      "El 78% de los compradores elige al agente que responde primero. Con Metatok, tu agencia responde en segundos, cualifica la intención y agenda visitas mientras tu equipo trabaja en otras captaciones.",
-    estadoActual: [
-      "Leads sin respuesta durante horas (o días)",
-      "Visitas canceladas por falta de confirmación",
-      "Agentes perdiendo tiempo con prospectos fríos",
-      "CRM con datos desactualizados o incompletos",
-    ],
-    conMetatok: [
-      "Respuesta automática en <60 segundos por WhatsApp o web",
-      "Cualificación: zona, presupuesto y urgencia antes de la visita",
-      "Agenda de visitas gestionada por IA sin intervención humana",
-      "CRM actualizado al instante con cada conversación",
-    ],
-    resultados: [
-      { value: "+47%", label: "visitas agendadas" },
-      { value: "−65%", label: "tiempo de respuesta" },
-      { value: "3×", label: "más leads cualificados" },
-    ],
-    opciones: [
-      "Voicebot para llamadas entrantes fuera de horario",
-      "Secuencias de nutrición por WhatsApp hasta el cierre",
-      "Dashboard de rendimiento por agente y zona",
-    ],
-  },
-  {
-    id: "clinicas",
-    icon: Stethoscope,
-    name: "Clínicas y Salud",
-    badgeStat: "48%",
-    badgeLabel: "menos inasistencia a citas",
-    headline: "Cero pacientes perdidos por falta de seguimiento.",
-    description:
-      "Los pacientes agendan con quien responde primero. Con Metatok, tu clínica confirma citas, resuelve dudas frecuentes y reduce el ausentismo mientras tu equipo se enfoca en la atención.",
-    estadoActual: [
-      "Pacientes que llaman fuera de horario y no reciben respuesta",
-      "Alto índice de inasistencia por falta de recordatorios",
-      "Personal administrativo saturado con preguntas repetitivas",
-      "Agenda desorganizada entre distintos canales",
-    ],
-    conMetatok: [
-      "Respuesta inmediata a consultas por WhatsApp y web 24/7",
-      "Recordatorios automáticos que reducen el ausentismo",
-      "Triaje inicial y resolución de dudas frecuentes por IA",
-      "Agenda centralizada y sincronizada con tu sistema clínico",
-    ],
-    resultados: [
-      { value: "−48%", label: "inasistencia a citas" },
-      { value: "+35%", label: "citas confirmadas" },
-      { value: "24/7", label: "atención al paciente" },
-    ],
-    opciones: [
-      "Voicebot para confirmación telefónica de citas",
-      "Recordatorios multicanal (WhatsApp + SMS)",
-      "Dashboard de ocupación por especialista",
-    ],
-  },
-  {
-    id: "ecommerce",
-    icon: ShoppingCart,
-    name: "E-commerce y Retail",
-    badgeStat: "62%",
-    badgeLabel: "carritos recuperados",
-    headline: "Recupera ventas que hoy se quedan en el carrito.",
-    description:
-      "Cada consulta sin responder es una venta perdida. Con Metatok, tu tienda resuelve dudas de producto, recupera carritos abandonados y gestiona devoluciones sin depender de tu equipo.",
-    estadoActual: [
-      "Consultas de producto sin responder fuera de horario",
-      "Carritos abandonados sin ningún seguimiento",
-      "Equipo de soporte saturado con preguntas de estado de pedido",
-      "Devoluciones gestionadas manualmente y con demoras",
-    ],
-    conMetatok: [
-      "Respuesta instantánea a dudas de producto y stock",
-      "Secuencias automáticas de recuperación de carrito por WhatsApp",
-      "Seguimiento de pedidos resuelto sin intervención humana",
-      "Gestión de devoluciones guiada paso a paso por IA",
-    ],
-    resultados: [
-      { value: "+62%", label: "carritos recuperados" },
-      { value: "−70%", label: "tickets de soporte" },
-      { value: "24/7", label: "atención al cliente" },
-    ],
-    opciones: [
-      "Notificaciones proactivas de estado de envío",
-      "Upsell y cross-sell conversacional",
-      "Integración nativa con tu ecommerce",
-    ],
-  },
-  {
-    id: "agencias",
-    icon: Briefcase,
-    name: "Agencias y Consultoras",
-    badgeStat: "3×",
-    badgeLabel: "más reuniones cualificadas",
-    headline: "Cualifica y agenda sin saturar a tu equipo comercial.",
-    description:
-      "Las agencias compiten por velocidad de respuesta. Con Metatok, cada lead entrante se cualifica y agenda automáticamente antes de que tu equipo comercial intervenga.",
-    estadoActual: [
-      "Leads de formularios y redes que tardan horas en ser contactados",
-      "Reuniones agendadas con prospectos sin presupuesto real",
-      "Equipo comercial dedicando horas a cualificación manual",
-      "Seguimiento inconsistente tras la primera llamada",
-    ],
-    conMetatok: [
-      "Cualificación automática de presupuesto, autoridad y urgencia",
-      "Agenda directa en el calendario del comercial correcto",
-      "Nutrición automática de leads que aún no están listos",
-      "Reporting de origen y calidad de cada oportunidad",
-    ],
-    resultados: [
-      { value: "3×", label: "reuniones cualificadas" },
-      { value: "−55%", label: "tiempo de cualificación" },
-      { value: "24/7", label: "captación activa" },
-    ],
-    opciones: [
-      "Enrutamiento automático por especialidad o cuenta",
-      "Secuencias de nutrición por email y WhatsApp",
-      "Dashboard de pipeline en tiempo real",
-    ],
-  },
-  {
-    id: "despachos",
-    icon: Scale,
-    name: "Despachos Profesionales",
-    badgeStat: "45%",
-    badgeLabel: "más consultas cerradas",
-    headline: "Convierte consultas en clientes, no en carpetas sin cerrar.",
-    description:
-      "Abogados, gestores y asesores pierden horas facturables filtrando consultas. Con Metatok, cada caso se cualifica, documenta y agenda antes de la primera reunión.",
-    estadoActual: [
-      "Consultas iniciales sin respuesta durante el día",
-      "Reuniones agendadas con casos fuera de tu área de práctica",
-      "Documentación incompleta al llegar a la primera cita",
-      "Seguimiento manual y disperso entre email y WhatsApp",
-    ],
-    conMetatok: [
-      "Filtro automático por tipo de caso y viabilidad",
-      "Recopilación de documentación antes de la reunión",
-      "Agenda automática con el profesional adecuado",
-      "Historial completo de cada consulta en tu CRM",
-    ],
-    resultados: [
-      { value: "+45%", label: "consultas cerradas" },
-      { value: "−60%", label: "tiempo administrativo" },
-      { value: "24/7", label: "primer contacto" },
-    ],
-    opciones: [
-      "Voicebot para líneas de atención al cliente",
-      "Plantillas de documentación por área de práctica",
-      "Panel de casos por prioridad y estado",
-    ],
-  },
-  {
-    id: "hoteles",
-    icon: Hotel,
-    name: "Hoteles y Hospedaje",
-    badgeStat: "38%",
-    badgeLabel: "más reservas directas",
-    headline: "Convierte consultas en reservas directas, sin comisión de OTAs.",
-    description:
-      "Cada consulta por WhatsApp o Instagram sin respuesta se va a otra plataforma. Con Metatok, tu hotel confirma disponibilidad, gestiona reservas y fideliza huéspedes sin ampliar tu equipo de recepción.",
-    estadoActual: [
-      "Consultas de disponibilidad sin respuesta fuera de horario",
-      "Reservas perdidas frente a plataformas con comisión",
-      "Recepción saturada con preguntas repetitivas de huéspedes",
-      "Upsell de servicios gestionado de forma manual o inexistente",
-    ],
-    conMetatok: [
-      "Confirmación de disponibilidad y reserva directa 24/7",
-      "Respuestas instantáneas a preguntas frecuentes de huéspedes",
-      "Upsell automático de servicios y experiencias adicionales",
-      "Seguimiento post-estancia para reseñas y fidelización",
-    ],
-    resultados: [
-      { value: "+38%", label: "reservas directas" },
-      { value: "−50%", label: "comisiones a OTAs" },
-      { value: "24/7", label: "atención al huésped" },
-    ],
-    opciones: [
-      "Check-in conversacional por WhatsApp",
-      "Voicebot multilenguaje para recepción",
-      "Dashboard de ocupación y canal de reserva",
-    ],
-  },
+const SECTOR_META: { id: string; icon: LucideIcon; badgeStat: string; resultValues: string[] }[] = [
+  { id: "inmobiliarias", icon: Building2, badgeStat: "78%", resultValues: ["+47%", "−65%", "3×"] },
+  { id: "clinicas", icon: Stethoscope, badgeStat: "48%", resultValues: ["−48%", "+35%", "24/7"] },
+  { id: "ecommerce", icon: ShoppingCart, badgeStat: "62%", resultValues: ["+62%", "−70%", "24/7"] },
+  { id: "agencias", icon: Briefcase, badgeStat: "3×", resultValues: ["3×", "−55%", "24/7"] },
+  { id: "despachos", icon: Scale, badgeStat: "45%", resultValues: ["+45%", "−60%", "24/7"] },
+  { id: "hoteles", icon: Hotel, badgeStat: "38%", resultValues: ["+38%", "−50%", "24/7"] },
 ];
+
+export function getSectores(t: T): Sector[] {
+  return SECTOR_META.map(({ id, icon, badgeStat, resultValues }) => ({
+    id,
+    icon,
+    badgeStat,
+    name: t(`sectores.items.${id}.name`),
+    badgeLabel: t(`sectores.items.${id}.badgeLabel`),
+    headline: t(`sectores.items.${id}.headline`),
+    description: t(`sectores.items.${id}.description`),
+    estadoActual: [0, 1, 2, 3].map((i) => t(`sectores.items.${id}.estadoActual.${i}`)),
+    conMetatok: [0, 1, 2, 3].map((i) => t(`sectores.items.${id}.conMetatok.${i}`)),
+    resultados: [
+      { value: resultValues[0], label: t(`sectores.items.${id}.resultados.r1`) },
+      { value: resultValues[1], label: t(`sectores.items.${id}.resultados.r2`) },
+      { value: resultValues[2], label: t(`sectores.items.${id}.resultados.r3`) },
+    ],
+    opciones: [0, 1, 2].map((i) => t(`sectores.items.${id}.opciones.${i}`)),
+  }));
+}
 
 // ---------- SERVICIOS ----------
 
@@ -444,71 +253,44 @@ export interface Servicio {
   flagship?: boolean;
 }
 
-export const SERVICIOS: Servicio[] = [
-  {
-    n: "01",
-    icon: Bot,
-    color: "violet",
-    title: "Agentes de IA Conversacional",
-    desc: "Agentes especializados con NLP que entienden intenciones, manejan objeciones y ejecutan estrategias de venta complejas en cada canal de tu negocio. El servicio más contratado y el que más ingresos genera a nuestros clientes.",
-    result: "Responde al 100% de tus leads en segundos, no en horas.",
-    flagship: true,
-  },
-  {
-    n: "02",
-    icon: Phone,
-    color: "pink",
-    title: "Voicebots (Agentes de Voz)",
-    desc: "Asistentes de voz ultrarrealistas que realizan y reciben llamadas telefónicas. Atienden objeciones, califican y agendan como tu mejor comercial, sin descansos ni bajas.",
-    result: "Atiende llamadas entrantes sin tiempo de espera 24/7.",
-  },
-  {
-    n: "03",
-    icon: Target,
-    color: "blue",
-    title: "Cualificación de Leads",
-    desc: "Filtramos y puntuamos cada prospecto en tiempo real para que tu equipo solo hable con quienes tienen intención real de compra. Cero tiempo perdido en curiosos.",
-    result: "Aumenta tu tasa de cierre hasta un 3× sin más presupuesto.",
-  },
-  {
-    n: "04",
-    icon: Database,
-    color: "teal",
-    title: "Integración con CRM",
-    desc: "Sincronización bidireccional con tu CRM mediante API. Datos limpios, actualizados y accionables 24/7, sin duplicados, sin fugas y sin depender de nadie.",
-    result: "0 horas de carga manual de datos en tu equipo.",
-  },
-  {
-    n: "05",
-    icon: CalendarCheck,
-    color: "amber",
-    title: "Agendamiento Automático",
-    desc: "Citas en tu calendario sin fricción. El agente negocia el horario, confirma la reunión y envía recordatorios personalizados hasta que el cliente se presenta.",
-    result: "Hasta +54% más citas agendadas sin intervención humana.",
-  },
-  {
-    n: "06",
-    icon: Workflow,
-    color: "ink",
-    title: "Flow-works Inteligentes",
-    desc: "Flujos de trabajo que disparan acciones automáticas: cualifican leads, agendan reuniones, actualizan el CRM y nutren prospectos mientras tu equipo duerme.",
-    result: "Tu embudo de ventas funciona solo, 24 horas al día.",
-  },
+const SERVICIO_META: { n: string; icon: LucideIcon; color: BadgeColor; flagship?: boolean }[] = [
+  { n: "01", icon: Bot, color: "violet", flagship: true },
+  { n: "02", icon: Phone, color: "pink" },
+  { n: "03", icon: Target, color: "blue" },
+  { n: "04", icon: Database, color: "teal" },
+  { n: "05", icon: CalendarCheck, color: "amber" },
+  { n: "06", icon: Workflow, color: "ink" },
 ];
 
-export const SERVICIOS_TOP_STATS = [
-  { icon: Trophy, label: "#1 en automatización con IA" },
-  { icon: Zap, label: "+400% tasa de respuesta" },
-  { icon: AlarmClock, label: "24/7 operativo" },
-  { icon: Puzzle, label: "Integración omnicanal" },
-];
+export function getServicios(t: T): Servicio[] {
+  return SERVICIO_META.map(({ n, icon, color, flagship }) => ({
+    n,
+    icon,
+    color,
+    flagship,
+    title: t(`servicios.items.${n}.title`),
+    desc: t(`servicios.items.${n}.desc`),
+    result: t(`servicios.items.${n}.result`),
+  }));
+}
 
-export const TRUST_STRIP = [
-  { icon: ShieldCheck, title: "100% Seguro", desc: "Tus datos protegidos" },
-  { icon: Rocket, title: "Implementación Rápida", desc: "Listo en días, no en meses" },
-  { icon: BarChart3, title: "Resultados Reales", desc: "Métricas que impulsan tu negocio" },
-  { icon: Headphones, title: "Soporte 24/7", desc: "Estamos contigo siempre" },
-];
+export function getServiciosTopStats(t: T) {
+  return [
+    { icon: Trophy, label: t("servicios.topStats.leader") },
+    { icon: Zap, label: t("servicios.topStats.speed") },
+    { icon: AlarmClock, label: t("servicios.topStats.operation") },
+    { icon: Puzzle, label: t("servicios.topStats.omnichannel") },
+  ];
+}
+
+export function getTrustStrip(t: T) {
+  return [
+    { icon: ShieldCheck, title: t("servicios.trustStrip.secure.title"), desc: t("servicios.trustStrip.secure.desc") },
+    { icon: Rocket, title: t("servicios.trustStrip.fast.title"), desc: t("servicios.trustStrip.fast.desc") },
+    { icon: BarChart3, title: t("servicios.trustStrip.results.title"), desc: t("servicios.trustStrip.results.desc") },
+    { icon: Headphones, title: t("servicios.trustStrip.support.title"), desc: t("servicios.trustStrip.support.desc") },
+  ];
+}
 
 export interface LeaderComparison {
   metric: string;
@@ -516,127 +298,101 @@ export interface LeaderComparison {
   market: string;
 }
 
-export const LEADER_COMPARISON: LeaderComparison[] = [
-  { metric: "Velocidad de respuesta", metatok: "< 60 segundos", market: "Horas (o nunca)" },
-  { metric: "Cobertura horaria", metatok: "24/7/365 real", market: "Horario de oficina" },
-  { metric: "Canales conectados", metatok: "5+ en un solo cerebro", market: "1-2 canales aislados" },
-];
+export function getLeaderComparison(t: T): LeaderComparison[] {
+  return ["speed", "coverage", "channels"].map((key) => ({
+    metric: t(`servicios.leaderRows.${key}.metric`),
+    metatok: t(`servicios.leaderRows.${key}.metatok`),
+    market: t(`servicios.leaderRows.${key}.market`),
+  }));
+}
 
 // ---------- COMPARATIVA ----------
 
-export const COMPARATIVA_ROWS: { icon: LucideIcon; feature: string; bot: string; metatok: string }[] = [
-  {
-    icon: Bot,
-    feature: "Calidad de Respuesta",
-    bot: "Estática y basada en botones (Árbol de decisiones)",
-    metatok: "Fluida, humana y persuasiva (IA Generativa)",
-  },
-  {
-    icon: Puzzle,
-    feature: "Integración",
-    bot: "Limitada o requiere Zapier complejo",
-    metatok: "Nativa con CRMs, Apps y Sector Público",
-  },
-  {
-    icon: Target,
-    feature: "Objetivo Principal",
-    bot: "Dar información y derivar a un humano",
-    metatok: "Superar objeciones y cerrar la venta o cita",
-  },
-  {
-    icon: Workflow,
-    feature: "Configuración",
-    bot: "Meses mapeando flujos interminables",
-    metatok: "En minutos, entrenado con tus propios documentos",
-  },
-  {
-    icon: Headphones,
-    feature: "Soporte",
-    bot: "Sistema de tickets básico",
-    metatok: "Equipo de éxito dedicado y optimización continua",
-  },
-];
+const COMPARATIVA_ICONS: Record<string, LucideIcon> = {
+  quality: Bot,
+  integration: Puzzle,
+  goal: Target,
+  setup: Workflow,
+  support: Headphones,
+};
+
+export function getComparativaRows(
+  t: T,
+): { icon: LucideIcon; feature: string; bot: string; metatok: string }[] {
+  return Object.keys(COMPARATIVA_ICONS).map((key) => ({
+    icon: COMPARATIVA_ICONS[key],
+    feature: t(`comparativa.rows.${key}.feature`),
+    bot: t(`comparativa.rows.${key}.bot`),
+    metatok: t(`comparativa.rows.${key}.metatok`),
+  }));
+}
 
 // ---------- DIAGNOSTICO ----------
 
-export const DIAGNOSTICO_ACTUAL = [
-  "Leads que no reciben respuesta en menos de 5 minutos",
-  "Tu equipo pierde horas en prospectos que nunca comprarán",
-  "Citas que se pierden por falta de seguimiento",
-  "CRM desactualizado con datos duplicados o incompletos",
-  "Sin presencia activa fuera del horario comercial",
-];
+export function getDiagnosticoActual(t: T): string[] {
+  return [0, 1, 2, 3, 4].map((i) => t(`diagnostico.actualItems.${i}`));
+}
 
-export const DIAGNOSTICO_METATOK = [
-  "Respuesta inmediata a cada lead, 24/7, en todos tus canales",
-  "Solo hablas con prospectos listos para comprar",
-  "Agendamiento automático con confirmación y recordatorios",
-  "CRM actualizado en tiempo real, sin intervención humana",
-  "Tu negocio capta y cualifica incluso mientras duermes",
-];
+export function getDiagnosticoMetatok(t: T): string[] {
+  return [0, 1, 2, 3, 4].map((i) => t(`diagnostico.metatokItems.${i}`));
+}
 
 // ---------- ACADEMY ----------
 
-export const ACADEMY_FEATURES: { icon: LucideIcon; title: string; desc: string; color: BadgeColor }[] = [
-  { icon: BookOpen, title: "Playbooks comerciales", desc: "Guiones, objeciones y secuencias listas para aplicar en campo.", color: "violet" },
-  { icon: Megaphone, title: "Marketing de guerrilla", desc: "Campañas, contenido y posicionamiento para acelerar captación.", color: "blue" },
-  { icon: Rocket, title: "Escalado operativo", desc: "Rituales y métricas para crecer sin perder conversión ni calidad.", color: "green" },
-];
+export function getAcademyFeatures(
+  t: T,
+): { icon: LucideIcon; title: string; desc: string; color: BadgeColor }[] {
+  return [
+    { icon: BookOpen, title: t("academy.features.playbooks.title"), desc: t("academy.features.playbooks.desc"), color: "violet" },
+    { icon: Megaphone, title: t("academy.features.guerrilla.title"), desc: t("academy.features.guerrilla.desc"), color: "blue" },
+    { icon: Rocket, title: t("academy.features.scaling.title"), desc: t("academy.features.scaling.desc"), color: "green" },
+  ];
+}
 
-export const ACADEMY_ROUTE = [
-  "Webinars semanales, certificaciones y guías por vertical para equipos de ventas.",
-  "Framework de conversión con IA: prospección, cualificación, objeciones y cierre.",
-  "Mentoría en posicionamiento de marca para vender método, no solo tecnología.",
-];
+export function getAcademyRoute(t: T): string[] {
+  return [0, 1, 2].map((i) => t(`academy.routeItems.${i}`));
+}
 
-export const ACADEMY_MODULES = [
-  { title: "Arquitectura comercial con IA", progress: 75 },
-  { title: "Guiones de cierre por nicho", progress: 60 },
-  { title: "Escalado y liderazgo de equipo", progress: 45 },
-];
+export function getAcademyModules(t: T) {
+  return [
+    { title: t("academy.modules.01"), progress: 75 },
+    { title: t("academy.modules.02"), progress: 60 },
+    { title: t("academy.modules.03"), progress: 45 },
+  ];
+}
 
 // ---------- PROCESO ----------
 
-export const PROCESO: { n: string; icon: LucideIcon; title: string; desc: string; tag: string }[] = [
-  {
-    n: "01",
-    icon: Target,
-    title: "Auditoría de Diagnóstico",
-    desc: "Un experto analiza tu operación actual, detecta fugas de conversión y cuantifica cuánto estás perdiendo sin automatización.",
-    tag: "Mapa claro de prioridades",
-  },
-  {
-    n: "02",
-    icon: Route,
-    title: "Estrategia a Medida",
-    desc: "Diseñamos la arquitectura de agentes, flujos e integraciones adaptada exactamente a tu modelo de negocio y tus canales actuales.",
-    tag: "Propuesta técnica personalizada",
-  },
-  {
-    n: "03",
-    icon: FileText,
-    title: "Presupuesto Transparente",
-    desc: "Recibes una propuesta de precio basada en la complejidad real. Sin letra pequeña, sin costes ocultos, sin permanencia forzada.",
-    tag: "Inversión clara y escalable",
-  },
-  {
-    n: "04",
-    icon: Rocket,
-    title: "Despliegue Llave en Mano",
-    desc: "Entre 15 y 30 días: programación, entrenamiento de agentes y QA completo. Tu equipo no toca código. Solo recibe resultados.",
-    tag: "Sistema activo en producción",
-  },
-];
+const PROCESO_ICONS: Record<string, LucideIcon> = {
+  "01": Target,
+  "02": Route,
+  "03": FileText,
+  "04": Rocket,
+};
+
+export function getProceso(t: T): { n: string; icon: LucideIcon; title: string; desc: string; tag: string }[] {
+  return Object.keys(PROCESO_ICONS).map((n) => ({
+    n,
+    icon: PROCESO_ICONS[n],
+    title: t(`proceso.steps.${n}.title`),
+    desc: t(`proceso.steps.${n}.desc`),
+    tag: t(`proceso.steps.${n}.tag`),
+  }));
+}
 
 // ---------- CANALES ----------
 
-export const CANALES: { icon: LucideIcon; name: string; desc: string; kind?: "whatsapp" | "instagram" }[] = [
-  { icon: Phone, name: "Teléfono", desc: "Llamadas de voz IA" },
-  { icon: Globe, name: "Web", desc: "Chat en tu sitio web" },
-  { icon: Phone, name: "WhatsApp", desc: "El canal más usado", kind: "whatsapp" },
-  { icon: Phone, name: "Instagram", desc: "DMs automatizados", kind: "instagram" },
-  { icon: PlugZap, name: "API", desc: "Integra cualquier sistema" },
-];
+export function getCanales(
+  t: T,
+): { icon: LucideIcon; name: string; desc: string; kind?: "whatsapp" | "instagram" }[] {
+  return [
+    { icon: Phone, name: t("canales.items.phone.name"), desc: t("canales.items.phone.desc") },
+    { icon: Globe, name: t("canales.items.web.name"), desc: t("canales.items.web.desc") },
+    { icon: Phone, name: t("canales.items.whatsapp.name"), desc: t("canales.items.whatsapp.desc"), kind: "whatsapp" },
+    { icon: Phone, name: t("canales.items.instagram.name"), desc: t("canales.items.instagram.desc"), kind: "instagram" },
+    { icon: PlugZap, name: t("canales.items.api.name"), desc: t("canales.items.api.desc") },
+  ];
+}
 
 // ---------- PLANES ----------
 
@@ -658,57 +414,23 @@ export interface Plan {
   featured?: boolean;
 }
 
-export const PLANES: Plan[] = [
-  {
-    id: "starter",
-    name: "Starter",
-    basePrice: 99,
-    desc: "Ideal para equipos pequeños que quieren empezar con IA sin riesgo.",
-    features: [
-      "1 canal integrado (Web o WhatsApp)",
-      "Asistente IA básico con NLP",
-      "Hasta 500 conversaciones/mes",
-      "Panel de control básico",
-      "Cualificación automática de leads",
-      "Soporte por email",
-    ],
-    cta: "Iniciar ahora",
-  },
-  {
-    id: "business",
-    name: "Business",
-    basePrice: 239,
-    desc: "Para empresas que quieren automatización total y no perder un solo lead.",
-    features: [
-      "Hasta 3 canales integrados",
-      "Chatbots y voicebots premium",
-      "Seguimiento y scoring automático",
-      "Integración CRM bidireccional",
-      "Agendamiento automático con recordatorios",
-      "Flow-works inteligentes",
-      "Panel de analítica avanzada",
-      "Soporte prioritario 24/5",
-    ],
-    cta: "Escalar mis ventas",
-    featured: true,
-  },
-  {
-    id: "enterprise",
-    name: "Enterprise",
-    basePrice: 590,
-    desc: "Solución avanzada con canales ilimitados y acompañamiento personalizado.",
-    features: [
-      "Canales ilimitados",
-      "Flujos y bots completamente a medida",
-      "Integraciones API avanzadas",
-      "Gestor de cuenta dedicado 1:1",
-      "SLA de disponibilidad garantizado",
-      "Onboarding personalizado",
-      "Soporte técnico especializado 24/7",
-    ],
-    cta: "Solicitar propuesta",
-  },
+const PLAN_META: { id: string; basePrice: number; featured?: boolean; featureCount: number }[] = [
+  { id: "starter", basePrice: 99, featureCount: 6 },
+  { id: "business", basePrice: 239, featured: true, featureCount: 8 },
+  { id: "enterprise", basePrice: 590, featureCount: 7 },
 ];
+
+export function getPlanes(t: T): Plan[] {
+  return PLAN_META.map(({ id, basePrice, featured, featureCount }) => ({
+    id,
+    basePrice,
+    featured,
+    name: t(`planes.plans.${id}.name`),
+    desc: t(`planes.plans.${id}.desc`),
+    features: Array.from({ length: featureCount }, (_, i) => t(`planes.plans.${id}.features.${i}`)),
+    cta: t(`planes.plans.${id}.cta`),
+  }));
+}
 
 // ---------- TESTIMONIOS ----------
 
@@ -718,101 +440,43 @@ export interface Testimonio {
   quote: string;
 }
 
-export const TESTIMONIOS: Testimonio[] = [
-  {
-    name: "David Gómez",
-    role: "Director de Ventas, inmobiliaria",
-    quote:
-      "Metatok.ai transformó nuestro embudo de ventas: asistentes humanoides atienden 24/7 y, con automatizaciones inteligentes, convierten consultas frías en citas cerradas.",
-  },
-  {
-    name: "Dra. Laura Peñafiel",
-    role: "Dirección de clínica",
-    quote:
-      "Nuestro embudo de ventas ahora fluye solo: asistentes humanoides resuelven dudas al instante y las automatizaciones de seguimiento recuperan citas que antes se perdían.",
-  },
-  {
-    name: "Ana Fuentes",
-    role: "Gerente de Operaciones, marketplace digital",
-    quote:
-      "Escalamos el embudo de ventas sin ampliar equipo: asistentes humanoides gestionan pedidos y devoluciones, y las automatizaciones mantienen cada oportunidad activa hasta la compra.",
-  },
-  {
-    name: "Luis Carrión",
-    role: 'Propietario, "Viajes Sin Fronteras"',
-    quote:
-      "Pasamos de respuestas tardías a un embudo de ventas siempre activo: asistentes humanoides de voz atienden con tono llamativo y las automatizaciones confirman y reactivan reservas.",
-  },
-  {
-    name: "Juan Valdés",
-    role: 'Director de Ventas, "TecnoCenter"',
-    quote:
-      "Nuestro embudo de ventas en web ahora convierte mejor: asistentes humanoides responden de forma persuasiva y las automatizaciones filtran, priorizan y empujan leads con alta intención.",
-  },
-  {
-    name: "Ricardo Garrido",
-    role: 'Abogado socio, "Garrido & Asociados"',
-    quote:
-      "Metatok.ai ordenó por completo nuestro embudo de ventas: asistentes humanoides cualifican casos y las automatizaciones agendan, documentan y dejan cada consulta lista para cerrar.",
-  },
-];
+const TESTIMONIO_NAMES: Record<string, string> = {
+  "1": "David Gómez",
+  "2": "Dra. Laura Peñafiel",
+  "3": "Ana Fuentes",
+  "4": "Luis Carrión",
+  "5": "Juan Valdés",
+  "6": "Ricardo Garrido",
+};
+
+export function getTestimonios(t: T): Testimonio[] {
+  return Object.keys(TESTIMONIO_NAMES).map((n) => ({
+    name: TESTIMONIO_NAMES[n],
+    role: t(`testimonios.items.${n}.role`),
+    quote: t(`testimonios.items.${n}.quote`),
+  }));
+}
 
 // ---------- AUDITORIA ----------
 
-export const AUDITORIA_CHECKLIST = [
-  "Análisis de tus canales y volumen de tráfico actuales",
-  "Detección de fugas de conversión en tu funnel",
-  "Mapa estratégico personalizado con IA",
-  "Estimación de impacto real en facturación",
-];
+export function getAuditoriaChecklist(t: T): string[] {
+  return [0, 1, 2, 3].map((i) => t(`auditoria.checklist.${i}`));
+}
 
-export const AUDITORIA_STATS = [
-  { value: "+38%", label: "leads recuperados" },
-  { value: "22h", label: "ahorradas / semana" },
-  { value: "+54%", label: "citas agendadas" },
-  { value: "+27%", label: "tasa de conversión" },
-];
+export function getAuditoriaStats(t: T) {
+  return [
+    { value: t("auditoria.stats.recovered.value"), label: t("auditoria.stats.recovered.label") },
+    { value: t("auditoria.stats.saved.value"), label: t("auditoria.stats.saved.label") },
+    { value: t("auditoria.stats.appointments.value"), label: t("auditoria.stats.appointments.label") },
+    { value: t("auditoria.stats.conversion.value"), label: t("auditoria.stats.conversion.label") },
+  ];
+}
 
 // ---------- FAQ ----------
 
-export const FAQ: { q: string; a: string }[] = [
-  {
-    q: "¿En qué consiste exactamente el servicio de automatización con IA?",
-    a: "Desplegamos agentes de inteligencia artificial que asumen tareas reales de tu operación: ventas, soporte, cualificación de leads, agendamiento y gestión de redes, en los canales que ya usas (WhatsApp, llamadas de voz, Instagram y tu web). No es un chatbot de respuestas predefinidas: es un sistema entrenado con la información de tu negocio que conversa, cualifica y cierra de forma autónoma.",
-  },
-  {
-    q: "¿Cómo es el proceso desde que solicito mi auditoría gratuita?",
-    a: "Un experto en automatización analiza tu operación actual (canales, volumen, embudo) y te entrega un diagnóstico con las fugas de conversión detectadas. A partir de ahí diseñamos la arquitectura de agentes a medida, te presentamos una propuesta de precio transparente y desplegamos el sistema completo en 15-30 días.",
-  },
-  {
-    q: "¿Tengo algún compromiso de permanencia?",
-    a: "No. Todos los planes de MetaTok operan sin permanencia ni costes ocultos. Puedes escalar, cambiar de plan o cancelar cuando lo necesites: nuestro objetivo es que te quedes por resultados, no por contrato.",
-  },
-  {
-    q: "¿Por qué el presupuesto es a medida?",
-    a: "Cada negocio tiene canales, volumen de conversaciones e integraciones distintas. En lugar de venderte un paquete genérico, auditamos tu operación real y te presentamos una inversión basada en la complejidad exacta de tu caso, sin letra pequeña.",
-  },
-  {
-    q: "¿Cuánto tiempo tarda la implementación completa?",
-    a: "Entre 15 y 30 días desde la auditoría inicial hasta el sistema activo en producción, incluyendo programación de agentes, entrenamiento con tu información de negocio e integraciones con tu CRM o herramientas actuales. Tu equipo no toca código en ningún momento.",
-  },
-  {
-    q: "¿En qué se diferencian vuestros agentes de un chatbot convencional?",
-    a: "Un chatbot tradicional sigue un árbol de decisiones estático y deriva a un humano en cuanto se complica la conversación. Los agentes de MetaTok usan IA generativa: entienden intención y contexto, superan objeciones y están entrenados para cerrar la venta o la cita, no solo para dar información.",
-  },
-];
-
-// ---------- SHARED ICONS ----------
-
-export const ICONS = {
-  Mail,
-  MapPin,
-  Users,
-  Award,
-  MonitorSmartphone,
-  Sparkles,
-  Repeat,
-  Lock,
-  Gauge,
-  GraduationCap,
-};
+export function getFaq(t: T): { q: string; a: string }[] {
+  return ["1", "2", "3", "4", "5", "6"].map((n) => ({
+    q: t(`faq.items.${n}.q`),
+    a: t(`faq.items.${n}.a`),
+  }));
+}

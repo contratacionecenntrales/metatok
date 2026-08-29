@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { useLocale, useTranslations } from "next-intl";
 import { ArrowRight, ArrowUpRight, ChevronDown, Menu, X } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
@@ -14,32 +15,34 @@ interface NavItem {
   children?: { label: string; href: string }[];
 }
 
-const NAV: NavItem[] = [
-  { label: "Inicio", href: "#inicio" },
-  {
-    label: "Solución",
-    children: [
-      { label: "Servicios", href: "#servicios" },
-      { label: "Por sector", href: "#sectores" },
-      { label: "Planes y precios", href: "#planes" },
-    ],
-  },
-  {
-    label: "Explorar",
-    children: [
-      { label: "Motor MetaTok Engine V5", href: "#motor-metatok" },
-      { label: "Producto White Label", href: "#producto-white-label" },
-      { label: "MetaTok Academy", href: "#academy" },
-      { label: "Casos de éxito", href: "#testimonios" },
-    ],
-  },
-  { label: "Contacto", href: "#contacto" },
-];
-
 export function Header() {
+  const t = useTranslations();
+  const locale = useLocale();
   const [scrolled, setScrolled] = useState(false);
   const [open, setOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<string | null>(null);
+
+  const NAV: NavItem[] = [
+    { label: t("nav.inicio"), href: "#inicio" },
+    {
+      label: t("nav.solucion"),
+      children: [
+        { label: t("nav.solucionItems.servicios"), href: "#servicios" },
+        { label: t("nav.solucionItems.sectores"), href: "#sectores" },
+        { label: t("nav.solucionItems.planes"), href: "#planes" },
+      ],
+    },
+    {
+      label: t("nav.explorar"),
+      children: [
+        { label: t("nav.explorarItems.engine"), href: "#motor-metatok" },
+        { label: t("nav.explorarItems.whiteLabel"), href: "#producto-white-label" },
+        { label: t("nav.explorarItems.academy"), href: "#academy" },
+        { label: t("nav.explorarItems.testimonios"), href: "#testimonios" },
+      ],
+    },
+    { label: t("nav.contacto"), href: "#contacto" },
+  ];
 
   useEffect(() => {
     const onScroll = () => setScrolled(window.scrollY > 8);
@@ -64,8 +67,8 @@ export function Header() {
           rel="noopener noreferrer"
           className="inline-flex items-center gap-1.5 hover:text-white"
         >
-          MetaTok es una marca de Grupo Evolvix Global
-          <span className="underline underline-offset-2">evolvixglobal.es</span>
+          {t("nav.topbar")}
+          <span className="underline underline-offset-2">{t("nav.topbarLink")}</span>
           <ArrowUpRight className="h-3 w-3" />
         </a>
       </div>
@@ -77,7 +80,7 @@ export function Header() {
         )}
       >
         <Container className="flex h-18 items-center justify-between py-3.5">
-          <a href="#inicio" className="group" aria-label="MetaTok AI — Inicio">
+          <a href="#inicio" className="group" aria-label="MetaTok AI">
             <Logo markClassName="transition-transform duration-300 group-hover:scale-105" />
           </a>
 
@@ -104,7 +107,7 @@ export function Header() {
                         animate={{ opacity: 1, y: 0 }}
                         exit={{ opacity: 0, y: 8 }}
                         transition={{ duration: 0.15 }}
-                        className="absolute left-0 top-full w-64 rounded-2xl border border-[#e1e8f7] bg-white p-2 shadow-xl shadow-brand-900/5"
+                        className="absolute start-0 top-full w-64 rounded-2xl border border-[#e1e8f7] bg-white p-2 shadow-xl shadow-brand-900/5"
                       >
                         {item.children.map((child) => (
                           <a
@@ -136,12 +139,14 @@ export function Header() {
               href="https://app.metatok.ai"
               className="rounded-lg px-3.5 py-2 text-sm font-semibold text-ink-soft transition-colors hover:text-brand-700"
             >
-              Iniciar sesión
+              {t("nav.iniciarSesion")}
             </a>
             <span className="mx-1 h-5 w-px bg-[#e1e8f7]" />
-            <span className="rounded-lg px-2.5 py-2 text-sm font-semibold text-ink-soft">ES</span>
+            <span className="rounded-lg px-2.5 py-2 text-sm font-semibold text-ink-soft">
+              {locale.toUpperCase()}
+            </span>
             <Button href="#contacto" size="md">
-              Crear mi agente
+              {t("nav.crearAgente")}
               <ArrowRight className="h-4 w-4" />
             </Button>
           </div>
@@ -150,7 +155,7 @@ export function Header() {
             type="button"
             onClick={() => setOpen((v) => !v)}
             className="inline-flex items-center justify-center rounded-lg p-2 text-ink hover:bg-brand-50 lg:hidden"
-            aria-label="Abrir menú"
+            aria-label={t("nav.openMenu")}
             aria-expanded={open}
           >
             {open ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
@@ -177,7 +182,7 @@ export function Header() {
                       {item.label}
                     </a>
                     {item.children ? (
-                      <div className="ml-3 flex flex-col gap-0.5 border-l border-[#e1e8f7] pl-3">
+                      <div className="ms-3 flex flex-col gap-0.5 border-s border-[#e1e8f7] ps-3">
                         {item.children.map((child) => (
                           <a
                             key={child.href}
@@ -197,10 +202,10 @@ export function Header() {
                     href="https://app.metatok.ai"
                     className="rounded-lg px-3 py-2 text-center text-base font-semibold text-ink-soft hover:text-brand-700"
                   >
-                    Iniciar sesión
+                    {t("nav.iniciarSesion")}
                   </a>
                   <Button href="#contacto" size="md" onClick={() => setOpen(false)}>
-                    Crear mi agente
+                    {t("nav.crearAgente")}
                     <ArrowRight className="h-4 w-4" />
                   </Button>
                 </div>

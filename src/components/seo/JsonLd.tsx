@@ -1,8 +1,12 @@
-import { FAQ, PLANES, SERVICIOS } from "@/lib/data";
+import { getTranslations } from "next-intl/server";
+import { getFaq, getPlanes, getServicios } from "@/lib/data";
 
 const SITE_URL = "https://www.metatok.ai";
 
-export function OrganizationJsonLd() {
+export async function OrganizationJsonLd({ locale }: { locale: string }) {
+  const t = await getTranslations({ locale });
+  const planes = getPlanes(t);
+
   const data = {
     "@context": "https://schema.org",
     "@graph": [
@@ -14,13 +18,8 @@ export function OrganizationJsonLd() {
         url: SITE_URL,
         logo: `${SITE_URL}/logo-512.png`,
         image: `${SITE_URL}/opengraph-image`,
-        description:
-          "Ecosistema de Agentes Autónomos de IA para automatizar ventas, soporte, contabilidad y gestión de redes 24/7 en WhatsApp, llamadas, Instagram y web.",
+        description: t("footer.tagline"),
         email: "info@metatok.ai",
-        areaServed: {
-          "@type": "Country",
-          name: "España",
-        },
         brand: {
           "@type": "Brand",
           name: "MetaTok AI",
@@ -35,9 +34,9 @@ export function OrganizationJsonLd() {
       {
         "@type": "WebSite",
         "@id": `${SITE_URL}/#website`,
-        url: SITE_URL,
+        url: `${SITE_URL}/${locale}`,
         name: "MetaTok AI",
-        inLanguage: "es-ES",
+        inLanguage: locale,
         publisher: { "@id": `${SITE_URL}/#organization` },
       },
       {
@@ -46,15 +45,14 @@ export function OrganizationJsonLd() {
         name: "MetaTok AI",
         applicationCategory: "BusinessApplication",
         operatingSystem: "Web",
-        description:
-          "Plataforma de agentes de inteligencia artificial que venden, atienden y gestionan negocios 24/7 en WhatsApp, llamadas de voz, Instagram y web.",
-        offers: PLANES.map((plan) => ({
+        description: t("meta.description"),
+        offers: planes.map((plan) => ({
           "@type": "Offer",
           name: plan.name,
           price: plan.basePrice,
           priceCurrency: "EUR",
           description: plan.desc,
-          url: `${SITE_URL}/#planes`,
+          url: `${SITE_URL}/${locale}#planes`,
         })),
       },
     ],
@@ -68,11 +66,14 @@ export function OrganizationJsonLd() {
   );
 }
 
-export function FaqJsonLd() {
+export async function FaqJsonLd({ locale }: { locale: string }) {
+  const t = await getTranslations({ locale });
+  const faq = getFaq(t);
+
   const data = {
     "@context": "https://schema.org",
     "@type": "FAQPage",
-    mainEntity: FAQ.map((item) => ({
+    mainEntity: faq.map((item) => ({
       "@type": "Question",
       name: item.q,
       acceptedAnswer: {
@@ -90,11 +91,14 @@ export function FaqJsonLd() {
   );
 }
 
-export function ServicesJsonLd() {
+export async function ServicesJsonLd({ locale }: { locale: string }) {
+  const t = await getTranslations({ locale });
+  const servicios = getServicios(t);
+
   const data = {
     "@context": "https://schema.org",
     "@type": "ItemList",
-    itemListElement: SERVICIOS.map((servicio, index) => ({
+    itemListElement: servicios.map((servicio, index) => ({
       "@type": "ListItem",
       position: index + 1,
       item: {
@@ -102,7 +106,6 @@ export function ServicesJsonLd() {
         name: servicio.title,
         description: servicio.desc,
         provider: { "@id": `${SITE_URL}/#organization` },
-        areaServed: { "@type": "Country", name: "España" },
       },
     })),
   };

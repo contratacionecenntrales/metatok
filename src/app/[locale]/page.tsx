@@ -1,3 +1,4 @@
+import { setRequestLocale } from "next-intl/server";
 import { Header } from "@/components/Header";
 import { Hero } from "@/components/Hero";
 import { TrustBanner } from "@/components/TrustBanner";
@@ -20,11 +21,18 @@ import { Contacto } from "@/components/Contacto";
 import { Footer } from "@/components/Footer";
 import { FaqJsonLd, ServicesJsonLd } from "@/components/seo/JsonLd";
 
-export default function Home() {
+export default async function Home({
+  params,
+}: {
+  params: Promise<{ locale: string }>;
+}) {
+  const { locale } = await params;
+  setRequestLocale(locale);
+
   return (
     <>
-      <FaqJsonLd />
-      <ServicesJsonLd />
+      <FaqJsonLd locale={locale} />
+      <ServicesJsonLd locale={locale} />
       <Header />
       <main className="flex-1">
         <Hero />

@@ -1,10 +1,11 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { Quote } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { TESTIMONIOS } from "@/lib/data";
+import { getTestimonios } from "@/lib/data";
 
 const AVATAR_COLORS = [
   "bg-brand-100 text-brand-700",
@@ -16,23 +17,27 @@ const AVATAR_COLORS = [
 ];
 
 export function Testimonios() {
+  const t = useTranslations();
+  const testimonios = getTestimonios(t);
+
   return (
     <section id="testimonios" className="bg-surface-tint py-20 sm:py-28">
       <Container>
         <SectionHeading
-          eyebrow="Historias de Éxito"
+          eyebrow={t("testimonios.eyebrow")}
           title={
             <>
-              Casos reales de negocios que ya <span className="text-gradient-brand">escalaron su captación</span>
+              {t("testimonios.titlePrefix")}{" "}
+              <span className="text-gradient-brand">{t("testimonios.titleHighlight")}</span>
             </>
           }
-          description="Resultados comprobados por líderes en sus respectivos sectores tras integrar los agentes IA de Metatok en su operación."
+          description={t("testimonios.description")}
         />
 
         <div className="mt-14 grid gap-6 md:grid-cols-2 lg:grid-cols-3">
-          {TESTIMONIOS.map((t, index) => (
+          {testimonios.map((testimonio, index) => (
             <motion.div
-              key={t.name}
+              key={testimonio.name}
               initial={{ opacity: 0, y: 24 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true, margin: "-60px" }}
@@ -40,16 +45,18 @@ export function Testimonios() {
               className="card-surface flex h-full flex-col rounded-3xl p-7"
             >
               <Quote className="h-7 w-7 text-brand-200" />
-              <p className="mt-4 flex-1 text-sm leading-relaxed text-ink-soft">“{t.quote}”</p>
+              <p className="mt-4 flex-1 text-sm leading-relaxed text-ink-soft">
+                “{testimonio.quote}”
+              </p>
               <div className="mt-6 flex items-center gap-3 border-t border-[#e1e8f7] pt-5">
                 <span
                   className={`inline-flex h-10 w-10 shrink-0 items-center justify-center rounded-full text-sm font-bold ${AVATAR_COLORS[index % AVATAR_COLORS.length]}`}
                 >
-                  {t.name.charAt(0)}
+                  {testimonio.name.charAt(0)}
                 </span>
                 <div className="min-w-0">
-                  <p className="truncate text-sm font-bold text-ink">{t.name}</p>
-                  <p className="truncate text-xs text-ink-soft">{t.role}</p>
+                  <p className="truncate text-sm font-bold text-ink">{testimonio.name}</p>
+                  <p className="truncate text-xs text-ink-soft">{testimonio.role}</p>
                 </div>
               </div>
             </motion.div>

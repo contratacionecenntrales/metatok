@@ -2,35 +2,38 @@
 
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { ArrowRight, Sparkles } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { CheckRow, CrossRow } from "@/components/ui/ListRow";
 import { IconBadge } from "@/components/ui/IconBadge";
-import { SECTORES } from "@/lib/data";
+import { getSectores } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
 export function Sectores() {
-  const [activeId, setActiveId] = useState(SECTORES[0].id);
-  const active = SECTORES.find((s) => s.id === activeId) ?? SECTORES[0];
+  const t = useTranslations();
+  const sectores = getSectores(t);
+  const [activeId, setActiveId] = useState(sectores[0].id);
+  const active = sectores.find((s) => s.id === activeId) ?? sectores[0];
 
   return (
     <section id="sectores" className="py-20 sm:py-28">
       <Container>
         <SectionHeading
-          eyebrow="Por sector"
+          eyebrow={t("sectores.eyebrow")}
           title={
             <>
-              Tu sector, tus resultados, <br className="hidden sm:block" />
-              tu solución a medida
+              {t("sectores.titleLine1")} <br className="hidden sm:block" />
+              {t("sectores.titleLine2")}
             </>
           }
-          description="No vendemos tecnología genérica. Diseñamos la automatización exacta que tu tipo de negocio necesita para convertir más."
+          description={t("sectores.description")}
         />
 
         <div className="mt-10 flex flex-wrap justify-center gap-2">
-          {SECTORES.map((sector) => (
+          {sectores.map((sector) => (
             <button
               key={sector.id}
               type="button"
@@ -86,7 +89,7 @@ export function Sectores() {
             <div className="mt-8 grid gap-6 lg:grid-cols-3">
               <div className="rounded-2xl border border-[#e1e8f7] p-5">
                 <p className="text-xs font-bold uppercase tracking-wide text-red-500">
-                  Estado actual
+                  {t("sectores.estadoActualLabel")}
                 </p>
                 <ul className="mt-4 flex flex-col gap-3">
                   {active.estadoActual.map((item) => (
@@ -96,7 +99,7 @@ export function Sectores() {
               </div>
               <div className="rounded-2xl border border-brand-100 bg-brand-50/50 p-5">
                 <p className="text-xs font-bold uppercase tracking-wide text-brand-700">
-                  Con Metatok
+                  {t("sectores.conMetatokLabel")}
                 </p>
                 <ul className="mt-4 flex flex-col gap-3">
                   {active.conMetatok.map((item) => (
@@ -106,7 +109,7 @@ export function Sectores() {
               </div>
               <div className="rounded-2xl border border-[#e1e8f7] p-5">
                 <p className="text-xs font-bold uppercase tracking-wide text-ink-soft">
-                  Resultados medios
+                  {t("sectores.resultadosLabel")}
                 </p>
                 <div className="mt-4 flex flex-col gap-4">
                   {active.resultados.map((r) => (
@@ -116,17 +119,15 @@ export function Sectores() {
                     </div>
                   ))}
                 </div>
-                <p className="mt-4 text-[11px] text-ink-soft/70">
-                  *Promedios en clientes tras 60 días de despliegue.
-                </p>
+                <p className="mt-4 text-[11px] text-ink-soft/70">{t("sectores.resultadosNote")}</p>
               </div>
             </div>
 
             <div className="mt-8 flex flex-col gap-4 border-t border-[#e1e8f7] pt-6 sm:flex-row sm:items-center sm:justify-between">
               <div className="flex flex-wrap gap-2">
-                <span className="mr-1 inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wide text-ink-soft">
+                <span className="me-1 inline-flex items-center gap-1.5 text-xs font-bold uppercase tracking-wide text-ink-soft">
                   <Sparkles className="h-3.5 w-3.5 text-brand-500" />
-                  Opciones adicionales
+                  {t("sectores.opcionesLabel")}
                 </span>
                 {active.opciones.map((opcion) => (
                   <span
@@ -138,16 +139,14 @@ export function Sectores() {
                 ))}
               </div>
               <Button href="#contacto" size="md" className="shrink-0">
-                Quiero una solución para mi sector
+                {t("sectores.ctaButton")}
                 <ArrowRight className="h-4 w-4" />
               </Button>
             </div>
           </motion.div>
         </AnimatePresence>
 
-        <p className="mt-6 text-center text-xs text-ink-soft">
-          Auditoría gratuita · Sin compromiso · Respuesta en menos de 24 h
-        </p>
+        <p className="mt-6 text-center text-xs text-ink-soft">{t("sectores.footNote")}</p>
       </Container>
     </section>
   );

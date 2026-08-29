@@ -1,31 +1,36 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { IconBadge } from "@/components/ui/IconBadge";
 import { WhatsAppIcon, InstagramIcon } from "@/components/ui/BrandIcons";
-import { CANALES } from "@/lib/data";
+import { getCanales } from "@/lib/data";
 import type { BadgeColor } from "@/components/ui/IconBadge";
 
 const COLORS: BadgeColor[] = ["violet", "blue", "green", "pink", "amber"];
 
 export function Canales() {
+  const t = useTranslations();
+  const canales = getCanales(t);
+
   return (
     <section id="canales" className="py-20 sm:py-28">
       <Container>
         <SectionHeading
-          eyebrow="Integración omnicanal"
+          eyebrow={t("canales.eyebrow")}
           title={
             <>
-              Tu IA donde ya están <span className="text-gradient-brand">tus clientes</span>
+              {t("canales.titlePrefix")}{" "}
+              <span className="text-gradient-brand">{t("canales.titleHighlight")}</span>
             </>
           }
-          description="Desplegamos en los canales que tus prospectos ya usan. Sin fricciones, sin cambios de plataforma para ellos."
+          description={t("canales.description")}
         />
 
         <div className="mt-14 grid gap-5 sm:grid-cols-2 lg:grid-cols-5">
-          {CANALES.map((canal, index) => (
+          {canales.map((canal, index) => (
             <motion.div
               key={canal.name}
               initial={{ opacity: 0, y: 24 }}
@@ -52,9 +57,9 @@ export function Canales() {
         </div>
 
         <p className="mt-10 text-center text-sm text-ink-soft">
-          ¿Usas otro canal o sistema interno?{" "}
+          {t("canales.otherChannel")}{" "}
           <a href="#contacto" className="font-semibold text-brand-600 hover:text-brand-800">
-            Consúltanos →
+            {t("canales.contactUs")}
           </a>
         </p>
       </Container>

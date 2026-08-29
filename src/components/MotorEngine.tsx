@@ -1,11 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { Cpu } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { IconBadge } from "@/components/ui/IconBadge";
-import { ENGINE_FEATURES, ENGINE_STATS } from "@/lib/data";
+import { getEngineFeatures, getEngineStats } from "@/lib/data";
 import { cn } from "@/lib/utils";
 
 function FeatureCard({
@@ -13,7 +14,7 @@ function FeatureCard({
   align,
   index,
 }: {
-  feature: (typeof ENGINE_FEATURES)[number];
+  feature: ReturnType<typeof getEngineFeatures>[number];
   align: "left" | "right";
   index: number;
 }) {
@@ -25,7 +26,7 @@ function FeatureCard({
       transition={{ duration: 0.55, delay: index * 0.08 }}
       className={cn(
         "card-surface flex h-full flex-col gap-3 rounded-3xl p-6",
-        align === "left" ? "lg:text-right lg:items-end" : "lg:text-left lg:items-start",
+        align === "left" ? "lg:text-end lg:items-end" : "lg:text-start lg:items-start",
       )}
     >
       <IconBadge icon={feature.icon} color={feature.color} />
@@ -36,19 +37,23 @@ function FeatureCard({
 }
 
 export function MotorEngine() {
-  const [a, b, c, d] = ENGINE_FEATURES;
+  const t = useTranslations();
+  const engineFeatures = getEngineFeatures(t);
+  const engineStats = getEngineStats(t);
+  const [a, b, c, d] = engineFeatures;
 
   return (
     <section id="motor-metatok" className="py-20 sm:py-28">
       <Container>
         <SectionHeading
-          eyebrow="MetaTok Engine V5"
+          eyebrow={t("engine.eyebrow")}
           title={
             <>
-              La Arquitectura detrás de la <span className="text-gradient-brand">Conversión Autónoma</span>
+              {t("engine.titlePrefix")}{" "}
+              <span className="text-gradient-brand">{t("engine.titleHighlight")}</span>
             </>
           }
-          description="Descubre el motor cognitivo que no solo responde preguntas, sino que califica leads, supera objeciones y cierra ventas sin intervención humana."
+          description={t("engine.description")}
         />
 
         <div className="mt-16 hidden lg:grid lg:grid-cols-[1fr_150px_1fr] lg:grid-rows-2 lg:gap-6">
@@ -75,7 +80,7 @@ export function MotorEngine() {
             <Cpu className="h-9 w-9 text-white" />
           </div>
           <div className="grid w-full gap-5 sm:grid-cols-2">
-            {ENGINE_FEATURES.map((feature, index) => (
+            {engineFeatures.map((feature, index) => (
               <FeatureCard key={feature.title} feature={feature} align="left" index={index} />
             ))}
           </div>
@@ -86,9 +91,9 @@ export function MotorEngine() {
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true }}
           transition={{ duration: 0.5 }}
-          className="mx-auto mt-14 grid max-w-3xl grid-cols-3 divide-x divide-[#e1e8f7] rounded-2xl border border-[#e1e8f7] bg-white py-6 shadow-sm"
+          className="mx-auto mt-14 grid max-w-3xl grid-cols-3 divide-x divide-[#e1e8f7] rounded-2xl border border-[#e1e8f7] bg-white py-6 shadow-sm rtl:divide-x-reverse"
         >
-          {ENGINE_STATS.map((stat) => (
+          {engineStats.map((stat) => (
             <div key={stat.label} className="flex flex-col items-center px-2 text-center">
               <span className="font-display text-2xl font-extrabold text-brand-600 sm:text-3xl">
                 {stat.value}

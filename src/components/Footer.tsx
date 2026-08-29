@@ -1,38 +1,50 @@
+"use client";
+
+import { useTranslations } from "next-intl";
 import { ArrowUpRight, Mail } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/ui/Logo";
+import { LanguageSwitcher } from "@/components/LanguageSwitcher";
 
-const FOOTER_LINKS = {
-  Solución: [
-    { label: "Servicios", href: "#servicios" },
-    { label: "Por sector", href: "#sectores" },
-    { label: "Motor MetaTok Engine V5", href: "#motor-metatok" },
-    { label: "Producto White Label", href: "#producto-white-label" },
-  ],
-  Explorar: [
-    { label: "MetaTok Academy", href: "#academy" },
-    { label: "Planes y precios", href: "#planes" },
-    { label: "Casos de éxito", href: "#testimonios" },
-    { label: "Preguntas frecuentes", href: "#faq" },
-  ],
-  Legal: [
-    { label: "Aviso Legal", href: "/legal/aviso-legal" },
-    { label: "Política de Privacidad", href: "/legal/privacidad" },
-    { label: "Política de Cookies", href: "/legal/cookies" },
-    { label: "Términos y Condiciones", href: "/legal/terminos" },
-  ],
-};
+const FOOTER_COLUMNS = [
+  {
+    key: "solucion",
+    links: [
+      { key: "servicios", href: "#servicios" },
+      { key: "sectores", href: "#sectores" },
+      { key: "engine", href: "#motor-metatok" },
+      { key: "whiteLabel", href: "#producto-white-label" },
+    ],
+  },
+  {
+    key: "explorar",
+    links: [
+      { key: "academy", href: "#academy" },
+      { key: "planes", href: "#planes" },
+      { key: "testimonios", href: "#testimonios" },
+      { key: "faq", href: "#faq" },
+    ],
+  },
+  {
+    key: "legal",
+    links: [
+      { key: "aviso", href: "/legal/aviso-legal" },
+      { key: "privacidad", href: "/legal/privacidad" },
+      { key: "cookies", href: "/legal/cookies" },
+      { key: "terminos", href: "/legal/terminos" },
+    ],
+  },
+] as const;
 
 export function Footer() {
+  const t = useTranslations();
+
   return (
     <footer className="border-t border-[#e1e8f7] bg-white">
       <Container className="grid gap-12 py-16 lg:grid-cols-[1.4fr_1fr_1fr_1fr]">
         <div className="flex flex-col gap-5">
           <Logo />
-          <p className="max-w-xs text-sm leading-relaxed text-ink-soft">
-            Ecosistema de Agentes Autónomos de IA que venden, atienden y
-            gestionan tu negocio 24/7 en WhatsApp, llamadas, Instagram y web.
-          </p>
+          <p className="max-w-xs text-sm leading-relaxed text-ink-soft">{t("footer.tagline")}</p>
           <a
             href="mailto:info@metatok.ai"
             className="flex items-center gap-2.5 text-sm text-ink-soft transition-colors hover:text-brand-700"
@@ -40,19 +52,22 @@ export function Footer() {
             <Mail className="h-4 w-4 text-brand-500" />
             info@metatok.ai
           </a>
+          <LanguageSwitcher className="mt-2" />
         </div>
 
-        {Object.entries(FOOTER_LINKS).map(([title, links]) => (
-          <div key={title}>
-            <p className="text-sm font-bold text-ink">{title}</p>
+        {FOOTER_COLUMNS.map((column) => (
+          <div key={column.key}>
+            <p className="text-sm font-bold text-ink">
+              {t(`footer.columns.${column.key}.title`)}
+            </p>
             <ul className="mt-5 flex flex-col gap-3">
-              {links.map((link) => (
-                <li key={link.label}>
+              {column.links.map((link) => (
+                <li key={link.key}>
                   <a
                     href={link.href}
                     className="text-sm text-ink-soft transition-colors hover:text-brand-700"
                   >
-                    {link.label}
+                    {t(`footer.columns.${column.key}.links.${link.key}`)}
                   </a>
                 </li>
               ))}
@@ -64,7 +79,7 @@ export function Footer() {
       <div className="border-t border-[#e1e8f7]">
         <Container className="flex flex-col items-center justify-between gap-3 py-6 sm:flex-row">
           <p className="text-xs text-ink-soft">
-            © {new Date().getFullYear()} MetaTok AI — Todos los derechos reservados.
+            {t("footer.copyright", { year: new Date().getFullYear() })}
           </p>
           <a
             href="https://evolvixglobal.es"
@@ -72,7 +87,7 @@ export function Footer() {
             rel="noopener noreferrer"
             className="inline-flex items-center gap-1.5 text-xs font-medium text-ink-soft hover:text-brand-700"
           >
-            MetaTok es una marca de Grupo Evolvix Global
+            {t("footer.brandLine")}
             <ArrowUpRight className="h-3 w-3" />
           </a>
         </Container>

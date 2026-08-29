@@ -1,15 +1,21 @@
 "use client";
 
 import { motion } from "framer-motion";
+import { useTranslations } from "next-intl";
 import { ArrowRight, GraduationCap, Headphones, Trophy } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { IconBadge } from "@/components/ui/IconBadge";
 import { Button } from "@/components/ui/Button";
 import { CheckRow } from "@/components/ui/ListRow";
-import { ACADEMY_FEATURES, ACADEMY_MODULES, ACADEMY_ROUTE } from "@/lib/data";
+import { getAcademyFeatures, getAcademyModules, getAcademyRoute } from "@/lib/data";
 
 export function Academy() {
+  const t = useTranslations();
+  const features = getAcademyFeatures(t);
+  const routeItems = getAcademyRoute(t);
+  const modules = getAcademyModules(t);
+
   return (
     <section id="academy" className="py-20 sm:py-28">
       <Container>
@@ -17,26 +23,27 @@ export function Academy() {
           <div className="flex flex-wrap justify-center gap-2">
             <span className="inline-flex items-center gap-1.5 rounded-full border border-brand-200 bg-brand-50 px-3.5 py-1 text-xs font-bold text-brand-700">
               <GraduationCap className="h-3.5 w-3.5" />
-              MetaTok Academy
+              {t("academy.badge1")}
             </span>
             <span className="inline-flex items-center gap-1.5 rounded-full border border-[#e1e8f7] bg-white px-3.5 py-1 text-xs font-bold text-ink-soft">
               <Trophy className="h-3.5 w-3.5" />
-              MetaTok Masters
+              {t("academy.badge2")}
             </span>
           </div>
           <SectionHeading
             title={
               <>
-                Formación para <span className="text-gradient-brand">vender mejor</span> y liderar
-                tu categoría
+                {t("academy.titlePrefix")}{" "}
+                <span className="text-gradient-brand">{t("academy.titleHighlight")}</span>{" "}
+                {t("academy.titleSuffix")}
               </>
             }
-            description="No solo entregamos software. Entregamos metodología comercial, acompañamiento y entrenamiento continuo para convertir tu marca en referencia de mercado."
+            description={t("academy.description")}
           />
         </div>
 
         <div className="mt-14 grid gap-6 md:grid-cols-3">
-          {ACADEMY_FEATURES.map((feature, index) => (
+          {features.map((feature, index) => (
             <motion.div
               key={feature.title}
               initial={{ opacity: 0, y: 24 }}
@@ -63,22 +70,17 @@ export function Academy() {
             className="card-surface rounded-3xl p-8"
           >
             <p className="text-xs font-bold uppercase tracking-wide text-brand-600">
-              Ruta de acompañamiento
+              {t("academy.routeLabel")}
             </p>
-            <h3 className="mt-2 text-xl font-extrabold text-ink">
-              Del onboarding al cierre repetible
-            </h3>
-            <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-              Sesiones en vivo, talleres tácticos y soporte de expertos para que tu equipo comercial
-              implemente rápido, mida mejor y escale su tasa de cierre de forma sostenible.
-            </p>
+            <h3 className="mt-2 text-xl font-extrabold text-ink">{t("academy.routeTitle")}</h3>
+            <p className="mt-3 text-sm leading-relaxed text-ink-soft">{t("academy.routeDesc")}</p>
             <ul className="mt-6 flex flex-col gap-3">
-              {ACADEMY_ROUTE.map((item) => (
+              {routeItems.map((item) => (
                 <CheckRow key={item}>{item}</CheckRow>
               ))}
             </ul>
             <Button href="#contacto" size="lg" className="mt-7">
-              Quiero entrar a MetaTok Academy
+              {t("academy.ctaButton")}
               <ArrowRight className="h-4 w-4" />
             </Button>
           </motion.div>
@@ -92,20 +94,20 @@ export function Academy() {
           >
             <div className="flex items-center justify-between">
               <p className="text-xs font-bold uppercase tracking-wide text-ink-soft">
-                Academy Dashboard
+                {t("academy.dashboardLabel")}
               </p>
               <span className="rounded-full bg-emerald-100 px-3 py-1 text-[11px] font-bold text-emerald-700">
-                Cohorte activa
+                {t("academy.cohortLabel")}
               </span>
             </div>
 
             <div className="mt-5 flex flex-col gap-4">
-              {ACADEMY_MODULES.map((module, index) => (
+              {modules.map((module, index) => (
                 <div key={module.title}>
                   <div className="mb-1.5 flex items-center justify-between text-sm">
                     <span className="font-semibold text-ink">
-                      Módulo {String(index + 1).padStart(2, "0")}
-                      <span className="ml-2 font-normal text-ink-soft">{module.title}</span>
+                      {t("academy.moduleLabel")} {String(index + 1).padStart(2, "0")}
+                      <span className="ms-2 font-normal text-ink-soft">{module.title}</span>
                     </span>
                     <span className="text-xs font-bold text-brand-600">{module.progress}%</span>
                   </div>
@@ -125,11 +127,11 @@ export function Academy() {
             <div className="mt-6 flex items-center gap-3 rounded-2xl border border-[#e1e8f7] p-4">
               <IconBadge icon={Headphones} color="violet" size="sm" />
               <div>
-                <p className="text-sm font-bold text-ink">Soporte experto</p>
-                <p className="text-xs text-ink-soft">Mentoría directa + playbooks accionables</p>
+                <p className="text-sm font-bold text-ink">{t("academy.supportTitle")}</p>
+                <p className="text-xs text-ink-soft">{t("academy.supportDesc")}</p>
               </div>
-              <span className="ml-auto rounded-full bg-emerald-100 px-2.5 py-1 text-[10px] font-bold text-emerald-700">
-                Incluido
+              <span className="ms-auto rounded-full bg-emerald-100 px-2.5 py-1 text-[10px] font-bold text-emerald-700">
+                {t("academy.includedLabel")}
               </span>
             </div>
           </motion.div>
