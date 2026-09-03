@@ -1,7 +1,7 @@
 "use client";
 
-import { useTranslations } from "next-intl";
-import { ArrowUpRight, Mail } from "lucide-react";
+import { useLocale, useTranslations } from "next-intl";
+import { Mail } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Logo } from "@/components/ui/Logo";
 import { LanguageSwitcher } from "@/components/LanguageSwitcher";
@@ -28,16 +28,17 @@ const FOOTER_COLUMNS = [
   {
     key: "legal",
     links: [
-      { key: "aviso", href: "/legal/aviso-legal" },
-      { key: "privacidad", href: "/legal/privacidad" },
-      { key: "cookies", href: "/legal/cookies" },
-      { key: "terminos", href: "/legal/terminos" },
+      { key: "aviso", href: "/legal/aviso-legal/" },
+      { key: "privacidad", href: "/legal/privacidad/" },
+      { key: "cookies", href: "/legal/cookies/" },
+      { key: "terminos", href: "/legal/terminos/" },
     ],
   },
 ] as const;
 
 export function Footer() {
   const t = useTranslations();
+  const locale = useLocale();
 
   return (
     <footer className="border-t border-[#e1e8f7] bg-white">
@@ -64,7 +65,7 @@ export function Footer() {
               {column.links.map((link) => (
                 <li key={link.key}>
                   <a
-                    href={link.href}
+                    href={link.href.startsWith("#") ? link.href : `/${locale}${link.href}`}
                     className="text-sm text-ink-soft transition-colors hover:text-brand-700"
                   >
                     {t(`footer.columns.${column.key}.links.${link.key}`)}
@@ -77,19 +78,10 @@ export function Footer() {
       </Container>
 
       <div className="border-t border-[#e1e8f7]">
-        <Container className="flex flex-col items-center justify-between gap-3 py-6 sm:flex-row">
+        <Container className="flex items-center justify-center py-6">
           <p className="text-xs text-ink-soft">
             {t("footer.copyright", { year: new Date().getFullYear() })}
           </p>
-          <a
-            href="https://evolvixglobal.es"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="inline-flex items-center gap-1.5 text-xs font-medium text-ink-soft hover:text-brand-700"
-          >
-            {t("footer.brandLine")}
-            <ArrowUpRight className="h-3 w-3" />
-          </a>
         </Container>
       </div>
     </footer>

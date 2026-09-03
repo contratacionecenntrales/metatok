@@ -59,8 +59,8 @@ export async function generateMetadata({
       .split(",")
       .map((k) => k.trim()),
     authors: [{ name: "MetaTok AI" }],
-    creator: "Grupo Evolvix Global",
-    publisher: "Grupo Evolvix Global",
+    creator: "MetaTok AI",
+    publisher: "MetaTok AI",
     alternates: {
       canonical: `${SITE_URL}/${locale}`,
       languages,

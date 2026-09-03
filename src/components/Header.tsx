@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { useLocale, useTranslations } from "next-intl";
-import { ArrowRight, ArrowUpRight, ChevronDown, Menu, X } from "lucide-react";
+import { ArrowRight, ChevronDown, Menu, X } from "lucide-react";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
 import { Logo } from "@/components/ui/Logo";
@@ -60,19 +60,6 @@ export function Header() {
 
   return (
     <div className="sticky top-0 z-50 w-full">
-      <div className="bg-ink py-2 text-center text-xs font-medium text-white/80">
-        <a
-          href="https://evolvixglobal.es"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="inline-flex items-center gap-1.5 hover:text-white"
-        >
-          {t("nav.topbar")}
-          <span className="underline underline-offset-2">{t("nav.topbarLink")}</span>
-          <ArrowUpRight className="h-3 w-3" />
-        </a>
-      </div>
-
       <header
         className={cn(
           "w-full border-b transition-all duration-300",

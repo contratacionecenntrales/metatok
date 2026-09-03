@@ -24,12 +24,6 @@ export async function OrganizationJsonLd({ locale }: { locale: string }) {
           "@type": "Brand",
           name: "MetaTok AI",
         },
-        parentOrganization: {
-          "@type": "Organization",
-          name: "Grupo Evolvix Global",
-          url: "https://evolvixglobal.es",
-        },
-        sameAs: ["https://evolvixglobal.es"],
       },
       {
         "@type": "WebSite",

@@ -5,8 +5,6 @@
     "keywords": "KI-Agenten für Unternehmen, Unternehmensautomatisierung mit künstlicher Intelligenz, WhatsApp KI-Chatbot, Voicebots, KI-Lead-Qualifizierung, KI-Vertriebsautomatisierung, MetaTok"
   },
   "nav": {
-    "topbar": "MetaTok ist eine Marke der Grupo Evolvix Global",
-    "topbarLink": "evolvixglobal.es",
     "inicio": "Start",
     "solucion": "Lösung",
     "explorar": "Entdecken",
@@ -33,7 +31,13 @@
     "badge": "Agenten-Ökosystem · MetaTok AI",
     "headlinePrefix": "Ihr",
     "headlineSuffix": "-Team im KI-Autopiloten",
-    "rotatingWords": ["Vertriebs", "Support", "Buchhaltungs", "Social-Media", "Content"],
+    "rotatingWords": [
+      "Vertriebs",
+      "Support",
+      "Buchhaltungs",
+      "Social-Media",
+      "Content"
+    ],
     "subheadline": "Intelligente Agenten, die rund um die Uhr auf den Kanälen verkaufen, betreuen und Ihr Geschäft steuern, die Sie am meisten nutzen.",
     "ctaPrimary": "Jetzt meinen Agenten erstellen",
     "ctaSecondary": "So funktioniert es",
@@ -49,17 +53,38 @@
       "noCode": "Kein Code für Ihr Team"
     },
     "stats": {
-      "automation": { "value": "100%", "label": "Vollständige Automatisierung" },
-      "savings": { "value": "3.000 €", "label": "Ersparnis pro Mitarbeiter" },
-      "operation": { "value": "24/7", "label": "Durchgehender Betrieb" }
+      "automation": {
+        "value": "100%",
+        "label": "Vollständige Automatisierung"
+      },
+      "savings": {
+        "value": "3.000 €",
+        "label": "Ersparnis pro Mitarbeiter"
+      },
+      "operation": {
+        "value": "24/7",
+        "label": "Durchgehender Betrieb"
+      }
     },
     "panelLive": "Panel · Live",
     "aiAgentOnline": "KI-AGENT · Online 24/7",
     "feed": {
-      "ticket": { "label": "Ticket gelöst", "sub": "Support · T-892" },
-      "invoice": { "label": "Rechnung verarbeitet", "sub": "Buchhaltung · #A-402" },
-      "post": { "label": "Beitrag veröffentlicht", "sub": "Instagram · Content" },
-      "lead": { "label": "Lead qualifiziert", "sub": "Vertrieb · Score 94" }
+      "ticket": {
+        "label": "Ticket gelöst",
+        "sub": "Support · T-892"
+      },
+      "invoice": {
+        "label": "Rechnung verarbeitet",
+        "sub": "Buchhaltung · #A-402"
+      },
+      "post": {
+        "label": "Beitrag veröffentlicht",
+        "sub": "Instagram · Content"
+      },
+      "lead": {
+        "label": "Lead qualifiziert",
+        "sub": "Vertrieb · Score 94"
+      }
     },
     "metrics": {
       "tasks": "Aufgaben/Std.",
@@ -67,10 +92,22 @@
       "savings": "Ersparnis/Mon."
     },
     "features": {
-      "speed": { "title": "Antwortgeschwindigkeit", "desc": "Wir antworten sofort" },
-      "autonomous": { "title": "Autonome Agenten", "desc": "24/7 im Einsatz, ohne Pause" },
-      "gdpr": { "title": "DSGVO-konform", "desc": "Ihre Daten sicher geschützt" },
-      "api": { "title": "Offene API", "desc": "Verbindet sich mit Ihren Tools" }
+      "speed": {
+        "title": "Antwortgeschwindigkeit",
+        "desc": "Wir antworten sofort"
+      },
+      "autonomous": {
+        "title": "Autonome Agenten",
+        "desc": "24/7 im Einsatz, ohne Pause"
+      },
+      "gdpr": {
+        "title": "DSGVO-konform",
+        "desc": "Ihre Daten sicher geschützt"
+      },
+      "api": {
+        "title": "Offene API",
+        "desc": "Verbindet sich mit Ihren Tools"
+      }
     }
   },
   "trustBanner": {
@@ -156,9 +193,18 @@
       }
     },
     "stats": {
-      "latency": { "value": "< 0,5s", "label": "Durchschnittliche Latenz" },
-      "uptime": { "value": "99,9%", "label": "Garantierte Verfügbarkeit" },
-      "encryption": { "value": "AES-256", "label": "Datenverschlüsselung" }
+      "latency": {
+        "value": "< 0,5s",
+        "label": "Durchschnittliche Latenz"
+      },
+      "uptime": {
+        "value": "99,9%",
+        "label": "Garantierte Verfügbarkeit"
+      },
+      "encryption": {
+        "value": "AES-256",
+        "label": "Datenverschlüsselung"
+      }
     }
   },
   "whiteLabel": {
@@ -166,10 +212,22 @@
     "title": "Ihre App, Ihre Marke, unsere Technologie",
     "description": "Wir verwandeln MetaTok in ein verkaufsfertiges White-Label-Produkt: native Erfahrung, Conversion-Architektur und kommerzieller Betrieb unter Ihrer Identität.",
     "features": {
-      "branding": { "title": "Vollständiges Branding", "desc": "UI, Tonalität, Bildsprache und Erlebnis passend zu Ihrer Marke." },
-      "publishing": { "title": "Offizielle Veröffentlichung", "desc": "Bereitstellung im App Store und bei Google Play oder private Enterprise-Distribution." },
-      "compliance": { "title": "Enterprise-Compliance", "desc": "DSGVO, Zugriffskontrollen und Nachverfolgbarkeit für sicheren Betrieb." },
-      "scale": { "title": "Multi-Nischen-Skalierung", "desc": "Eine technische Basis für mehrere Branchen, ohne das Produkt neu zu bauen." }
+      "branding": {
+        "title": "Vollständiges Branding",
+        "desc": "UI, Tonalität, Bildsprache und Erlebnis passend zu Ihrer Marke."
+      },
+      "publishing": {
+        "title": "Offizielle Veröffentlichung",
+        "desc": "Bereitstellung im App Store und bei Google Play oder private Enterprise-Distribution."
+      },
+      "compliance": {
+        "title": "Enterprise-Compliance",
+        "desc": "DSGVO, Zugriffskontrollen und Nachverfolgbarkeit für sicheren Betrieb."
+      },
+      "scale": {
+        "title": "Multi-Nischen-Skalierung",
+        "desc": "Eine technische Basis für mehrere Branchen, ohne das Produkt neu zu bauen."
+      }
     },
     "sectionLabel": "Ihre Marke, unsere Stärke",
     "heading2Prefix": "Native App mit der",
@@ -434,19 +492,43 @@
     "leaderUsLabel": "MetaTok",
     "leaderThemLabel": "Rest",
     "leaderRows": {
-      "speed": { "metric": "Antwortgeschwindigkeit", "metatok": "< 60 Sekunden", "market": "Stunden (oder nie)" },
-      "coverage": { "metric": "Zeitliche Abdeckung", "metatok": "Echte 24/7/365", "market": "Nur Bürozeiten" },
-      "channels": { "metric": "Verbundene Kanäle", "metatok": "5+ in einem Gehirn", "market": "1-2 isolierte Kanäle" }
+      "speed": {
+        "metric": "Antwortgeschwindigkeit",
+        "metatok": "< 60 Sekunden",
+        "market": "Stunden (oder nie)"
+      },
+      "coverage": {
+        "metric": "Zeitliche Abdeckung",
+        "metatok": "Echte 24/7/365",
+        "market": "Nur Bürozeiten"
+      },
+      "channels": {
+        "metric": "Verbundene Kanäle",
+        "metatok": "5+ in einem Gehirn",
+        "market": "1-2 isolierte Kanäle"
+      }
     },
     "stackLabel": "Komplettes Paket",
     "stackTitle": "Die Unternehmen, die ihre Branche bereits anführen, automatisieren mit MetaTok. Und Ihres?",
     "stackDesc": "Wir zeigen Ihnen, welche Module Sie zuerst brauchen, welche Wirkung zu erwarten ist und wie Sie reibungslos starten. Ohne Mindestlaufzeit, ohne Kleingedrucktes.",
     "stackCta": "Ich will die Nummer 1 in meiner Branche sein",
     "trustStrip": {
-      "secure": { "title": "100% Sicher", "desc": "Ihre Daten sind geschützt" },
-      "fast": { "title": "Schnelle Umsetzung", "desc": "Startklar in Tagen, nicht in Monaten" },
-      "results": { "title": "Echte Ergebnisse", "desc": "Kennzahlen, die Ihr Geschäft voranbringen" },
-      "support": { "title": "24/7 Support", "desc": "Wir sind immer für Sie da" }
+      "secure": {
+        "title": "100% Sicher",
+        "desc": "Ihre Daten sind geschützt"
+      },
+      "fast": {
+        "title": "Schnelle Umsetzung",
+        "desc": "Startklar in Tagen, nicht in Monaten"
+      },
+      "results": {
+        "title": "Echte Ergebnisse",
+        "desc": "Kennzahlen, die Ihr Geschäft voranbringen"
+      },
+      "support": {
+        "title": "24/7 Support",
+        "desc": "Wir sind immer für Sie da"
+      }
     }
   },
   "comparativa": {
@@ -460,11 +542,31 @@
       "metatok": "MetaTok AI"
     },
     "rows": {
-      "quality": { "feature": "Antwortqualität", "bot": "Statisch und knopfbasiert (Entscheidungsbaum)", "metatok": "Flüssig, menschlich und überzeugend (Generative KI)" },
-      "integration": { "feature": "Integration", "bot": "Begrenzt oder erfordert komplexes Zapier", "metatok": "Nativ mit CRMs, Apps und öffentlichem Sektor" },
-      "goal": { "feature": "Hauptziel", "bot": "Informationen geben und an einen Menschen weiterleiten", "metatok": "Einwände überwinden und den Verkauf oder Termin abschließen" },
-      "setup": { "feature": "Einrichtung", "bot": "Monate für die Abbildung endloser Abläufe", "metatok": "In Minuten, trainiert mit Ihren eigenen Dokumenten" },
-      "support": { "feature": "Support", "bot": "Einfaches Ticketsystem", "metatok": "Dediziertes Erfolgsteam und kontinuierliche Optimierung" }
+      "quality": {
+        "feature": "Antwortqualität",
+        "bot": "Statisch und knopfbasiert (Entscheidungsbaum)",
+        "metatok": "Flüssig, menschlich und überzeugend (Generative KI)"
+      },
+      "integration": {
+        "feature": "Integration",
+        "bot": "Begrenzt oder erfordert komplexes Zapier",
+        "metatok": "Nativ mit CRMs, Apps und öffentlichem Sektor"
+      },
+      "goal": {
+        "feature": "Hauptziel",
+        "bot": "Informationen geben und an einen Menschen weiterleiten",
+        "metatok": "Einwände überwinden und den Verkauf oder Termin abschließen"
+      },
+      "setup": {
+        "feature": "Einrichtung",
+        "bot": "Monate für die Abbildung endloser Abläufe",
+        "metatok": "In Minuten, trainiert mit Ihren eigenen Dokumenten"
+      },
+      "support": {
+        "feature": "Support",
+        "bot": "Einfaches Ticketsystem",
+        "metatok": "Dediziertes Erfolgsteam und kontinuierliche Optimierung"
+      }
     }
   },
   "diagnostico": {
@@ -507,9 +609,18 @@
     "titleSuffix": "und Ihre Kategorie anzuführen",
     "description": "Wir liefern nicht nur Software. Wir liefern Vertriebsmethodik, Begleitung und kontinuierliches Training, um Ihre Marke zur Referenz am Markt zu machen.",
     "features": {
-      "playbooks": { "title": "Vertriebs-Playbooks", "desc": "Skripte, Einwandbehandlung und Sequenzen, sofort einsatzbereit für den Alltag." },
-      "guerrilla": { "title": "Guerilla-Marketing", "desc": "Kampagnen, Inhalte und Positionierung, um die Kundengewinnung zu beschleunigen." },
-      "scaling": { "title": "Operative Skalierung", "desc": "Routinen und Kennzahlen, um zu wachsen, ohne Conversion oder Qualität zu verlieren." }
+      "playbooks": {
+        "title": "Vertriebs-Playbooks",
+        "desc": "Skripte, Einwandbehandlung und Sequenzen, sofort einsatzbereit für den Alltag."
+      },
+      "guerrilla": {
+        "title": "Guerilla-Marketing",
+        "desc": "Kampagnen, Inhalte und Positionierung, um die Kundengewinnung zu beschleunigen."
+      },
+      "scaling": {
+        "title": "Operative Skalierung",
+        "desc": "Routinen und Kennzahlen, um zu wachsen, ohne Conversion oder Qualität zu verlieren."
+      }
     },
     "routeLabel": "Begleitungspfad",
     "routeTitle": "Vom Onboarding zum wiederholbaren Abschluss",
@@ -568,11 +679,26 @@
     "titleHighlight": "Ihre Kunden bereits sind",
     "description": "Wir setzen sie auf den Kanälen ein, die Ihre Interessenten bereits nutzen. Ohne Reibung, ohne Plattformwechsel für sie.",
     "items": {
-      "phone": { "name": "Telefon", "desc": "KI-Sprachanrufe" },
-      "web": { "name": "Web", "desc": "Chat auf Ihrer Website" },
-      "whatsapp": { "name": "WhatsApp", "desc": "Der meistgenutzte Kanal" },
-      "instagram": { "name": "Instagram", "desc": "Automatisierte Direktnachrichten" },
-      "api": { "name": "API", "desc": "Integrieren Sie jedes System" }
+      "phone": {
+        "name": "Telefon",
+        "desc": "KI-Sprachanrufe"
+      },
+      "web": {
+        "name": "Web",
+        "desc": "Chat auf Ihrer Website"
+      },
+      "whatsapp": {
+        "name": "WhatsApp",
+        "desc": "Der meistgenutzte Kanal"
+      },
+      "instagram": {
+        "name": "Instagram",
+        "desc": "Automatisierte Direktnachrichten"
+      },
+      "api": {
+        "name": "API",
+        "desc": "Integrieren Sie jedes System"
+      }
     },
     "otherChannel": "Nutzen Sie einen anderen Kanal oder ein internes System?",
     "contactUs": "Fragen Sie uns →"
@@ -686,10 +812,22 @@
     "limitedSlots": "Begrenzte Plätze jede Woche. Antwort garantiert in < 24 Std.",
     "statsLabel": "Durchschnittliche Ergebnisse nach 60 Tagen",
     "stats": {
-      "recovered": { "value": "+38%", "label": "zurückgewonnene Leads" },
-      "saved": { "value": "22 Std.", "label": "gespart / Woche" },
-      "appointments": { "value": "+54%", "label": "vereinbarte Termine" },
-      "conversion": { "value": "+27%", "label": "Konversionsrate" }
+      "recovered": {
+        "value": "+38%",
+        "label": "zurückgewonnene Leads"
+      },
+      "saved": {
+        "value": "22 Std.",
+        "label": "gespart / Woche"
+      },
+      "appointments": {
+        "value": "+54%",
+        "label": "vereinbarte Termine"
+      },
+      "conversion": {
+        "value": "+27%",
+        "label": "Konversionsrate"
+      }
     },
     "disclaimer": "*Bei echten Kunden beobachtete Durchschnittswerte. Die Ergebnisse können je nach Branche und Volumen variieren."
   },
@@ -776,7 +914,207 @@
         }
       }
     },
-    "copyright": "© {year} MetaTok AI — Alle Rechte vorbehalten.",
-    "brandLine": "MetaTok ist eine Marke der Grupo Evolvix Global"
+    "copyright": "© {year} MetaTok AI — Alle Rechte vorbehalten."
+  },
+  "legalPages": {
+    "avisoLegal": {
+      "title": "Impressum",
+      "updated": "Letzte Aktualisierung: September 2026",
+      "sections": [
+        {
+          "heading": "1. Anbieterkennzeichnung",
+          "body": [
+            "In Erfüllung der geltenden Informationspflichten wird darauf hingewiesen, dass Betreiberin der Website www.metatok.ai (die „Website“) die MetaTok LLC („MetaTok“) ist, eine in den Vereinigten Staaten gegründete Gesellschaft mit beschränkter Haftung.",
+            "Kontakt: info@metatok.ai."
+          ]
+        },
+        {
+          "heading": "2. Zweck und Geltungsbereich",
+          "body": [
+            "Dieses Impressum regelt den Zugang zu und die Nutzung der Website, deren Zweck es ist, über die von MetaTok angebotenen KI-Agenten- und Geschäftsautomatisierungsdienste zu informieren sowie die Kontaktaufnahme und Beauftragung dieser Dienste zu erleichtern.",
+            "Der Zugriff auf die Website und/oder die Nutzung der darüber angebotenen Dienste begründet die Stellung als Nutzer und setzt die vollständige Annahme der in diesem Impressum enthaltenen Bedingungen voraus."
+          ]
+        },
+        {
+          "heading": "3. Zugangs- und Nutzungsbedingungen",
+          "body": [
+            "Der Nutzer verpflichtet sich, die Website sowie die darauf angebotenen Inhalte und Informationen angemessen und rechtmäßig zu nutzen, im Einklang mit geltendem Recht, diesem Impressum, der guten Sitte und der öffentlichen Ordnung.",
+            "Die Nutzung der Website zu rechtswidrigen oder schädlichen Zwecken oder auf eine Weise, die Schaden verursachen oder ihren normalen Betrieb beeinträchtigen könnte, ist untersagt."
+          ]
+        },
+        {
+          "heading": "4. Geistiges und gewerbliches Eigentum",
+          "body": [
+            "Sämtliche Inhalte der Website, einschließlich Texte, Bilder, Marken, Logos, Designs, Quellcode und andere Elemente, sind Eigentum von MetaTok oder Dritter, die deren Nutzung gestattet haben, und sind durch das Recht des geistigen und gewerblichen Eigentums geschützt.",
+            "Die Vervielfältigung, Verbreitung, Bearbeitung oder öffentliche Wiedergabe dieser Inhalte ohne vorherige ausdrückliche Genehmigung von MetaTok ist untersagt."
+          ]
+        },
+        {
+          "heading": "5. Haftungsausschluss",
+          "body": [
+            "MetaTok garantiert nicht die Verfügbarkeit, Kontinuität oder Fehlerfreiheit des Betriebs der Website und schließt dementsprechend jede Haftung für Schäden aus, die sich aus der fehlenden Verfügbarkeit oder Kontinuität der Website und ihrer Dienste ergeben.",
+            "MetaTok haftet ebenfalls nicht für Schäden, die durch rechtswidrige oder unsachgemäße Nutzung der Website durch Dritte entstehen."
+          ]
+        },
+        {
+          "heading": "6. Links zu Drittanbietern",
+          "body": [
+            "Die Website kann Links zu Websites Dritter enthalten (z. B. Buchungsplattformen oder soziale Netzwerke). MetaTok übernimmt keine Verantwortung für die Inhalte, Datenschutzrichtlinien oder Praktiken dieser Drittanbieter-Websites."
+          ]
+        },
+        {
+          "heading": "7. Anwendbares Recht und Gerichtsstand",
+          "body": [
+            "Für alle Streitigkeiten im Zusammenhang mit der Website oder den erbrachten Dienstleistungen gilt das am gewöhnlichen Aufenthaltsort des Nutzers geltende Recht, unbeschadet anwendbarer verbraucherschutzrechtlicher Bestimmungen."
+          ]
+        }
+      ]
+    },
+    "privacidad": {
+      "title": "Datenschutzerklärung",
+      "updated": "Letzte Aktualisierung: September 2026",
+      "sections": [
+        {
+          "heading": "1. Verantwortlicher",
+          "body": [
+            "Verantwortlicher für die Verarbeitung der über die Website erhobenen personenbezogenen Daten ist die MetaTok LLC. Bei Fragen zum Datenschutz können Sie uns unter info@metatok.ai kontaktieren."
+          ]
+        },
+        {
+          "heading": "2. Von uns erhobene Daten",
+          "body": [
+            "Wir erheben die Daten, die Sie uns freiwillig über unser Formular/Widget zur Buchung eines Audits mitteilen (Name, Unternehmen, Telefonnummer, E-Mail-Adresse und Angaben zu Ihrem Unternehmen), sowie Nutzungsdaten, die über Cookies und Web-Analyse-Tools erfasst werden."
+          ]
+        },
+        {
+          "heading": "3. Zweck der Verarbeitung",
+          "body": [
+            "Wir verwenden Ihre Daten, um: (i) Ihre Anfrage für ein Audit oder eine Demo zu bearbeiten, (ii) Sie mit kommerziellen Informationen zu unseren Diensten zu kontaktieren, (iii) die Website und ihre Leistung zu verbessern, und (iv) gesetzliche Pflichten zu erfüllen."
+          ]
+        },
+        {
+          "heading": "4. Rechtsgrundlage",
+          "body": [
+            "Die Verarbeitung beruht auf der Einwilligung des Nutzers bei Übermittlung seiner Daten über unsere Formulare sowie auf dem berechtigten Interesse von MetaTok, geschäftliche Anfragen zu bearbeiten und seine Dienste zu verbessern."
+          ]
+        },
+        {
+          "heading": "5. Speicherdauer",
+          "body": [
+            "Wir speichern Ihre personenbezogenen Daten, solange eine geschäftliche oder beiderseitig interessengeleitete Beziehung besteht, und danach für die gesetzlich vorgeschriebenen Fristen, nach deren Ablauf sie gelöscht oder anonymisiert werden."
+          ]
+        },
+        {
+          "heading": "6. Empfänger und Auftragsverarbeiter",
+          "body": [
+            "Ihre Daten können von Technologiedienstleistern verarbeitet werden, die für MetaTok tätig sind, etwa die Buchungs- und CRM-Plattform zur Terminierung von Audits, stets unter angemessenen vertraglichen Garantien und ausschließlich zum Zweck der Erbringung dieser Dienstleistung."
+          ]
+        },
+        {
+          "heading": "7. Internationale Datenübermittlungen",
+          "body": [
+            "Da MetaTok LLC eine in den Vereinigten Staaten gegründete Gesellschaft ist, können Ihre Daten außerhalb des Europäischen Wirtschaftsraums verarbeitet oder gespeichert werden. In diesen Fällen setzen wir die nach geltendem Datenschutzrecht erforderlichen angemessenen Garantien um, wie z. B. Standardvertragsklauseln."
+          ]
+        },
+        {
+          "heading": "8. Ihre Rechte",
+          "body": [
+            "Sie können Ihre Rechte auf Auskunft, Berichtigung, Löschung, Widerspruch, Einschränkung der Verarbeitung und Datenübertragbarkeit ausüben, indem Sie eine E-Mail an info@metatok.ai senden, das gewünschte Recht angeben und einen Identitätsnachweis beifügen."
+          ]
+        },
+        {
+          "heading": "9. Änderungen dieser Richtlinie",
+          "body": [
+            "MetaTok kann diese Datenschutzerklärung aktualisieren, um sie an gesetzliche Änderungen oder Änderungen unserer Dienste anzupassen. Wir empfehlen, diese Seite regelmäßig zu überprüfen."
+          ]
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie-Richtlinie",
+      "updated": "Letzte Aktualisierung: September 2026",
+      "sections": [
+        {
+          "heading": "1. Was sind Cookies?",
+          "body": [
+            "Cookies sind kleine Textdateien, die eine Website auf dem Gerät des Nutzers speichert, um Informationen über seinen Besuch zu speichern, etwa seine Präferenzen oder sein Nutzungsverhalten."
+          ]
+        },
+        {
+          "heading": "2. Von uns verwendete Cookie-Arten",
+          "body": [
+            "Technische oder notwendige Cookies: unerlässlich für das ordnungsgemäße Funktionieren der Website.",
+            "Analyse-Cookies: ermöglichen es uns zu verstehen, wie Nutzer mit der Website interagieren, um deren Leistung und Inhalte zu verbessern.",
+            "Cookies von Drittanbietern: werden von in die Website eingebetteten Diensten, wie dem Audit-Buchungswidget, für deren ordnungsgemäße Funktion verwendet."
+          ]
+        },
+        {
+          "heading": "3. Verwaltung von Cookies",
+          "body": [
+            "Sie können auf Ihrem Gerät installierte Cookies über die Einstellungen Ihres Browsers zulassen, blockieren oder löschen. Bitte beachten Sie, dass die Deaktivierung bestimmter Cookies die ordnungsgemäße Funktion der Website beeinträchtigen kann."
+          ]
+        },
+        {
+          "heading": "4. Aktualisierung dieser Richtlinie",
+          "body": [
+            "Diese Cookie-Richtlinie kann aufgrund gesetzlicher Änderungen oder Änderungen der von der Website genutzten Dienste aktualisiert werden. Wir empfehlen, sie regelmäßig zu überprüfen."
+          ]
+        }
+      ]
+    },
+    "terminos": {
+      "title": "Allgemeine Geschäftsbedingungen",
+      "updated": "Letzte Aktualisierung: September 2026",
+      "sections": [
+        {
+          "heading": "1. Annahme der Bedingungen",
+          "body": [
+            "Der Zugriff auf und die Nutzung der Website sowie die Beauftragung der von MetaTok LLC angebotenen Dienstleistungen setzen die vollständige Annahme dieser Allgemeinen Geschäftsbedingungen voraus."
+          ]
+        },
+        {
+          "heading": "2. Beschreibung der Dienstleistung",
+          "body": [
+            "MetaTok bietet Unternehmen KI-Agenten und Lösungen zur Geschäftsautomatisierung (WhatsApp, Anrufe, soziale Netzwerke und Web) an, die über Abonnementpläne verfügbar sind."
+          ]
+        },
+        {
+          "heading": "3. Vertragsbedingungen",
+          "body": [
+            "Preise, Merkmale und Bedingungen der einzelnen Pläne sind auf der Website aufgeführt und können von MetaTok geändert werden; es gelten die zum Zeitpunkt des Vertragsabschlusses gültigen Bedingungen."
+          ]
+        },
+        {
+          "heading": "4. Pflichten des Nutzers/Kunden",
+          "body": [
+            "Der Kunde verpflichtet sich, wahrheitsgemäße und aktuelle Angaben zu machen, den Dienst rechtmäßig zu nutzen und ihn nicht für Zwecke zu verwenden, die gegen Gesetz, gute Sitten oder öffentliche Ordnung verstoßen."
+          ]
+        },
+        {
+          "heading": "5. Geistiges Eigentum",
+          "body": [
+            "Die Software, Technologie, Marke und Inhalte im Zusammenhang mit den Diensten von MetaTok sind Eigentum von MetaTok LLC und durch das Recht des geistigen und gewerblichen Eigentums geschützt."
+          ]
+        },
+        {
+          "heading": "6. Haftungsbeschränkung",
+          "body": [
+            "MetaTok haftet nicht für indirekte Schäden, entgangenen Gewinn oder entgangene Geschäftsmöglichkeiten, die sich aus der Nutzung des Dienstes ergeben, außer in Fällen, in denen das anwendbare Recht eine solche Beschränkung nicht zulässt."
+          ]
+        },
+        {
+          "heading": "7. Änderungen",
+          "body": [
+            "MetaTok kann diese Allgemeinen Geschäftsbedingungen jederzeit ändern, indem die aktualisierte Fassung auf der Website veröffentlicht wird."
+          ]
+        },
+        {
+          "heading": "8. Anwendbares Recht",
+          "body": [
+            "Diese Allgemeinen Geschäftsbedingungen unterliegen dem anwendbaren Recht, unbeschadet der je nach Wohnsitzland des Kunden anwendbaren verbraucherschutzrechtlichen Bestimmungen."
+          ]
+        }
+      ]
+    }
   }
 }

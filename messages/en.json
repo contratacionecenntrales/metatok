@@ -5,8 +5,6 @@
     "keywords": "AI agents for business, business automation with artificial intelligence, WhatsApp AI chatbot, voicebots, AI lead qualification, AI sales automation, MetaTok"
   },
   "nav": {
-    "topbar": "MetaTok is a brand of Grupo Evolvix Global",
-    "topbarLink": "evolvixglobal.es",
     "inicio": "Home",
     "solucion": "Solution",
     "explorar": "Explore",
@@ -33,7 +31,13 @@
     "badge": "Agent Ecosystem · MetaTok AI",
     "headlinePrefix": "Your",
     "headlineSuffix": "team on AI autopilot",
-    "rotatingWords": ["Sales", "Support", "Accounting", "Social Media", "Content"],
+    "rotatingWords": [
+      "Sales",
+      "Support",
+      "Accounting",
+      "Social Media",
+      "Content"
+    ],
     "subheadline": "Smart agents that sell, support and manage your business 24/7 on the channels you use most.",
     "ctaPrimary": "Create my agent now",
     "ctaSecondary": "See how it works",
@@ -49,17 +53,38 @@
       "noCode": "No code for your team"
     },
     "stats": {
-      "automation": { "value": "100%", "label": "Full automation" },
-      "savings": { "value": "€3,000", "label": "Savings per employee" },
-      "operation": { "value": "24/7", "label": "Continuous operation" }
+      "automation": {
+        "value": "100%",
+        "label": "Full automation"
+      },
+      "savings": {
+        "value": "€3,000",
+        "label": "Savings per employee"
+      },
+      "operation": {
+        "value": "24/7",
+        "label": "Continuous operation"
+      }
     },
     "panelLive": "Panel · Live",
     "aiAgentOnline": "AI AGENT · Online 24/7",
     "feed": {
-      "ticket": { "label": "Ticket resolved", "sub": "Support · T-892" },
-      "invoice": { "label": "Invoice processed", "sub": "Accounting · #A-402" },
-      "post": { "label": "Post published", "sub": "Instagram · Content" },
-      "lead": { "label": "Lead qualified", "sub": "Sales · Score 94" }
+      "ticket": {
+        "label": "Ticket resolved",
+        "sub": "Support · T-892"
+      },
+      "invoice": {
+        "label": "Invoice processed",
+        "sub": "Accounting · #A-402"
+      },
+      "post": {
+        "label": "Post published",
+        "sub": "Instagram · Content"
+      },
+      "lead": {
+        "label": "Lead qualified",
+        "sub": "Sales · Score 94"
+      }
     },
     "metrics": {
       "tasks": "Tasks/hour",
@@ -67,10 +92,22 @@
       "savings": "Savings/mo"
     },
     "features": {
-      "speed": { "title": "Response speed", "desc": "We respond instantly" },
-      "autonomous": { "title": "Autonomous agents", "desc": "Working 24/7, no breaks" },
-      "gdpr": { "title": "GDPR compliant", "desc": "Your data, safe and protected" },
-      "api": { "title": "Open API", "desc": "Connects with your tools" }
+      "speed": {
+        "title": "Response speed",
+        "desc": "We respond instantly"
+      },
+      "autonomous": {
+        "title": "Autonomous agents",
+        "desc": "Working 24/7, no breaks"
+      },
+      "gdpr": {
+        "title": "GDPR compliant",
+        "desc": "Your data, safe and protected"
+      },
+      "api": {
+        "title": "Open API",
+        "desc": "Connects with your tools"
+      }
     }
   },
   "trustBanner": {
@@ -156,9 +193,18 @@
       }
     },
     "stats": {
-      "latency": { "value": "< 0.5s", "label": "Average latency" },
-      "uptime": { "value": "99.9%", "label": "Guaranteed uptime" },
-      "encryption": { "value": "AES-256", "label": "Data encryption" }
+      "latency": {
+        "value": "< 0.5s",
+        "label": "Average latency"
+      },
+      "uptime": {
+        "value": "99.9%",
+        "label": "Guaranteed uptime"
+      },
+      "encryption": {
+        "value": "AES-256",
+        "label": "Data encryption"
+      }
     }
   },
   "whiteLabel": {
@@ -166,10 +212,22 @@
     "title": "Your app, your brand, our technology",
     "description": "We turn MetaTok into a sellable white-label product: native experience, conversion architecture and commercial operation under your own identity.",
     "features": {
-      "branding": { "title": "Full branding", "desc": "UI, tone, iconography and experience consistent with your brand." },
-      "publishing": { "title": "Official publishing", "desc": "Deployment on the App Store and Google Play, or private enterprise distribution." },
-      "compliance": { "title": "Enterprise compliance", "desc": "GDPR, access controls and traceability for secure operation." },
-      "scale": { "title": "Multi-niche scale", "desc": "One technical foundation for multiple verticals, no product rebuild needed." }
+      "branding": {
+        "title": "Full branding",
+        "desc": "UI, tone, iconography and experience consistent with your brand."
+      },
+      "publishing": {
+        "title": "Official publishing",
+        "desc": "Deployment on the App Store and Google Play, or private enterprise distribution."
+      },
+      "compliance": {
+        "title": "Enterprise compliance",
+        "desc": "GDPR, access controls and traceability for secure operation."
+      },
+      "scale": {
+        "title": "Multi-niche scale",
+        "desc": "One technical foundation for multiple verticals, no product rebuild needed."
+      }
     },
     "sectionLabel": "Your brand, our power",
     "heading2Prefix": "Native app with the",
@@ -434,19 +492,43 @@
     "leaderUsLabel": "MetaTok",
     "leaderThemLabel": "Rest",
     "leaderRows": {
-      "speed": { "metric": "Response speed", "metatok": "< 60 seconds", "market": "Hours (or never)" },
-      "coverage": { "metric": "Hourly coverage", "metatok": "Real 24/7/365", "market": "Office hours only" },
-      "channels": { "metric": "Channels connected", "metatok": "5+ in one brain", "market": "1-2 isolated channels" }
+      "speed": {
+        "metric": "Response speed",
+        "metatok": "< 60 seconds",
+        "market": "Hours (or never)"
+      },
+      "coverage": {
+        "metric": "Hourly coverage",
+        "metatok": "Real 24/7/365",
+        "market": "Office hours only"
+      },
+      "channels": {
+        "metric": "Channels connected",
+        "metatok": "5+ in one brain",
+        "market": "1-2 isolated channels"
+      }
     },
     "stackLabel": "Full stack",
     "stackTitle": "The companies already leading their industry automate with MetaTok. What about yours?",
     "stackDesc": "We'll show you which modules to deploy first, how much impact to expect, and how to roll it out with zero friction. No lock-in, no fine print.",
     "stackCta": "I want to be the Top 1 in my industry",
     "trustStrip": {
-      "secure": { "title": "100% Secure", "desc": "Your data, protected" },
-      "fast": { "title": "Fast Implementation", "desc": "Live in days, not months" },
-      "results": { "title": "Real Results", "desc": "Metrics that drive your business" },
-      "support": { "title": "24/7 Support", "desc": "We're always with you" }
+      "secure": {
+        "title": "100% Secure",
+        "desc": "Your data, protected"
+      },
+      "fast": {
+        "title": "Fast Implementation",
+        "desc": "Live in days, not months"
+      },
+      "results": {
+        "title": "Real Results",
+        "desc": "Metrics that drive your business"
+      },
+      "support": {
+        "title": "24/7 Support",
+        "desc": "We're always with you"
+      }
     }
   },
   "comparativa": {
@@ -460,11 +542,31 @@
       "metatok": "MetaTok AI"
     },
     "rows": {
-      "quality": { "feature": "Response Quality", "bot": "Static, button-based (decision tree)", "metatok": "Fluid, human and persuasive (Generative AI)" },
-      "integration": { "feature": "Integration", "bot": "Limited or requires complex Zapier setups", "metatok": "Native with CRMs, Apps and Public Sector systems" },
-      "goal": { "feature": "Main Goal", "bot": "Give information and hand off to a human", "metatok": "Overcome objections and close the sale or appointment" },
-      "setup": { "feature": "Setup", "bot": "Months mapping endless flows", "metatok": "Minutes, trained on your own documents" },
-      "support": { "feature": "Support", "bot": "Basic ticketing system", "metatok": "Dedicated success team and continuous optimization" }
+      "quality": {
+        "feature": "Response Quality",
+        "bot": "Static, button-based (decision tree)",
+        "metatok": "Fluid, human and persuasive (Generative AI)"
+      },
+      "integration": {
+        "feature": "Integration",
+        "bot": "Limited or requires complex Zapier setups",
+        "metatok": "Native with CRMs, Apps and Public Sector systems"
+      },
+      "goal": {
+        "feature": "Main Goal",
+        "bot": "Give information and hand off to a human",
+        "metatok": "Overcome objections and close the sale or appointment"
+      },
+      "setup": {
+        "feature": "Setup",
+        "bot": "Months mapping endless flows",
+        "metatok": "Minutes, trained on your own documents"
+      },
+      "support": {
+        "feature": "Support",
+        "bot": "Basic ticketing system",
+        "metatok": "Dedicated success team and continuous optimization"
+      }
     }
   },
   "diagnostico": {
@@ -507,9 +609,18 @@
     "titleSuffix": "and lead your category",
     "description": "We don't just deliver software. We deliver sales methodology, coaching and ongoing training to turn your brand into a market reference.",
     "features": {
-      "playbooks": { "title": "Sales playbooks", "desc": "Scripts, objection handling and sequences ready to use in the field." },
-      "guerrilla": { "title": "Guerrilla marketing", "desc": "Campaigns, content and positioning to accelerate lead capture." },
-      "scaling": { "title": "Operational scaling", "desc": "Rituals and metrics to grow without losing conversion or quality." }
+      "playbooks": {
+        "title": "Sales playbooks",
+        "desc": "Scripts, objection handling and sequences ready to use in the field."
+      },
+      "guerrilla": {
+        "title": "Guerrilla marketing",
+        "desc": "Campaigns, content and positioning to accelerate lead capture."
+      },
+      "scaling": {
+        "title": "Operational scaling",
+        "desc": "Rituals and metrics to grow without losing conversion or quality."
+      }
     },
     "routeLabel": "Coaching journey",
     "routeTitle": "From onboarding to repeatable closing",
@@ -568,11 +679,26 @@
     "titleHighlight": "your customers already are",
     "description": "We deploy on the channels your prospects already use. No friction, no platform changes for them.",
     "items": {
-      "phone": { "name": "Phone", "desc": "AI voice calls" },
-      "web": { "name": "Web", "desc": "Chat on your website" },
-      "whatsapp": { "name": "WhatsApp", "desc": "The most-used channel" },
-      "instagram": { "name": "Instagram", "desc": "Automated DMs" },
-      "api": { "name": "API", "desc": "Integrate any system" }
+      "phone": {
+        "name": "Phone",
+        "desc": "AI voice calls"
+      },
+      "web": {
+        "name": "Web",
+        "desc": "Chat on your website"
+      },
+      "whatsapp": {
+        "name": "WhatsApp",
+        "desc": "The most-used channel"
+      },
+      "instagram": {
+        "name": "Instagram",
+        "desc": "Automated DMs"
+      },
+      "api": {
+        "name": "API",
+        "desc": "Integrate any system"
+      }
     },
     "otherChannel": "Using another channel or internal system?",
     "contactUs": "Ask us →"
@@ -686,10 +812,22 @@
     "limitedSlots": "Limited slots every week. Response guaranteed in < 24 h.",
     "statsLabel": "Average results after 60 days",
     "stats": {
-      "recovered": { "value": "+38%", "label": "leads recovered" },
-      "saved": { "value": "22h", "label": "saved / week" },
-      "appointments": { "value": "+54%", "label": "appointments booked" },
-      "conversion": { "value": "+27%", "label": "conversion rate" }
+      "recovered": {
+        "value": "+38%",
+        "label": "leads recovered"
+      },
+      "saved": {
+        "value": "22h",
+        "label": "saved / week"
+      },
+      "appointments": {
+        "value": "+54%",
+        "label": "appointments booked"
+      },
+      "conversion": {
+        "value": "+27%",
+        "label": "conversion rate"
+      }
     },
     "disclaimer": "*Averages observed among real clients. Results may vary by industry and volume."
   },
@@ -776,7 +914,207 @@
         }
       }
     },
-    "copyright": "© {year} MetaTok AI — All rights reserved.",
-    "brandLine": "MetaTok is a brand of Grupo Evolvix Global"
+    "copyright": "© {year} MetaTok AI — All rights reserved."
+  },
+  "legalPages": {
+    "avisoLegal": {
+      "title": "Legal Notice",
+      "updated": "Last updated: September 2026",
+      "sections": [
+        {
+          "heading": "1. Identification of the owner",
+          "body": [
+            "In compliance with applicable information duties, the owner of the website www.metatok.ai (the \"Website\") is MetaTok LLC (\"MetaTok\"), a limited liability company incorporated in the United States.",
+            "Contact details: info@metatok.ai."
+          ]
+        },
+        {
+          "heading": "2. Purpose and scope",
+          "body": [
+            "This Legal Notice governs access to and use of the Website, whose purpose is to provide information about the AI agent and business automation services offered by MetaTok, and to facilitate contact and the hiring of such services.",
+            "Accessing the Website and/or using the services offered through it grants the status of user and implies full acceptance of the conditions set out in this Legal Notice."
+          ]
+        },
+        {
+          "heading": "3. Access and use conditions",
+          "body": [
+            "Users agree to make appropriate and lawful use of the Website and of the content and information offered on it, in accordance with applicable law, this Legal Notice, morality and public order.",
+            "Any use of the Website for unlawful or harmful purposes, or in a way that could cause damage or prevent its normal operation, is prohibited."
+          ]
+        },
+        {
+          "heading": "4. Intellectual and industrial property",
+          "body": [
+            "All content on the Website, including text, images, trademarks, logos, designs, source code and other elements, is the property of MetaTok or of third parties who have authorized its use, and is protected by intellectual and industrial property law.",
+            "Reproduction, distribution, transformation or public communication of such content without the prior express authorization of MetaTok is prohibited."
+          ]
+        },
+        {
+          "heading": "5. Disclaimer of warranties and liability",
+          "body": [
+            "MetaTok does not guarantee the availability, continuity or infallibility of the Website's operation and, accordingly, disclaims any liability for damages arising from the lack of availability or continuity of the Website and its services.",
+            "MetaTok is likewise not responsible for damages arising from unlawful or improper use of the Website by third parties."
+          ]
+        },
+        {
+          "heading": "6. Third-party links",
+          "body": [
+            "The Website may include links to third-party websites (for example, booking platforms or social networks). MetaTok assumes no responsibility for the content, privacy policies or practices of such third-party sites."
+          ]
+        },
+        {
+          "heading": "7. Governing law and jurisdiction",
+          "body": [
+            "Any dispute relating to the Website or the services provided shall be governed by the law applicable at the user's habitual place of residence, without prejudice to any applicable consumer-protection rules."
+          ]
+        }
+      ]
+    },
+    "privacidad": {
+      "title": "Privacy Policy",
+      "updated": "Last updated: September 2026",
+      "sections": [
+        {
+          "heading": "1. Data controller",
+          "body": [
+            "The controller responsible for processing personal data collected through the Website is MetaTok LLC. You can contact us about any privacy matter at info@metatok.ai."
+          ]
+        },
+        {
+          "heading": "2. Data we collect",
+          "body": [
+            "We collect the data you voluntarily provide through our audit-booking form/widget (name, company, phone number, email address and details about your business), as well as browsing data collected through cookies and web analytics tools."
+          ]
+        },
+        {
+          "heading": "3. Purpose of processing",
+          "body": [
+            "We use your data to: (i) manage your request for an audit or demo, (ii) contact you with commercial information about our services, (iii) improve the Website and its performance, and (iv) comply with legal obligations."
+          ]
+        },
+        {
+          "heading": "4. Legal basis",
+          "body": [
+            "Processing is based on the user's consent when submitting data through our forms, and on MetaTok's legitimate interest in handling commercial inquiries and improving its services."
+          ]
+        },
+        {
+          "heading": "5. Data retention",
+          "body": [
+            "We will keep your personal data for as long as a business or mutual-interest relationship exists, and afterwards for the legally required periods, after which it will be deleted or anonymized."
+          ]
+        },
+        {
+          "heading": "6. Recipients and data processors",
+          "body": [
+            "Your data may be processed by technology providers that render services to MetaTok, such as the booking and CRM platform used to schedule audits, always under appropriate contractual safeguards and solely for the purpose of providing that service."
+          ]
+        },
+        {
+          "heading": "7. International transfers",
+          "body": [
+            "As MetaTok LLC is an entity incorporated in the United States, your data may be processed or stored outside the European Economic Area. In such cases, we implement the appropriate safeguards required by applicable data-protection law, such as Standard Contractual Clauses."
+          ]
+        },
+        {
+          "heading": "8. Your rights",
+          "body": [
+            "You may exercise your rights of access, rectification, erasure, objection, restriction of processing and data portability by emailing info@metatok.ai, indicating the right you wish to exercise and attaching a document proving your identity."
+          ]
+        },
+        {
+          "heading": "9. Changes to this policy",
+          "body": [
+            "MetaTok may update this Privacy Policy to reflect legislative developments or changes to our services. We recommend reviewing this page periodically."
+          ]
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie Policy",
+      "updated": "Last updated: September 2026",
+      "sections": [
+        {
+          "heading": "1. What are cookies?",
+          "body": [
+            "Cookies are small text files that a website stores on a user's device to remember information about their visit, such as their preferences or browsing behavior."
+          ]
+        },
+        {
+          "heading": "2. Types of cookies we use",
+          "body": [
+            "Technical or necessary cookies: essential for the proper functioning of the Website.",
+            "Analytics cookies: allow us to understand how users interact with the Website in order to improve its performance and content.",
+            "Third-party cookies: used by services embedded in the Website, such as the audit-booking widget, for it to work correctly."
+          ]
+        },
+        {
+          "heading": "3. How to manage cookies",
+          "body": [
+            "You can allow, block or delete cookies stored on your device through your browser settings. Please note that disabling certain cookies may affect the proper functioning of the Website."
+          ]
+        },
+        {
+          "heading": "4. Updates to this policy",
+          "body": [
+            "This Cookie Policy may be updated to reflect regulatory changes or changes to the services used by the Website. We recommend reviewing it periodically."
+          ]
+        }
+      ]
+    },
+    "terminos": {
+      "title": "Terms and Conditions",
+      "updated": "Last updated: September 2026",
+      "sections": [
+        {
+          "heading": "1. Acceptance of terms",
+          "body": [
+            "Access to and use of the Website, as well as engaging the services offered by MetaTok LLC, implies full acceptance of these Terms and Conditions."
+          ]
+        },
+        {
+          "heading": "2. Service description",
+          "body": [
+            "MetaTok provides AI agents and business automation solutions (WhatsApp, calls, social media and web support) for businesses, available through subscription plans."
+          ]
+        },
+        {
+          "heading": "3. Contracting conditions",
+          "body": [
+            "The prices, features and conditions of each plan are detailed on the Website and may be modified by MetaTok; the conditions in force at the time of contracting shall apply."
+          ]
+        },
+        {
+          "heading": "4. User/customer obligations",
+          "body": [
+            "The customer agrees to provide truthful and up-to-date information, to make lawful use of the service, and not to use it for purposes contrary to law, morality or public order."
+          ]
+        },
+        {
+          "heading": "5. Intellectual property",
+          "body": [
+            "The software, technology, brand and content associated with MetaTok's services are the property of MetaTok LLC and are protected by intellectual and industrial property law."
+          ]
+        },
+        {
+          "heading": "6. Limitation of liability",
+          "body": [
+            "MetaTok shall not be liable for indirect damages, loss of profits or business opportunities arising from use of the service, except where applicable law does not permit such limitation."
+          ]
+        },
+        {
+          "heading": "7. Amendments",
+          "body": [
+            "MetaTok may amend these Terms and Conditions at any time by publishing the updated version on the Website."
+          ]
+        },
+        {
+          "heading": "8. Governing law",
+          "body": [
+            "These Terms and Conditions are governed by applicable law, without prejudice to any consumer-protection rules that may apply based on the customer's country of residence."
+          ]
+        }
+      ]
+    }
   }
 }
