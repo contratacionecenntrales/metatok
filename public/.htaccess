@@ -1,0 +1,25 @@
+# MetaTok.ai — configuración para hosting Apache (Hostalia)
+
+# La imagen Open Graph se exporta sin extensión; forzamos su tipo MIME
+# para que las tarjetas de vista previa en redes sociales funcionen bien.
+<IfModule mod_mime.c>
+  AddType image/png opengraph-image
+</IfModule>
+
+# Página de error 404 personalizada (generada por Next.js)
+ErrorDocument 404 /404.html
+
+# Compresión para acelerar la carga (si el módulo está disponible)
+<IfModule mod_deflate.c>
+  AddOutputFilterByType DEFLATE text/html text/css text/javascript application/javascript application/json image/svg+xml
+</IfModule>
+
+# Cache para assets estáticos versionados
+<IfModule mod_expires.c>
+  ExpiresActive On
+  ExpiresByType text/css "access plus 1 year"
+  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType image/png "access plus 1 month"
+  ExpiresByType image/svg+xml "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 month"
+</IfModule>

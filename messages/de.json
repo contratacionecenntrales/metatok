@@ -1,0 +1,1120 @@
+{
+  "meta": {
+    "title": "MetaTok AI – KI-Agenten 24/7 für Unternehmen",
+    "description": "Automatisieren Sie Vertrieb, Support und Social-Media-Management mit KI-Agenten rund um die Uhr auf WhatsApp, Anrufen, Instagram und im Web. Kostenloses Audit für wachsende Unternehmen.",
+    "keywords": "KI-Agenten für Unternehmen, Unternehmensautomatisierung mit künstlicher Intelligenz, WhatsApp KI-Chatbot, Voicebots, KI-Lead-Qualifizierung, KI-Vertriebsautomatisierung, MetaTok"
+  },
+  "nav": {
+    "inicio": "Start",
+    "solucion": "Lösung",
+    "explorar": "Entdecken",
+    "contacto": "Kontakt",
+    "iniciarSesion": "Anmelden",
+    "crearAgente": "Meinen Agenten erstellen",
+    "openMenu": "Menü öffnen",
+    "solucionItems": {
+      "servicios": "Leistungen",
+      "sectores": "Nach Branche",
+      "planes": "Pläne & Preise"
+    },
+    "explorarItems": {
+      "engine": "MetaTok Engine V5",
+      "whiteLabel": "White-Label-Produkt",
+      "academy": "MetaTok Academy",
+      "testimonios": "Erfolgsgeschichten"
+    }
+  },
+  "languageSwitcher": {
+    "label": "Sprache"
+  },
+  "hero": {
+    "badge": "Agenten-Ökosystem · MetaTok AI",
+    "headlinePrefix": "Ihr",
+    "headlineSuffix": "-Team im KI-Autopiloten",
+    "rotatingWords": [
+      "Vertriebs",
+      "Support",
+      "Buchhaltungs",
+      "Social-Media",
+      "Content"
+    ],
+    "subheadline": "Intelligente Agenten, die rund um die Uhr auf den Kanälen verkaufen, betreuen und Ihr Geschäft steuern, die Sie am meisten nutzen.",
+    "ctaPrimary": "Jetzt meinen Agenten erstellen",
+    "ctaSecondary": "So funktioniert es",
+    "channels": {
+      "whatsapp": "WhatsApp",
+      "calls": "Anrufe",
+      "instagram": "Instagram",
+      "web": "Web"
+    },
+    "trust": {
+      "noPermanence": "Keine Mindestlaufzeit",
+      "deploy": "Einsatzbereit in 15-30 Tagen",
+      "noCode": "Kein Code für Ihr Team"
+    },
+    "stats": {
+      "automation": {
+        "value": "100%",
+        "label": "Vollständige Automatisierung"
+      },
+      "savings": {
+        "value": "3.000 €",
+        "label": "Ersparnis pro Mitarbeiter"
+      },
+      "operation": {
+        "value": "24/7",
+        "label": "Durchgehender Betrieb"
+      }
+    },
+    "panelLive": "Panel · Live",
+    "aiAgentOnline": "KI-AGENT · Online 24/7",
+    "feed": {
+      "ticket": {
+        "label": "Ticket gelöst",
+        "sub": "Support · T-892"
+      },
+      "invoice": {
+        "label": "Rechnung verarbeitet",
+        "sub": "Buchhaltung · #A-402"
+      },
+      "post": {
+        "label": "Beitrag veröffentlicht",
+        "sub": "Instagram · Content"
+      },
+      "lead": {
+        "label": "Lead qualifiziert",
+        "sub": "Vertrieb · Score 94"
+      }
+    },
+    "metrics": {
+      "tasks": "Aufgaben/Std.",
+      "depts": "Aktive Abt.",
+      "savings": "Ersparnis/Mon."
+    },
+    "features": {
+      "speed": {
+        "title": "Antwortgeschwindigkeit",
+        "desc": "Wir antworten sofort"
+      },
+      "autonomous": {
+        "title": "Autonome Agenten",
+        "desc": "24/7 im Einsatz, ohne Pause"
+      },
+      "gdpr": {
+        "title": "DSGVO-konform",
+        "desc": "Ihre Daten sicher geschützt"
+      },
+      "api": {
+        "title": "Offene API",
+        "desc": "Verbindet sich mit Ihren Tools"
+      }
+    }
+  },
+  "trustBanner": {
+    "prefix": "MetaTok verarbeitet bereits",
+    "highlight": "über 12 Millionen",
+    "suffix": "Nachrichten pro Monat in Verkaufsgesprächen.",
+    "subtext": "Robuste Systeme für Rechnungsvolumen in großem Maßstab. Datensicherheit auf Bankniveau."
+  },
+  "problema": {
+    "eyebrow": "Das Geldleck",
+    "titleLine1": "Drei stille Kosten,",
+    "titleLine2": "die Sie bereits zahlen",
+    "description": "Jede Minute ohne Automatisierung ist Geld, das verloren geht. Finden Sie genau heraus, was der Status quo Sie kostet.",
+    "items": {
+      "1": {
+        "stat": "70%",
+        "title": "Kalter Lead",
+        "desc": "70% der Leads gehen verloren, wenn die Antwort erst nach 5 Minuten kommt. Geschwindigkeit ist alles."
+      },
+      "2": {
+        "stat": "1.000",
+        "title": "Menschliche Überlastung",
+        "desc": "Ihr menschliches Team kann nicht 1.000 Chats gleichzeitig bearbeiten. Die MetaTok-Agenten schon."
+      },
+      "3": {
+        "stat": "Kein Abschluss",
+        "title": "Kein autonomer Abschluss",
+        "desc": "Gewöhnliche Bots geben nur Informationen. MetaTok-Agenten sind darauf programmiert, abzuschließen."
+      }
+    }
+  },
+  "beneficios": {
+    "eyebrow": "Wettbewerbsvorteil",
+    "title": "Warum MetaTok die Spielregeln ändert",
+    "items": {
+      "01": {
+        "stat": "+400%",
+        "statLabel": "Antwortrate vs. manuell",
+        "title": "Eine Antwort, die Chancen vervielfacht",
+        "desc": "Geschwindigkeit und die richtige Beharrlichkeit machen aus Gesprächen Umsatz. Weniger Leads, die durch Schweigen verloren gehen."
+      },
+      "02": {
+        "stat": "3.000 €",
+        "statLabel": "Ersparnis pro Mitarbeiter",
+        "title": "Null repetitive Aufgaben",
+        "desc": "Die KI übernimmt die gesamte operative Last. Sie eliminiert menschliche Fehler und senkt strukturelle Kosten massiv."
+      },
+      "03": {
+        "stat": "24/7",
+        "statLabel": "Ohne Unterbrechungen",
+        "title": "Rund um die Uhr im Einsatz",
+        "desc": "Ihr Unternehmen schläft nie. Es gewinnt, qualifiziert und vereinbart Termine auch außerhalb der Geschäftszeiten und an Feiertagen."
+      },
+      "04": {
+        "stat": "5+",
+        "statLabel": "Integrierte Kanäle",
+        "title": "Vollständige Omnichannel-Integration",
+        "desc": "Telefon, Web, WhatsApp, Instagram, Telegram oder Ihr internes CRM per API. Ein zusammenhängendes, verbundenes Text- und Sprach-Ökosystem."
+      }
+    }
+  },
+  "engine": {
+    "eyebrow": "MetaTok Engine V5",
+    "titlePrefix": "Die Architektur hinter der",
+    "titleHighlight": "Autonomen Konversion",
+    "description": "Entdecken Sie die kognitive Engine, die nicht nur Fragen beantwortet, sondern Leads qualifiziert, Einwände überwindet und Verkäufe ohne menschliches Eingreifen abschließt.",
+    "features": {
+      "cognitive": {
+        "title": "Kognitive Verarbeitung in Echtzeit",
+        "desc": "Der V5-Kern analysiert Absicht, Stimmung und Kontext in Millisekunden. Er passt das Verkaufsskript dynamisch an, basierend auf über 10.000 früheren Interaktionen."
+      },
+      "omnichannel": {
+        "title": "Vollständige Omnichannel-Präsenz",
+        "desc": "WhatsApp, Instagram und Web mit einem einzigen zentralen Gehirn verbunden."
+      },
+      "crm": {
+        "title": "CRM-Synchronisierung",
+        "desc": "Native bidirektionale Integration. Alles wird erfasst."
+      },
+      "optimization": {
+        "title": "Ständige Selbstoptimierung",
+        "desc": "Das System hört nie auf zu lernen. Es führt automatisierte A/B-Tests an eigenen Nachrichten durch, um die Kombinationen mit der höchsten Antwortrate zu finden."
+      }
+    },
+    "stats": {
+      "latency": {
+        "value": "< 0,5s",
+        "label": "Durchschnittliche Latenz"
+      },
+      "uptime": {
+        "value": "99,9%",
+        "label": "Garantierte Verfügbarkeit"
+      },
+      "encryption": {
+        "value": "AES-256",
+        "label": "Datenverschlüsselung"
+      }
+    }
+  },
+  "whiteLabel": {
+    "eyebrow": "Produkt",
+    "title": "Ihre App, Ihre Marke, unsere Technologie",
+    "description": "Wir verwandeln MetaTok in ein verkaufsfertiges White-Label-Produkt: native Erfahrung, Conversion-Architektur und kommerzieller Betrieb unter Ihrer Identität.",
+    "features": {
+      "branding": {
+        "title": "Vollständiges Branding",
+        "desc": "UI, Tonalität, Bildsprache und Erlebnis passend zu Ihrer Marke."
+      },
+      "publishing": {
+        "title": "Offizielle Veröffentlichung",
+        "desc": "Bereitstellung im App Store und bei Google Play oder private Enterprise-Distribution."
+      },
+      "compliance": {
+        "title": "Enterprise-Compliance",
+        "desc": "DSGVO, Zugriffskontrollen und Nachverfolgbarkeit für sicheren Betrieb."
+      },
+      "scale": {
+        "title": "Multi-Nischen-Skalierung",
+        "desc": "Eine technische Basis für mehrere Branchen, ohne das Produkt neu zu bauen."
+      }
+    },
+    "sectionLabel": "Ihre Marke, unsere Stärke",
+    "heading2Prefix": "Native App mit der",
+    "heading2Highlight": "MetaTok",
+    "heading2Suffix": "-Engine integriert.",
+    "paragraph": "Wir entwickeln Ihre native App mit integrierter MetaTok-Engine. Sie kontrollieren Marke, Verkaufsstory und Preisgestaltung; wir beschleunigen die technische Ebene und die Konversion.",
+    "bullets": [
+      "Vollständige Unternehmensidentität: Marke, visuelle Tonalität und Namensgebung, abgestimmt auf Ihr Unternehmen.",
+      "Professionelle Distribution im App Store und bei Google Play, oder ein privater Unternehmenskanal, wann immer nötig.",
+      "Dieselbe kognitive MetaTok-Schicht in Ihrer App: Agenten, die 24/7 verkaufen, qualifizieren und Termine vereinbaren.",
+      "Analyse-Dashboards und Reporting unter Ihrem White Label, um Funnel und Vertriebsteam zu messen.",
+      "Koordinierte Roadmaps und Updates, ohne dass Ihre Marke die narrative Kontrolle gegenüber dem Kunden verliert.",
+      "Enterprise-Optionen: SLAs, Datenschutz (DSGVO) und Data Governance passend zu Ihrer Compliance."
+    ],
+    "ctaPrimary": "Ich möchte meine White-Label-App",
+    "ctaSecondary": "Enterprise-Optionen ansehen",
+    "phoneAppName": "IhreMarke Assistent",
+    "phoneOnline": "Online",
+    "chat": {
+      "msg1": "Hallo, ich bin der Berater von IhreMarke. Wie kann ich helfen? 👋",
+      "msg2": "Ich hätte gerne ein Angebot für diese Woche.",
+      "msg3": "Perfekt! Bevorzugen Sie ein Videocall oder ein persönliches Treffen?",
+      "msg4": "Videocall, jeder Tag passt ✅"
+    },
+    "leadQualified": "Lead in 43s qualifiziert",
+    "floatBadge1": "+31% Demo-Buchungen",
+    "floatBadge2": "100% individuelle Marke"
+  },
+  "sectores": {
+    "eyebrow": "Nach Branche",
+    "titleLine1": "Ihre Branche, Ihre Ergebnisse,",
+    "titleLine2": "Ihre maßgeschneiderte Lösung",
+    "description": "Wir verkaufen keine generische Technologie. Wir entwerfen genau die Automatisierung, die Ihr Geschäftstyp braucht, um mehr zu konvertieren.",
+    "estadoActualLabel": "Aktueller Zustand",
+    "conMetatokLabel": "Mit Metatok",
+    "resultadosLabel": "Durchschnittliche Ergebnisse",
+    "resultadosNote": "*Durchschnittswerte bei Kunden nach 60 Tagen Einsatz.",
+    "opcionesLabel": "Zusätzliche Optionen",
+    "ctaButton": "Ich möchte eine Lösung für meine Branche",
+    "footNote": "Kostenloses Audit · Unverbindlich · Antwort in unter 24 Std.",
+    "items": {
+      "inmobiliarias": {
+        "name": "Immobilien & Agenturen",
+        "badgeLabel": "wählt den, der zuerst antwortet",
+        "headline": "Verlieren Sie keine Käufer mehr durch späte Antworten.",
+        "description": "78% der Käufer entscheiden sich für den Makler, der zuerst antwortet. Mit Metatok antwortet Ihre Agentur in Sekunden, qualifiziert die Absicht und vereinbart Besichtigungen, während Ihr Team an neuen Kontakten arbeitet.",
+        "estadoActual": [
+          "Leads bleiben stunden- oder tagelang unbeantwortet",
+          "Besichtigungen storniert mangels Bestätigung",
+          "Makler verschwenden Zeit mit kalten Interessenten",
+          "CRM mit veralteten oder unvollständigen Daten"
+        ],
+        "conMetatok": [
+          "Automatische Antwort in unter 60 Sekunden per WhatsApp oder Web",
+          "Qualifizierung: Lage, Budget und Dringlichkeit vor der Besichtigung",
+          "Terminplanung für Besichtigungen von KI verwaltet, ohne menschliches Eingreifen",
+          "CRM sofort bei jedem Gespräch aktualisiert"
+        ],
+        "resultados": {
+          "r1": "vereinbarte Besichtigungen",
+          "r2": "Antwortzeit",
+          "r3": "besser qualifizierte Leads"
+        },
+        "opciones": [
+          "Voicebot für eingehende Anrufe außerhalb der Geschäftszeiten",
+          "WhatsApp-Nurturing-Sequenzen bis zum Abschluss",
+          "Leistungs-Dashboard nach Makler und Gebiet"
+        ]
+      },
+      "clinicas": {
+        "name": "Kliniken & Gesundheitswesen",
+        "badgeLabel": "weniger Terminausfälle",
+        "headline": "Verlieren Sie keine Patienten mehr durch mangelnde Nachverfolgung.",
+        "description": "Patienten buchen bei dem, der zuerst antwortet. Mit Metatok bestätigt Ihre Klinik Termine, beantwortet häufige Fragen und senkt die Ausfallquote, während sich Ihr Team auf die Betreuung konzentriert.",
+        "estadoActual": [
+          "Patienten rufen außerhalb der Sprechzeiten an und erhalten keine Antwort",
+          "Hohe Ausfallquote mangels Erinnerungen",
+          "Verwaltungspersonal überlastet mit sich wiederholenden Fragen",
+          "Unorganisierte Terminplanung über verschiedene Kanäle"
+        ],
+        "conMetatok": [
+          "Sofortige Antwort auf WhatsApp- und Web-Anfragen, 24/7",
+          "Automatische Erinnerungen, die die Ausfallquote senken",
+          "Erste Einschätzung und Beantwortung häufiger Fragen durch KI",
+          "Zentralisierte, mit Ihrem Klinik-System synchronisierte Terminplanung"
+        ],
+        "resultados": {
+          "r1": "weniger Terminausfälle",
+          "r2": "bestätigte Termine",
+          "r3": "Patientenbetreuung"
+        },
+        "opciones": [
+          "Voicebot zur telefonischen Terminbestätigung",
+          "Multikanal-Erinnerungen (WhatsApp + SMS)",
+          "Auslastungs-Dashboard je Facharzt"
+        ]
+      },
+      "ecommerce": {
+        "name": "E-Commerce & Einzelhandel",
+        "badgeLabel": "zurückgewonnene Warenkörbe",
+        "headline": "Gewinnen Sie Umsätze zurück, die heute im Warenkorb liegen bleiben.",
+        "description": "Jede unbeantwortete Anfrage ist ein verlorener Verkauf. Mit Metatok beantwortet Ihr Shop Produktfragen, gewinnt abgebrochene Warenkörbe zurück und wickelt Rücksendungen ab, ohne auf Ihr Team angewiesen zu sein.",
+        "estadoActual": [
+          "Produktfragen bleiben außerhalb der Geschäftszeiten unbeantwortet",
+          "Abgebrochene Warenkörbe ohne jegliche Nachverfolgung",
+          "Support-Team überlastet mit Fragen zum Bestellstatus",
+          "Rücksendungen werden manuell und mit Verzögerung bearbeitet"
+        ],
+        "conMetatok": [
+          "Sofortige Antworten auf Produkt- und Lagerfragen",
+          "Automatische Warenkorb-Rückgewinnungssequenzen per WhatsApp",
+          "Bestellverfolgung ohne menschliches Eingreifen gelöst",
+          "Rücksendungen Schritt für Schritt von der KI begleitet"
+        ],
+        "resultados": {
+          "r1": "zurückgewonnene Warenkörbe",
+          "r2": "weniger Support-Tickets",
+          "r3": "Kundenbetreuung"
+        },
+        "opciones": [
+          "Proaktive Versandstatus-Benachrichtigungen",
+          "Konversationelles Upselling und Cross-Selling",
+          "Native Integration mit Ihrem Onlineshop"
+        ]
+      },
+      "agencias": {
+        "name": "Agenturen & Beratungen",
+        "badgeLabel": "mehr qualifizierte Termine",
+        "headline": "Qualifizieren und terminieren, ohne Ihr Vertriebsteam zu überlasten.",
+        "description": "Agenturen konkurrieren um Antwortgeschwindigkeit. Mit Metatok wird jeder eingehende Lead automatisch qualifiziert und terminiert, noch bevor Ihr Vertriebsteam eingreift.",
+        "estadoActual": [
+          "Leads aus Formularen und sozialen Netzwerken, die erst nach Stunden kontaktiert werden",
+          "Termine mit Interessenten ohne echtes Budget",
+          "Vertriebsteam verbringt Stunden mit manueller Qualifizierung",
+          "Uneinheitliche Nachverfolgung nach dem ersten Anruf"
+        ],
+        "conMetatok": [
+          "Automatische Qualifizierung von Budget, Entscheidungsbefugnis und Dringlichkeit",
+          "Direkte Terminbuchung im Kalender des richtigen Vertriebsmitarbeiters",
+          "Automatisches Nurturing von Leads, die noch nicht bereit sind",
+          "Reporting zu Herkunft und Qualität jeder Chance"
+        ],
+        "resultados": {
+          "r1": "qualifizierte Termine",
+          "r2": "Qualifizierungszeit",
+          "r3": "aktive Neukundengewinnung"
+        },
+        "opciones": [
+          "Automatisches Routing nach Spezialisierung oder Konto",
+          "Nurturing-Sequenzen per E-Mail und WhatsApp",
+          "Echtzeit-Pipeline-Dashboard"
+        ]
+      },
+      "despachos": {
+        "name": "Professionelle Kanzleien",
+        "badgeLabel": "mehr abgeschlossene Anfragen",
+        "headline": "Verwandeln Sie Anfragen in Mandanten, nicht in liegengebliebene Akten.",
+        "description": "Anwälte, Steuerberater und Berater verlieren abrechenbare Stunden mit der Filterung von Anfragen. Mit Metatok wird jeder Fall vor dem ersten Termin qualifiziert, dokumentiert und terminiert.",
+        "estadoActual": [
+          "Erstanfragen bleiben tagsüber unbeantwortet",
+          "Termine für Fälle außerhalb Ihres Fachgebiets vereinbart",
+          "Unvollständige Unterlagen beim ersten Termin",
+          "Manuelle, verstreute Nachverfolgung zwischen E-Mail und WhatsApp"
+        ],
+        "conMetatok": [
+          "Automatische Filterung nach Falltyp und Erfolgsaussicht",
+          "Sammlung der Unterlagen vor dem Termin",
+          "Automatische Terminbuchung beim passenden Fachmann",
+          "Vollständige Historie jeder Anfrage in Ihrem CRM"
+        ],
+        "resultados": {
+          "r1": "abgeschlossene Anfragen",
+          "r2": "weniger Verwaltungsaufwand",
+          "r3": "Erstkontakt"
+        },
+        "opciones": [
+          "Voicebot für Kundenservice-Leitungen",
+          "Dokumentationsvorlagen je Fachbereich",
+          "Fallübersicht nach Priorität und Status"
+        ]
+      },
+      "hoteles": {
+        "name": "Hotels & Unterkünfte",
+        "badgeLabel": "mehr Direktbuchungen",
+        "headline": "Verwandeln Sie Anfragen in Direktbuchungen, ohne OTA-Provision.",
+        "description": "Jede unbeantwortete WhatsApp- oder Instagram-Anfrage wandert zu einer anderen Plattform ab. Mit Metatok bestätigt Ihr Hotel Verfügbarkeiten, verwaltet Buchungen und bindet Gäste, ohne Ihr Rezeptionsteam zu vergrößern.",
+        "estadoActual": [
+          "Verfügbarkeitsanfragen außerhalb der Geschäftszeiten unbeantwortet",
+          "Buchungen an provisionspflichtige Plattformen verloren",
+          "Rezeption überlastet mit sich wiederholenden Gästefragen",
+          "Upselling von Leistungen manuell oder gar nicht umgesetzt"
+        ],
+        "conMetatok": [
+          "Verfügbarkeitsbestätigung und Direktbuchung, 24/7",
+          "Sofortige Antworten auf häufige Gästefragen",
+          "Automatisches Upselling zusätzlicher Leistungen und Erlebnisse",
+          "Nachverfolgung nach dem Aufenthalt für Bewertungen und Kundenbindung"
+        ],
+        "resultados": {
+          "r1": "Direktbuchungen",
+          "r2": "weniger OTA-Provisionen",
+          "r3": "Gästebetreuung"
+        },
+        "opciones": [
+          "Konversationeller Check-in per WhatsApp",
+          "Mehrsprachiger Voicebot für die Rezeption",
+          "Auslastungs- und Buchungskanal-Dashboard"
+        ]
+      }
+    }
+  },
+  "servicios": {
+    "badge": "Die KI-Agenten-Plattform Nr. 1 bei den Ergebnissen",
+    "eyebrow": "Leistungen",
+    "titlePrefix": "KI-Automatisierung, die Sie an die",
+    "titleHighlight": "Spitze Ihrer Branche bringt",
+    "description": "Während Ihre Konkurrenz weiterhin Leads an einfache Chatbots verliert, setzen Sie dasselbe Ökosystem ein, das die bereits führenden Unternehmen ihrer Kategorie nutzen.",
+    "topStats": {
+      "leader": "Nr. 1 in KI-Automatisierung",
+      "speed": "+400% Antwortrate",
+      "operation": "24/7 im Einsatz",
+      "omnichannel": "Omnichannel-Integration"
+    },
+    "serviceLabel": "Leistung",
+    "flagshipBadge": "Meistgebuchte Leistung Nr. 1",
+    "activationLabel": "Sofortige Aktivierung",
+    "moreLabel": "Mehr erfahren",
+    "items": {
+      "01": {
+        "title": "Konversationelle KI-Agenten",
+        "desc": "Spezialisierte NLP-Agenten, die Absichten verstehen, Einwände behandeln und komplexe Vertriebsstrategien auf jedem Kanal Ihres Unternehmens umsetzen. Die meistgebuchte Leistung und die, die unseren Kunden den meisten Umsatz bringt.",
+        "result": "Beantwortet 100% Ihrer Leads in Sekunden, nicht in Stunden."
+      },
+      "02": {
+        "title": "Voicebots (Sprachagenten)",
+        "desc": "Ultra-realistische Sprachassistenten, die Telefonanrufe tätigen und entgegennehmen. Sie behandeln Einwände, qualifizieren und vereinbaren Termine wie Ihr bester Vertriebsmitarbeiter – ohne Pausen und ohne Krankmeldungen.",
+        "result": "Bearbeitet eingehende Anrufe ohne Wartezeit, 24/7."
+      },
+      "03": {
+        "title": "Lead-Qualifizierung",
+        "desc": "Wir filtern und bewerten jeden Interessenten in Echtzeit, damit Ihr Team nur mit Personen mit echter Kaufabsicht spricht. Null verlorene Zeit für bloß Neugierige.",
+        "result": "Steigern Sie Ihre Abschlussrate um bis zu 3× ohne zusätzliches Budget."
+      },
+      "04": {
+        "title": "CRM-Integration",
+        "desc": "Bidirektionale Synchronisierung mit Ihrem CRM per API. Saubere, aktuelle und verwertbare Daten rund um die Uhr – ohne Duplikate, ohne Datenverlust, ohne Abhängigkeit von jemandem.",
+        "result": "0 Stunden manuelle Dateneingabe für Ihr Team."
+      },
+      "05": {
+        "title": "Automatische Terminplanung",
+        "desc": "Termine in Ihrem Kalender, reibungslos. Der Agent verhandelt die Uhrzeit, bestätigt den Termin und sendet personalisierte Erinnerungen, bis der Kunde erscheint.",
+        "result": "Bis zu +54% mehr vereinbarte Termine ohne menschliches Eingreifen."
+      },
+      "06": {
+        "title": "Intelligente Flow-works",
+        "desc": "Workflows, die automatische Aktionen auslösen: Leads qualifizieren, Termine vereinbaren, das CRM aktualisieren und Interessenten pflegen, während Ihr Team schläft.",
+        "result": "Ihr Verkaufstrichter läuft von allein, 24 Stunden am Tag."
+      }
+    },
+    "leaderTitle": "Warum wir die Nummer 1 sind",
+    "leaderDesc": "Der Unterschied ist nicht nur Technologie. Es sind Geschwindigkeit, Abdeckung und Ergebnisse, die der Marktdurchschnitt nicht erreichen kann.",
+    "leaderUsLabel": "MetaTok",
+    "leaderThemLabel": "Rest",
+    "leaderRows": {
+      "speed": {
+        "metric": "Antwortgeschwindigkeit",
+        "metatok": "< 60 Sekunden",
+        "market": "Stunden (oder nie)"
+      },
+      "coverage": {
+        "metric": "Zeitliche Abdeckung",
+        "metatok": "Echte 24/7/365",
+        "market": "Nur Bürozeiten"
+      },
+      "channels": {
+        "metric": "Verbundene Kanäle",
+        "metatok": "5+ in einem Gehirn",
+        "market": "1-2 isolierte Kanäle"
+      }
+    },
+    "stackLabel": "Komplettes Paket",
+    "stackTitle": "Die Unternehmen, die ihre Branche bereits anführen, automatisieren mit MetaTok. Und Ihres?",
+    "stackDesc": "Wir zeigen Ihnen, welche Module Sie zuerst brauchen, welche Wirkung zu erwarten ist und wie Sie reibungslos starten. Ohne Mindestlaufzeit, ohne Kleingedrucktes.",
+    "stackCta": "Ich will die Nummer 1 in meiner Branche sein",
+    "trustStrip": {
+      "secure": {
+        "title": "100% Sicher",
+        "desc": "Ihre Daten sind geschützt"
+      },
+      "fast": {
+        "title": "Schnelle Umsetzung",
+        "desc": "Startklar in Tagen, nicht in Monaten"
+      },
+      "results": {
+        "title": "Echte Ergebnisse",
+        "desc": "Kennzahlen, die Ihr Geschäft voranbringen"
+      },
+      "support": {
+        "title": "24/7 Support",
+        "desc": "Wir sind immer für Sie da"
+      }
+    }
+  },
+  "comparativa": {
+    "eyebrow": "Die Entscheidung",
+    "titlePrefix": "MetaTok AI vs.",
+    "titleHighlight": "herkömmliche Chatbots",
+    "description": "Ein langweiliger Entscheidungsbaum gegen eine auf Konversion ausgerichtete generative KI. Der Unterschied zwischen einem verlorenen Lead und einem abgeschlossenen Verkauf.",
+    "headers": {
+      "feature": "Merkmal",
+      "bot": "Herkömmlicher Bot",
+      "metatok": "MetaTok AI"
+    },
+    "rows": {
+      "quality": {
+        "feature": "Antwortqualität",
+        "bot": "Statisch und knopfbasiert (Entscheidungsbaum)",
+        "metatok": "Flüssig, menschlich und überzeugend (Generative KI)"
+      },
+      "integration": {
+        "feature": "Integration",
+        "bot": "Begrenzt oder erfordert komplexes Zapier",
+        "metatok": "Nativ mit CRMs, Apps und öffentlichem Sektor"
+      },
+      "goal": {
+        "feature": "Hauptziel",
+        "bot": "Informationen geben und an einen Menschen weiterleiten",
+        "metatok": "Einwände überwinden und den Verkauf oder Termin abschließen"
+      },
+      "setup": {
+        "feature": "Einrichtung",
+        "bot": "Monate für die Abbildung endloser Abläufe",
+        "metatok": "In Minuten, trainiert mit Ihren eigenen Dokumenten"
+      },
+      "support": {
+        "feature": "Support",
+        "bot": "Einfaches Ticketsystem",
+        "metatok": "Dediziertes Erfolgsteam und kontinuierliche Optimierung"
+      }
+    }
+  },
+  "diagnostico": {
+    "eyebrow": "Vorher und nachher",
+    "titleLine1": "Kommt Ihnen die Situation",
+    "titleLine2": "Ihres Unternehmens heute bekannt vor?",
+    "descPrefix": "Die meisten Unternehmen verlieren zwischen",
+    "descHighlight": "40% und 60%",
+    "descSuffix": "ihrer Leads durch fehlende schnelle Antworten und systematische Nachverfolgung.",
+    "actualLabel": "Aktuelle Situation",
+    "actualSubLabel": "Ohne Automatisierung",
+    "metatokLabel": "Mit Metatok",
+    "metatokSubLabel": "Aktive Automatisierung",
+    "actualItems": [
+      "Leads, die nicht innerhalb von 5 Minuten beantwortet werden",
+      "Ihr Team verschwendet Stunden mit Interessenten, die nie kaufen werden",
+      "Termine gehen mangels Nachverfolgung verloren",
+      "Veraltetes CRM mit doppelten oder unvollständigen Daten",
+      "Keine aktive Präsenz außerhalb der Geschäftszeiten"
+    ],
+    "metatokItems": [
+      "Sofortige Antwort auf jeden Lead, 24/7, auf allen Kanälen",
+      "Sie sprechen nur mit kaufbereiten Interessenten",
+      "Automatische Terminplanung mit Bestätigung und Erinnerungen",
+      "CRM in Echtzeit aktualisiert, ohne menschliches Eingreifen",
+      "Ihr Unternehmen gewinnt und qualifiziert Leads sogar, während Sie schlafen"
+    ],
+    "ctaButton": "Hören Sie auf, Leads zu verlieren: kostenloses Audit in 24 Std.",
+    "trust": {
+      "noCompromise": "Unverbindlich",
+      "noPermanence": "Keine Mindestlaufzeit",
+      "response": "Antwort in unter 24 Std."
+    }
+  },
+  "academy": {
+    "badge1": "MetaTok Academy",
+    "badge2": "MetaTok Masters",
+    "titlePrefix": "Training, um",
+    "titleHighlight": "besser zu verkaufen",
+    "titleSuffix": "und Ihre Kategorie anzuführen",
+    "description": "Wir liefern nicht nur Software. Wir liefern Vertriebsmethodik, Begleitung und kontinuierliches Training, um Ihre Marke zur Referenz am Markt zu machen.",
+    "features": {
+      "playbooks": {
+        "title": "Vertriebs-Playbooks",
+        "desc": "Skripte, Einwandbehandlung und Sequenzen, sofort einsatzbereit für den Alltag."
+      },
+      "guerrilla": {
+        "title": "Guerilla-Marketing",
+        "desc": "Kampagnen, Inhalte und Positionierung, um die Kundengewinnung zu beschleunigen."
+      },
+      "scaling": {
+        "title": "Operative Skalierung",
+        "desc": "Routinen und Kennzahlen, um zu wachsen, ohne Conversion oder Qualität zu verlieren."
+      }
+    },
+    "routeLabel": "Begleitungspfad",
+    "routeTitle": "Vom Onboarding zum wiederholbaren Abschluss",
+    "routeDesc": "Live-Sessions, taktische Workshops und Expertenunterstützung, damit Ihr Vertriebsteam schnell umsetzt, besser misst und seine Abschlussrate nachhaltig steigert.",
+    "routeItems": [
+      "Wöchentliche Webinare, Zertifizierungen und branchenspezifische Leitfäden für Vertriebsteams.",
+      "KI-Konversions-Framework: Akquise, Qualifizierung, Einwände und Abschluss.",
+      "Mentoring zur Markenpositionierung, um eine Methode zu verkaufen, nicht nur Technologie."
+    ],
+    "ctaButton": "Ich möchte der MetaTok Academy beitreten",
+    "dashboardLabel": "Academy Dashboard",
+    "cohortLabel": "Aktive Kohorte",
+    "moduleLabel": "Modul",
+    "modules": {
+      "01": "Vertriebsarchitektur mit KI",
+      "02": "Abschlussskripte nach Nische",
+      "03": "Skalierung und Teamführung"
+    },
+    "supportTitle": "Experten-Support",
+    "supportDesc": "Direktes Mentoring + umsetzbare Playbooks",
+    "includedLabel": "Inbegriffen"
+  },
+  "proceso": {
+    "eyebrow": "Von der Diagnose zum Einsatz",
+    "titlePrefix": "Ein",
+    "titleHighlight": "hochpräziser",
+    "titleSuffix": "Prozess ohne Improvisation",
+    "description": "Jede Phase ist darauf ausgelegt, messbare Ergebnisse zu liefern und Ihr Wachstum zu beschleunigen.",
+    "steps": {
+      "01": {
+        "title": "Diagnose-Audit",
+        "desc": "Ein Experte analysiert Ihren aktuellen Betrieb, erkennt Conversion-Lücken und beziffert genau, was Sie ohne Automatisierung verlieren.",
+        "tag": "Klare Prioritätenübersicht"
+      },
+      "02": {
+        "title": "Maßgeschneiderte Strategie",
+        "desc": "Wir entwerfen die Agentenarchitektur, Abläufe und Integrationen genau passend zu Ihrem Geschäftsmodell und Ihren aktuellen Kanälen.",
+        "tag": "Individuelles technisches Angebot"
+      },
+      "03": {
+        "title": "Transparentes Budget",
+        "desc": "Sie erhalten ein Preisangebot basierend auf der tatsächlichen Komplexität. Kein Kleingedrucktes, keine versteckten Kosten, keine erzwungene Mindestlaufzeit.",
+        "tag": "Klare, skalierbare Investition"
+      },
+      "04": {
+        "title": "Schlüsselfertige Bereitstellung",
+        "desc": "Innerhalb von 15 bis 30 Tagen: Programmierung, Agenten-Training und vollständiges QA. Ihr Team fasst keinen Code an. Es erhält nur Ergebnisse.",
+        "tag": "System aktiv im Produktivbetrieb"
+      }
+    },
+    "ctaButton": "Fordern Sie Ihr kostenloses Audit an"
+  },
+  "canales": {
+    "eyebrow": "Omnichannel-Integration",
+    "titlePrefix": "Ihre KI dort, wo",
+    "titleHighlight": "Ihre Kunden bereits sind",
+    "description": "Wir setzen sie auf den Kanälen ein, die Ihre Interessenten bereits nutzen. Ohne Reibung, ohne Plattformwechsel für sie.",
+    "items": {
+      "phone": {
+        "name": "Telefon",
+        "desc": "KI-Sprachanrufe"
+      },
+      "web": {
+        "name": "Web",
+        "desc": "Chat auf Ihrer Website"
+      },
+      "whatsapp": {
+        "name": "WhatsApp",
+        "desc": "Der meistgenutzte Kanal"
+      },
+      "instagram": {
+        "name": "Instagram",
+        "desc": "Automatisierte Direktnachrichten"
+      },
+      "api": {
+        "name": "API",
+        "desc": "Integrieren Sie jedes System"
+      }
+    },
+    "otherChannel": "Nutzen Sie einen anderen Kanal oder ein internes System?",
+    "contactUs": "Fragen Sie uns →"
+  },
+  "planes": {
+    "eyebrow": "Pläne & Preise",
+    "titleLine1": "Investieren Sie in Ergebnisse,",
+    "titleLine2": "nicht in Überstunden",
+    "description": "Keine Mindestlaufzeit. Keine versteckten Kosten. Skalieren Sie nur, wenn Sie es brauchen.",
+    "cycles": {
+      "monthly": "Monatlich",
+      "quarterly": "Vierteljährlich",
+      "yearly": "Jährlich",
+      "quarterlyBadge": "Sparen Sie ~16%",
+      "yearlyBadge": "Sparen Sie ~29%"
+    },
+    "perMonth": "/Monat",
+    "billedNote": "Abrechnung je nach gewähltem Zyklus",
+    "featuredBadge": "Am Beliebtesten",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "desc": "Ideal für kleine Teams, die risikofrei mit KI starten möchten.",
+        "features": [
+          "1 integrierter Kanal (Web oder WhatsApp)",
+          "Basis-KI-Assistent mit NLP",
+          "Bis zu 500 Gespräche/Monat",
+          "Einfaches Kontrollpanel",
+          "Automatische Lead-Qualifizierung",
+          "E-Mail-Support"
+        ],
+        "cta": "Jetzt starten"
+      },
+      "business": {
+        "name": "Business",
+        "desc": "Für Unternehmen, die vollständige Automatisierung wollen und keinen einzigen Lead mehr verlieren möchten.",
+        "features": [
+          "Bis zu 3 integrierte Kanäle",
+          "Premium-Chatbots und -Voicebots",
+          "Automatische Nachverfolgung und Bewertung",
+          "Bidirektionale CRM-Integration",
+          "Automatische Terminplanung mit Erinnerungen",
+          "Intelligente Flow-works",
+          "Erweitertes Analyse-Dashboard",
+          "Prioritäts-Support 24/5"
+        ],
+        "cta": "Meinen Vertrieb skalieren"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "desc": "Fortschrittliche Lösung mit unbegrenzten Kanälen und persönlicher Betreuung.",
+        "features": [
+          "Unbegrenzte Kanäle",
+          "Vollständig maßgeschneiderte Flows und Bots",
+          "Erweiterte API-Integrationen",
+          "Dedizierter 1:1-Kundenbetreuer",
+          "Garantiertes Verfügbarkeits-SLA",
+          "Individuelles Onboarding",
+          "Spezialisierter technischer Support 24/7"
+        ],
+        "cta": "Angebot anfordern"
+      }
+    },
+    "footerNote": "Alle Pläne beinhalten Zugang zur Metatok-Plattform. Ohne Mindestlaufzeit und ohne versteckte Kosten.",
+    "customNeed": "Brauchen Sie etwas Spezifisches?",
+    "customCta": "Lassen Sie uns über einen individuellen Plan sprechen →"
+  },
+  "testimonios": {
+    "eyebrow": "Erfolgsgeschichten",
+    "titlePrefix": "Echte Fälle von Unternehmen, die ihre Kundengewinnung",
+    "titleHighlight": "bereits skaliert haben",
+    "description": "Bewährte Ergebnisse von Marktführern in ihren jeweiligen Branchen nach der Integration der KI-Agenten von Metatok in ihren Betrieb.",
+    "items": {
+      "1": {
+        "role": "Vertriebsleiter, Immobilienunternehmen",
+        "quote": "Metatok.ai hat unseren Verkaufstrichter verändert: humanoide Assistenten kümmern sich 24/7 um Anfragen und verwandeln mit intelligenten Automatisierungen kalte Anfragen in abgeschlossene Termine."
+      },
+      "2": {
+        "role": "Klinikleitung",
+        "quote": "Unser Verkaufstrichter läuft jetzt von allein: humanoide Assistenten beantworten Fragen sofort, und Nachverfolgungs-Automatisierungen holen Termine zurück, die früher verloren gingen."
+      },
+      "3": {
+        "role": "Betriebsleiterin, digitaler Marktplatz",
+        "quote": "Wir haben unseren Verkaufstrichter skaliert, ohne das Team zu vergrößern: humanoide Assistenten verwalten Bestellungen und Rücksendungen, und Automatisierungen halten jede Chance bis zum Kauf aktiv."
+      },
+      "4": {
+        "role": "Inhaber, „Reisen ohne Grenzen“",
+        "quote": "Wir sind von langsamen Antworten zu einem stets aktiven Verkaufstrichter übergegangen: humanoide Sprachassistenten begrüßen mit einem einnehmenden Ton, und Automatisierungen bestätigen und reaktivieren Buchungen."
+      },
+      "5": {
+        "role": "Vertriebsleiter, „TecnoCenter“",
+        "quote": "Unser Verkaufstrichter im Web konvertiert jetzt besser: humanoide Assistenten antworten überzeugend, und Automatisierungen filtern, priorisieren und pushen Leads mit hoher Kaufabsicht."
+      },
+      "6": {
+        "role": "Partneranwalt, „Garrido & Asociados“",
+        "quote": "Metatok.ai hat unseren Verkaufstrichter vollständig geordnet: humanoide Assistenten qualifizieren Fälle, und Automatisierungen terminieren, dokumentieren und bringen jede Anfrage zum Abschluss bereit."
+      }
+    }
+  },
+  "auditoria": {
+    "badge": "100% kostenloses Audit · Unverbindlich",
+    "title": "Finden Sie genau heraus, wie viel Ihnen entgeht",
+    "description": "Das ist kein Verkaufsgespräch. Es ist eine kostenlose technische Sitzung, in der ein Automatisierungsexperte Ihren tatsächlichen Betrieb analysiert und Ihnen mit Zahlen zeigt, wie viel Sie verbessern können.",
+    "checklist": [
+      "Analyse Ihrer aktuellen Kanäle und Ihres Traffic-Volumens",
+      "Erkennung von Conversion-Lücken in Ihrem Funnel",
+      "Persönliche strategische Roadmap mit KI",
+      "Schätzung der tatsächlichen Auswirkung auf den Umsatz"
+    ],
+    "ctaButton": "Mein kostenloses Audit anfordern",
+    "limitedSlots": "Begrenzte Plätze jede Woche. Antwort garantiert in < 24 Std.",
+    "statsLabel": "Durchschnittliche Ergebnisse nach 60 Tagen",
+    "stats": {
+      "recovered": {
+        "value": "+38%",
+        "label": "zurückgewonnene Leads"
+      },
+      "saved": {
+        "value": "22 Std.",
+        "label": "gespart / Woche"
+      },
+      "appointments": {
+        "value": "+54%",
+        "label": "vereinbarte Termine"
+      },
+      "conversion": {
+        "value": "+27%",
+        "label": "Konversionsrate"
+      }
+    },
+    "disclaimer": "*Bei echten Kunden beobachtete Durchschnittswerte. Die Ergebnisse können je nach Branche und Volumen variieren."
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Häufig gestellte Fragen",
+    "description": "Wir beantworten die häufigsten Fragen zum Service, zur Umsetzung und zur Investition.",
+    "items": {
+      "1": {
+        "q": "Woraus besteht der KI-Automatisierungsservice genau?",
+        "a": "Wir setzen Agenten künstlicher Intelligenz ein, die reale Aufgaben in Ihrem Betrieb übernehmen: Vertrieb, Support, Lead-Qualifizierung, Terminplanung und Social-Media-Management, auf den Kanälen, die Sie bereits nutzen (WhatsApp, Sprachanrufe, Instagram und Ihre Website). Es ist kein Chatbot mit vordefinierten Antworten: Es ist ein System, das mit den Informationen Ihres Unternehmens trainiert wurde und selbstständig konversiert, qualifiziert und abschließt."
+      },
+      "2": {
+        "q": "Wie läuft der Prozess ab, nachdem ich mein kostenloses Audit angefordert habe?",
+        "a": "Ein Automatisierungsexperte analysiert Ihren aktuellen Betrieb (Kanäle, Volumen, Funnel) und gibt Ihnen eine Diagnose mit den erkannten Conversion-Lücken. Anschließend entwerfen wir die maßgeschneiderte Agentenarchitektur, präsentieren Ihnen ein transparentes Preisangebot und setzen das komplette System in 15-30 Tagen ein."
+      },
+      "3": {
+        "q": "Habe ich eine Mindestvertragslaufzeit?",
+        "a": "Nein. Alle MetaTok-Pläne laufen ohne Mindestlaufzeit und ohne versteckte Kosten. Sie können jederzeit skalieren, den Plan wechseln oder kündigen: Unser Ziel ist es, dass Sie wegen der Ergebnisse bleiben, nicht wegen eines Vertrags."
+      },
+      "4": {
+        "q": "Warum ist das Budget maßgeschneidert?",
+        "a": "Jedes Unternehmen hat unterschiedliche Kanäle, Gesprächsvolumen und Integrationen. Statt Ihnen ein generisches Paket zu verkaufen, prüfen wir Ihren tatsächlichen Betrieb und legen eine Investition vor, die auf der exakten Komplexität Ihres Falls basiert, ohne Kleingedrucktes."
+      },
+      "5": {
+        "q": "Wie lange dauert die vollständige Umsetzung?",
+        "a": "Zwischen 15 und 30 Tage vom Erstaudit bis zum aktiven System im Produktivbetrieb, einschließlich Programmierung der Agenten, Training mit Ihren Unternehmensinformationen und Integrationen mit Ihrem CRM oder aktuellen Tools. Ihr Team fasst zu keinem Zeitpunkt Code an."
+      },
+      "6": {
+        "q": "Wie unterscheiden sich Ihre Agenten von einem herkömmlichen Chatbot?",
+        "a": "Ein herkömmlicher Chatbot folgt einem statischen Entscheidungsbaum und leitet an einen Menschen weiter, sobald das Gespräch komplizierter wird. Die MetaTok-Agenten nutzen generative KI: Sie verstehen Absicht und Kontext, überwinden Einwände und sind darauf trainiert, den Verkauf oder Termin abzuschließen, nicht nur Informationen zu geben."
+      }
+    }
+  },
+  "contacto": {
+    "eyebrow": "Kontakt",
+    "title": "Sprechen wir über Ihren nächsten Wettbewerbsvorteil",
+    "description": "Schreiben Sie uns, und ein Senior-Techniker meldet sich innerhalb von 24 Stunden bei Ihnen, um Ihr kostenloses Audit zu vereinbaren.",
+    "remoteLabel": "Remote-Service · Internationale Abdeckung",
+    "gdprLabel": "Wir behandeln Ihre Daten gemäß DSGVO",
+    "noCommitmentTitle": "Unverbindlich",
+    "noCommitmentDesc": "Wir verkaufen keine Verkaufsgespräche. Sie erhalten eine echte technische Analyse, wie KI Ihren aktuellen Umsatz maximieren kann.",
+    "fields": {
+      "nombre": "Name",
+      "email": "E-Mail",
+      "empresa": "Unternehmen",
+      "telefono": "Telefon",
+      "web": "Website (optional)",
+      "automatizar": "Was möchten Sie automatisieren? (optional)"
+    },
+    "submitLabel": "Audit anfordern",
+    "consentText": "Mit dem Absenden stimmen Sie zu, dass wir Sie bezüglich Ihrer Audit-Anfrage kontaktieren.",
+    "successTitle": "Anfrage erhalten!",
+    "successDesc": "Ein Senior-Techniker von MetaTok meldet sich innerhalb von 24 Stunden bei Ihnen, um Ihr kostenloses Audit zu vereinbaren."
+  },
+  "footer": {
+    "tagline": "Ein Ökosystem autonomer KI-Agenten, die 24/7 auf WhatsApp, Anrufen, Instagram und im Web verkaufen, betreuen und Ihr Geschäft steuern.",
+    "columns": {
+      "solucion": {
+        "title": "Lösung",
+        "links": {
+          "servicios": "Leistungen",
+          "sectores": "Nach Branche",
+          "engine": "MetaTok Engine V5",
+          "whiteLabel": "White-Label-Produkt"
+        }
+      },
+      "explorar": {
+        "title": "Entdecken",
+        "links": {
+          "academy": "MetaTok Academy",
+          "planes": "Pläne & Preise",
+          "testimonios": "Erfolgsgeschichten",
+          "faq": "Häufig gestellte Fragen"
+        }
+      },
+      "legal": {
+        "title": "Rechtliches",
+        "links": {
+          "aviso": "Impressum",
+          "privacidad": "Datenschutzerklärung",
+          "cookies": "Cookie-Richtlinie",
+          "terminos": "Allgemeine Geschäftsbedingungen"
+        }
+      }
+    },
+    "copyright": "© {year} MetaTok AI — Alle Rechte vorbehalten."
+  },
+  "legalPages": {
+    "avisoLegal": {
+      "title": "Impressum",
+      "updated": "Letzte Aktualisierung: September 2026",
+      "sections": [
+        {
+          "heading": "1. Anbieterkennzeichnung",
+          "body": [
+            "In Erfüllung der geltenden Informationspflichten wird darauf hingewiesen, dass Betreiberin der Website www.metatok.ai (die „Website“) die MetaTok LLC („MetaTok“) ist, eine in den Vereinigten Staaten gegründete Gesellschaft mit beschränkter Haftung.",
+            "Kontakt: info@metatok.ai."
+          ]
+        },
+        {
+          "heading": "2. Zweck und Geltungsbereich",
+          "body": [
+            "Dieses Impressum regelt den Zugang zu und die Nutzung der Website, deren Zweck es ist, über die von MetaTok angebotenen KI-Agenten- und Geschäftsautomatisierungsdienste zu informieren sowie die Kontaktaufnahme und Beauftragung dieser Dienste zu erleichtern.",
+            "Der Zugriff auf die Website und/oder die Nutzung der darüber angebotenen Dienste begründet die Stellung als Nutzer und setzt die vollständige Annahme der in diesem Impressum enthaltenen Bedingungen voraus."
+          ]
+        },
+        {
+          "heading": "3. Zugangs- und Nutzungsbedingungen",
+          "body": [
+            "Der Nutzer verpflichtet sich, die Website sowie die darauf angebotenen Inhalte und Informationen angemessen und rechtmäßig zu nutzen, im Einklang mit geltendem Recht, diesem Impressum, der guten Sitte und der öffentlichen Ordnung.",
+            "Die Nutzung der Website zu rechtswidrigen oder schädlichen Zwecken oder auf eine Weise, die Schaden verursachen oder ihren normalen Betrieb beeinträchtigen könnte, ist untersagt."
+          ]
+        },
+        {
+          "heading": "4. Geistiges und gewerbliches Eigentum",
+          "body": [
+            "Sämtliche Inhalte der Website, einschließlich Texte, Bilder, Marken, Logos, Designs, Quellcode und andere Elemente, sind Eigentum von MetaTok oder Dritter, die deren Nutzung gestattet haben, und sind durch das Recht des geistigen und gewerblichen Eigentums geschützt.",
+            "Die Vervielfältigung, Verbreitung, Bearbeitung oder öffentliche Wiedergabe dieser Inhalte ohne vorherige ausdrückliche Genehmigung von MetaTok ist untersagt."
+          ]
+        },
+        {
+          "heading": "5. Haftungsausschluss",
+          "body": [
+            "MetaTok garantiert nicht die Verfügbarkeit, Kontinuität oder Fehlerfreiheit des Betriebs der Website und schließt dementsprechend jede Haftung für Schäden aus, die sich aus der fehlenden Verfügbarkeit oder Kontinuität der Website und ihrer Dienste ergeben.",
+            "MetaTok haftet ebenfalls nicht für Schäden, die durch rechtswidrige oder unsachgemäße Nutzung der Website durch Dritte entstehen."
+          ]
+        },
+        {
+          "heading": "6. Links zu Drittanbietern",
+          "body": [
+            "Die Website kann Links zu Websites Dritter enthalten (z. B. Buchungsplattformen oder soziale Netzwerke). MetaTok übernimmt keine Verantwortung für die Inhalte, Datenschutzrichtlinien oder Praktiken dieser Drittanbieter-Websites."
+          ]
+        },
+        {
+          "heading": "7. Anwendbares Recht und Gerichtsstand",
+          "body": [
+            "Für alle Streitigkeiten im Zusammenhang mit der Website oder den erbrachten Dienstleistungen gilt das am gewöhnlichen Aufenthaltsort des Nutzers geltende Recht, unbeschadet anwendbarer verbraucherschutzrechtlicher Bestimmungen."
+          ]
+        }
+      ]
+    },
+    "privacidad": {
+      "title": "Datenschutzerklärung",
+      "updated": "Letzte Aktualisierung: September 2026",
+      "sections": [
+        {
+          "heading": "1. Verantwortlicher",
+          "body": [
+            "Verantwortlicher für die Verarbeitung der über die Website erhobenen personenbezogenen Daten ist die MetaTok LLC. Bei Fragen zum Datenschutz können Sie uns unter info@metatok.ai kontaktieren."
+          ]
+        },
+        {
+          "heading": "2. Von uns erhobene Daten",
+          "body": [
+            "Wir erheben die Daten, die Sie uns freiwillig über unser Formular/Widget zur Buchung eines Audits mitteilen (Name, Unternehmen, Telefonnummer, E-Mail-Adresse und Angaben zu Ihrem Unternehmen), sowie Nutzungsdaten, die über Cookies und Web-Analyse-Tools erfasst werden."
+          ]
+        },
+        {
+          "heading": "3. Zweck der Verarbeitung",
+          "body": [
+            "Wir verwenden Ihre Daten, um: (i) Ihre Anfrage für ein Audit oder eine Demo zu bearbeiten, (ii) Sie mit kommerziellen Informationen zu unseren Diensten zu kontaktieren, (iii) die Website und ihre Leistung zu verbessern, und (iv) gesetzliche Pflichten zu erfüllen."
+          ]
+        },
+        {
+          "heading": "4. Rechtsgrundlage",
+          "body": [
+            "Die Verarbeitung beruht auf der Einwilligung des Nutzers bei Übermittlung seiner Daten über unsere Formulare sowie auf dem berechtigten Interesse von MetaTok, geschäftliche Anfragen zu bearbeiten und seine Dienste zu verbessern."
+          ]
+        },
+        {
+          "heading": "5. Speicherdauer",
+          "body": [
+            "Wir speichern Ihre personenbezogenen Daten, solange eine geschäftliche oder beiderseitig interessengeleitete Beziehung besteht, und danach für die gesetzlich vorgeschriebenen Fristen, nach deren Ablauf sie gelöscht oder anonymisiert werden."
+          ]
+        },
+        {
+          "heading": "6. Empfänger und Auftragsverarbeiter",
+          "body": [
+            "Ihre Daten können von Technologiedienstleistern verarbeitet werden, die für MetaTok tätig sind, etwa die Buchungs- und CRM-Plattform zur Terminierung von Audits, stets unter angemessenen vertraglichen Garantien und ausschließlich zum Zweck der Erbringung dieser Dienstleistung."
+          ]
+        },
+        {
+          "heading": "7. Internationale Datenübermittlungen",
+          "body": [
+            "Da MetaTok LLC eine in den Vereinigten Staaten gegründete Gesellschaft ist, können Ihre Daten außerhalb des Europäischen Wirtschaftsraums verarbeitet oder gespeichert werden. In diesen Fällen setzen wir die nach geltendem Datenschutzrecht erforderlichen angemessenen Garantien um, wie z. B. Standardvertragsklauseln."
+          ]
+        },
+        {
+          "heading": "8. Ihre Rechte",
+          "body": [
+            "Sie können Ihre Rechte auf Auskunft, Berichtigung, Löschung, Widerspruch, Einschränkung der Verarbeitung und Datenübertragbarkeit ausüben, indem Sie eine E-Mail an info@metatok.ai senden, das gewünschte Recht angeben und einen Identitätsnachweis beifügen."
+          ]
+        },
+        {
+          "heading": "9. Änderungen dieser Richtlinie",
+          "body": [
+            "MetaTok kann diese Datenschutzerklärung aktualisieren, um sie an gesetzliche Änderungen oder Änderungen unserer Dienste anzupassen. Wir empfehlen, diese Seite regelmäßig zu überprüfen."
+          ]
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Cookie-Richtlinie",
+      "updated": "Letzte Aktualisierung: September 2026",
+      "sections": [
+        {
+          "heading": "1. Was sind Cookies?",
+          "body": [
+            "Cookies sind kleine Textdateien, die eine Website auf dem Gerät des Nutzers speichert, um Informationen über seinen Besuch zu speichern, etwa seine Präferenzen oder sein Nutzungsverhalten."
+          ]
+        },
+        {
+          "heading": "2. Von uns verwendete Cookie-Arten",
+          "body": [
+            "Technische oder notwendige Cookies: unerlässlich für das ordnungsgemäße Funktionieren der Website.",
+            "Analyse-Cookies: ermöglichen es uns zu verstehen, wie Nutzer mit der Website interagieren, um deren Leistung und Inhalte zu verbessern.",
+            "Cookies von Drittanbietern: werden von in die Website eingebetteten Diensten, wie dem Audit-Buchungswidget, für deren ordnungsgemäße Funktion verwendet."
+          ]
+        },
+        {
+          "heading": "3. Verwaltung von Cookies",
+          "body": [
+            "Sie können auf Ihrem Gerät installierte Cookies über die Einstellungen Ihres Browsers zulassen, blockieren oder löschen. Bitte beachten Sie, dass die Deaktivierung bestimmter Cookies die ordnungsgemäße Funktion der Website beeinträchtigen kann."
+          ]
+        },
+        {
+          "heading": "4. Aktualisierung dieser Richtlinie",
+          "body": [
+            "Diese Cookie-Richtlinie kann aufgrund gesetzlicher Änderungen oder Änderungen der von der Website genutzten Dienste aktualisiert werden. Wir empfehlen, sie regelmäßig zu überprüfen."
+          ]
+        }
+      ]
+    },
+    "terminos": {
+      "title": "Allgemeine Geschäftsbedingungen",
+      "updated": "Letzte Aktualisierung: September 2026",
+      "sections": [
+        {
+          "heading": "1. Annahme der Bedingungen",
+          "body": [
+            "Der Zugriff auf und die Nutzung der Website sowie die Beauftragung der von MetaTok LLC angebotenen Dienstleistungen setzen die vollständige Annahme dieser Allgemeinen Geschäftsbedingungen voraus."
+          ]
+        },
+        {
+          "heading": "2. Beschreibung der Dienstleistung",
+          "body": [
+            "MetaTok bietet Unternehmen KI-Agenten und Lösungen zur Geschäftsautomatisierung (WhatsApp, Anrufe, soziale Netzwerke und Web) an, die über Abonnementpläne verfügbar sind."
+          ]
+        },
+        {
+          "heading": "3. Vertragsbedingungen",
+          "body": [
+            "Preise, Merkmale und Bedingungen der einzelnen Pläne sind auf der Website aufgeführt und können von MetaTok geändert werden; es gelten die zum Zeitpunkt des Vertragsabschlusses gültigen Bedingungen."
+          ]
+        },
+        {
+          "heading": "4. Pflichten des Nutzers/Kunden",
+          "body": [
+            "Der Kunde verpflichtet sich, wahrheitsgemäße und aktuelle Angaben zu machen, den Dienst rechtmäßig zu nutzen und ihn nicht für Zwecke zu verwenden, die gegen Gesetz, gute Sitten oder öffentliche Ordnung verstoßen."
+          ]
+        },
+        {
+          "heading": "5. Geistiges Eigentum",
+          "body": [
+            "Die Software, Technologie, Marke und Inhalte im Zusammenhang mit den Diensten von MetaTok sind Eigentum von MetaTok LLC und durch das Recht des geistigen und gewerblichen Eigentums geschützt."
+          ]
+        },
+        {
+          "heading": "6. Haftungsbeschränkung",
+          "body": [
+            "MetaTok haftet nicht für indirekte Schäden, entgangenen Gewinn oder entgangene Geschäftsmöglichkeiten, die sich aus der Nutzung des Dienstes ergeben, außer in Fällen, in denen das anwendbare Recht eine solche Beschränkung nicht zulässt."
+          ]
+        },
+        {
+          "heading": "7. Änderungen",
+          "body": [
+            "MetaTok kann diese Allgemeinen Geschäftsbedingungen jederzeit ändern, indem die aktualisierte Fassung auf der Website veröffentlicht wird."
+          ]
+        },
+        {
+          "heading": "8. Anwendbares Recht",
+          "body": [
+            "Diese Allgemeinen Geschäftsbedingungen unterliegen dem anwendbaren Recht, unbeschadet der je nach Wohnsitzland des Kunden anwendbaren verbraucherschutzrechtlichen Bestimmungen."
+          ]
+        }
+      ]
+    }
+  }
+}

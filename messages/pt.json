@@ -1,0 +1,1120 @@
+{
+  "meta": {
+    "title": "MetaTok AI – Agentes de IA 24/7 para Empresas",
+    "description": "Automatize vendas, suporte e gestão de redes com agentes de IA 24/7 no WhatsApp, chamadas, Instagram e site. Auditoria gratuita para empresas em crescimento.",
+    "keywords": "agentes de IA para empresas, automação com inteligência artificial, chatbot IA WhatsApp, voicebots, qualificação de leads com IA, automação comercial IA, MetaTok"
+  },
+  "nav": {
+    "inicio": "Início",
+    "solucion": "Solução",
+    "explorar": "Explorar",
+    "contacto": "Contato",
+    "iniciarSesion": "Entrar",
+    "crearAgente": "Criar meu agente",
+    "openMenu": "Abrir menu",
+    "solucionItems": {
+      "servicios": "Serviços",
+      "sectores": "Por setor",
+      "planes": "Planos e preços"
+    },
+    "explorarItems": {
+      "engine": "Motor MetaTok Engine V5",
+      "whiteLabel": "Produto White Label",
+      "academy": "MetaTok Academy",
+      "testimonios": "Casos de sucesso"
+    }
+  },
+  "languageSwitcher": {
+    "label": "Idioma"
+  },
+  "hero": {
+    "badge": "Ecossistema de Agentes · MetaTok AI",
+    "headlinePrefix": "Sua equipe de",
+    "headlineSuffix": "em Piloto Automático com IA",
+    "rotatingWords": [
+      "Vendas",
+      "Suporte",
+      "Contabilidade",
+      "Gestão de Redes",
+      "Conteúdo"
+    ],
+    "subheadline": "Agentes inteligentes que vendem, atendem e gerenciam por você 24/7 nos canais que você mais usa.",
+    "ctaPrimary": "Criar meu agente agora",
+    "ctaSecondary": "Ver como funciona",
+    "channels": {
+      "whatsapp": "WhatsApp",
+      "calls": "Chamadas",
+      "instagram": "Instagram",
+      "web": "Site"
+    },
+    "trust": {
+      "noPermanence": "Sem fidelidade",
+      "deploy": "Implementação em 15-30 dias",
+      "noCode": "Sem código para sua equipe"
+    },
+    "stats": {
+      "automation": {
+        "value": "100%",
+        "label": "Automação total"
+      },
+      "savings": {
+        "value": "R$ 3.000",
+        "label": "Economia por colaborador"
+      },
+      "operation": {
+        "value": "24/7",
+        "label": "Operação contínua"
+      }
+    },
+    "panelLive": "Painel · Ao vivo",
+    "aiAgentOnline": "AGENTE IA · Online 24/7",
+    "feed": {
+      "ticket": {
+        "label": "Chamado resolvido",
+        "sub": "Suporte · T-892"
+      },
+      "invoice": {
+        "label": "Fatura processada",
+        "sub": "Contabilidade · #A-402"
+      },
+      "post": {
+        "label": "Post publicado",
+        "sub": "Instagram · Conteúdo"
+      },
+      "lead": {
+        "label": "Lead qualificado",
+        "sub": "Vendas · Score 94"
+      }
+    },
+    "metrics": {
+      "tasks": "Tarefas/hora",
+      "depts": "Deptos. Ativos",
+      "savings": "Economia/mês"
+    },
+    "features": {
+      "speed": {
+        "title": "Velocidade de resposta",
+        "desc": "Atendemos na hora"
+      },
+      "autonomous": {
+        "title": "Agentes autônomos",
+        "desc": "Trabalham 24/7 sem pausas"
+      },
+      "gdpr": {
+        "title": "LGPD blindada",
+        "desc": "Dados seguros e protegidos"
+      },
+      "api": {
+        "title": "API aberta",
+        "desc": "Conecta com suas ferramentas"
+      }
+    }
+  },
+  "trustBanner": {
+    "prefix": "A MetaTok já está processando",
+    "highlight": "+12 milhões",
+    "suffix": "de mensagens por mês em conversas de venda.",
+    "subtext": "Sistemas robustos preparados para faturamento em grande escala. Segurança de nível bancário para os seus dados."
+  },
+  "problema": {
+    "eyebrow": "O vazamento de dinheiro",
+    "titleLine1": "Três custos silenciosos",
+    "titleLine2": "que você já está pagando",
+    "description": "Cada minuto sem automação é dinheiro que vai embora. Descubra exatamente quanto o status quo está te custando.",
+    "items": {
+      "1": {
+        "stat": "70%",
+        "title": "Lead frio",
+        "desc": "70% dos leads se perdem por serem respondidos depois de 5 minutos. A velocidade é tudo."
+      },
+      "2": {
+        "stat": "1.000",
+        "title": "Saturação humana",
+        "desc": "Sua equipe humana não consegue atender 1.000 conversas ao mesmo tempo. Os agentes MetaTok conseguem."
+      },
+      "3": {
+        "stat": "Zero fechamento",
+        "title": "Sem fechamento autônomo",
+        "desc": "Os bots comuns só dão informação. Os agentes MetaTok são programados para fechar a venda."
+      }
+    }
+  },
+  "beneficios": {
+    "eyebrow": "Vantagem Competitiva",
+    "title": "Por que a MetaTok muda as regras",
+    "items": {
+      "01": {
+        "stat": "+400%",
+        "statLabel": "Taxa de resposta vs. manual",
+        "title": "Resposta que multiplica oportunidades",
+        "desc": "A velocidade e a insistência certa transformam conversas em receita. Menos leads perdidos por silêncio."
+      },
+      "02": {
+        "stat": "R$ 3.000",
+        "statLabel": "Economia por colaborador",
+        "title": "Zero tarefas repetitivas",
+        "desc": "A IA assume toda a carga operacional. Elimina erros humanos e reduz custos estruturais em grande escala."
+      },
+      "03": {
+        "stat": "24/7",
+        "statLabel": "Sem interrupções",
+        "title": "Operando 24 horas por dia",
+        "desc": "Seu negócio nunca dorme. Capta, qualifica e agenda mesmo fora do horário comercial e em feriados."
+      },
+      "04": {
+        "stat": "5+",
+        "statLabel": "Canais integrados",
+        "title": "Integração omnicanal total",
+        "desc": "Telefone, site, WhatsApp, Instagram, Telegram ou seu CRM interno via API. Um ecossistema de texto e voz conectado e coerente."
+      }
+    }
+  },
+  "engine": {
+    "eyebrow": "MetaTok Engine V5",
+    "titlePrefix": "A Arquitetura por trás da",
+    "titleHighlight": "Conversão Autônoma",
+    "description": "Descubra o motor cognitivo que não só responde perguntas, mas qualifica leads, supera objeções e fecha vendas sem intervenção humana.",
+    "features": {
+      "cognitive": {
+        "title": "Processamento Cognitivo em Tempo Real",
+        "desc": "O núcleo V5 analisa intenção, sentimento e contexto em milissegundos. Adapta o roteiro de vendas dinamicamente com base em mais de 10.000 interações anteriores."
+      },
+      "omnichannel": {
+        "title": "Omnicanalidade Total",
+        "desc": "WhatsApp, Instagram e site conectados a um único cérebro central."
+      },
+      "crm": {
+        "title": "Sincronização com CRM",
+        "desc": "Integração nativa bidirecional. Tudo fica registrado."
+      },
+      "optimization": {
+        "title": "Auto-otimização Constante",
+        "desc": "O sistema nunca para de aprender. Realiza testes A/B automatizados nas próprias mensagens para encontrar as combinações que geram maior taxa de resposta."
+      }
+    },
+    "stats": {
+      "latency": {
+        "value": "< 0,5s",
+        "label": "Latência média"
+      },
+      "uptime": {
+        "value": "99,9%",
+        "label": "Uptime garantido"
+      },
+      "encryption": {
+        "value": "AES-256",
+        "label": "Criptografia de dados"
+      }
+    }
+  },
+  "whiteLabel": {
+    "eyebrow": "Produto",
+    "title": "Seu app, sua marca, nossa tecnologia",
+    "description": "Transformamos a MetaTok em um produto white label pronto para venda: experiência nativa, arquitetura de conversão e operação comercial sob sua identidade.",
+    "features": {
+      "branding": {
+        "title": "Branding completo",
+        "desc": "UI, tom, iconografia e experiência coerentes com sua marca."
+      },
+      "publishing": {
+        "title": "Publicação oficial",
+        "desc": "Lançamento na App Store e Google Play ou distribuição privada enterprise."
+      },
+      "compliance": {
+        "title": "Conformidade enterprise",
+        "desc": "LGPD, controles de acesso e rastreabilidade para operação segura."
+      },
+      "scale": {
+        "title": "Escala multinicho",
+        "desc": "Uma base técnica para múltiplas verticais sem refazer o produto."
+      }
+    },
+    "sectionLabel": "Sua marca, nosso poder",
+    "heading2Prefix": "Aplicativo nativo com o motor da",
+    "heading2Highlight": "MetaTok",
+    "heading2Suffix": "integrado.",
+    "paragraph": "Criamos seu aplicativo nativo com o motor da MetaTok integrado. Você controla marca, discurso comercial e precificação; nós aceleramos a camada técnica e a conversão.",
+    "bullets": [
+      "Identidade corporativa integral: marca, tonalidade visual e nomenclatura alinhadas ao seu negócio.",
+      "Distribuição profissional na App Store e Google Play, ou canal privado corporativo quando precisar.",
+      "A mesma camada cognitiva MetaTok dentro do seu app: agentes que vendem, qualificam e agendam 24/7.",
+      "Painéis analíticos e relatórios sob sua marca própria para medir funil e equipe comercial.",
+      "Roadmaps e atualizações coordenadas sem que sua marca perca o controle da narrativa perante o cliente.",
+      "Opções Enterprise: SLAs, privacidade (LGPD) e governança de dados alinhadas à sua conformidade."
+    ],
+    "ctaPrimary": "Quero meu app white label",
+    "ctaSecondary": "Ver opções enterprise",
+    "phoneAppName": "Assistente SuaMarca",
+    "phoneOnline": "Online",
+    "chat": {
+      "msg1": "Olá, sou o assistente da SuaMarca. Como posso ajudar? 👋",
+      "msg2": "Quero uma proposta para esta semana.",
+      "msg3": "Perfeito! Você prefere reunião por videochamada ou presencial?",
+      "msg4": "Videochamada, qualquer dia ✅"
+    },
+    "leadQualified": "Lead qualificado em 43s",
+    "floatBadge1": "+31% de agendamentos de demo",
+    "floatBadge2": "Marca 100% personalizada"
+  },
+  "sectores": {
+    "eyebrow": "Por setor",
+    "titleLine1": "Seu setor, seus resultados,",
+    "titleLine2": "sua solução sob medida",
+    "description": "Não vendemos tecnologia genérica. Desenhamos a automação exata que o seu tipo de negócio precisa para converter mais.",
+    "estadoActualLabel": "Situação atual",
+    "conMetatokLabel": "Com a Metatok",
+    "resultadosLabel": "Resultados médios",
+    "resultadosNote": "*Médias entre clientes após 60 dias de implementação.",
+    "opcionesLabel": "Opções adicionais",
+    "ctaButton": "Quero uma solução para o meu setor",
+    "footNote": "Auditoria gratuita · Sem compromisso · Resposta em menos de 24 h",
+    "items": {
+      "inmobiliarias": {
+        "name": "Imobiliárias e Agências",
+        "badgeLabel": "escolhe quem responde primeiro",
+        "headline": "Pare de perder compradores por demora na resposta.",
+        "description": "78% dos compradores escolhem o corretor que responde primeiro. Com a Metatok, sua imobiliária responde em segundos, qualifica a intenção e agenda visitas enquanto sua equipe capta novos clientes.",
+        "estadoActual": [
+          "Leads sem resposta por horas (ou dias)",
+          "Visitas canceladas por falta de confirmação",
+          "Corretores perdendo tempo com prospects frios",
+          "CRM com dados desatualizados ou incompletos"
+        ],
+        "conMetatok": [
+          "Resposta automática em menos de 60 segundos via WhatsApp ou site",
+          "Qualificação: região, orçamento e urgência antes da visita",
+          "Agenda de visitas gerenciada por IA sem intervenção humana",
+          "CRM atualizado instantaneamente a cada conversa"
+        ],
+        "resultados": {
+          "r1": "visitas agendadas",
+          "r2": "tempo de resposta",
+          "r3": "leads mais qualificados"
+        },
+        "opciones": [
+          "Voicebot para chamadas recebidas fora do horário",
+          "Sequências de nutrição por WhatsApp até o fechamento",
+          "Dashboard de desempenho por corretor e região"
+        ]
+      },
+      "clinicas": {
+        "name": "Clínicas e Saúde",
+        "badgeLabel": "menos faltas em consultas",
+        "headline": "Pare de perder pacientes por falta de acompanhamento.",
+        "description": "Os pacientes agendam com quem responde primeiro. Com a Metatok, sua clínica confirma consultas, tira dúvidas frequentes e reduz o absenteísmo enquanto sua equipe foca no atendimento.",
+        "estadoActual": [
+          "Pacientes que ligam fora do horário e não recebem resposta",
+          "Alta taxa de faltas por falta de lembretes",
+          "Equipe administrativa sobrecarregada com perguntas repetitivas",
+          "Agenda desorganizada entre diferentes canais"
+        ],
+        "conMetatok": [
+          "Resposta imediata a consultas por WhatsApp e site, 24/7",
+          "Lembretes automáticos que reduzem as faltas",
+          "Triagem inicial e resposta a dúvidas frequentes pela IA",
+          "Agenda centralizada e sincronizada com seu sistema clínico"
+        ],
+        "resultados": {
+          "r1": "menos faltas em consultas",
+          "r2": "consultas confirmadas",
+          "r3": "atendimento ao paciente"
+        },
+        "opciones": [
+          "Voicebot para confirmação telefônica de consultas",
+          "Lembretes multicanal (WhatsApp + SMS)",
+          "Dashboard de ocupação por especialista"
+        ]
+      },
+      "ecommerce": {
+        "name": "E-commerce e Varejo",
+        "badgeLabel": "carrinhos recuperados",
+        "headline": "Recupere vendas que hoje ficam paradas no carrinho.",
+        "description": "Cada dúvida sem resposta é uma venda perdida. Com a Metatok, sua loja tira dúvidas sobre produtos, recupera carrinhos abandonados e gerencia devoluções sem depender da sua equipe.",
+        "estadoActual": [
+          "Dúvidas sobre produtos sem resposta fora do horário",
+          "Carrinhos abandonados sem nenhum acompanhamento",
+          "Equipe de suporte sobrecarregada com perguntas de status do pedido",
+          "Devoluções tratadas manualmente e com demora"
+        ],
+        "conMetatok": [
+          "Resposta instantânea sobre produtos e estoque",
+          "Sequências automáticas de recuperação de carrinho via WhatsApp",
+          "Acompanhamento de pedidos resolvido sem intervenção humana",
+          "Gestão de devoluções guiada passo a passo pela IA"
+        ],
+        "resultados": {
+          "r1": "carrinhos recuperados",
+          "r2": "chamados de suporte",
+          "r3": "atendimento ao cliente"
+        },
+        "opciones": [
+          "Notificações proativas de status de envio",
+          "Upsell e cross-sell conversacional",
+          "Integração nativa com seu e-commerce"
+        ]
+      },
+      "agencias": {
+        "name": "Agências e Consultorias",
+        "badgeLabel": "mais reuniões qualificadas",
+        "headline": "Qualifique e agende sem sobrecarregar sua equipe comercial.",
+        "description": "As agências competem por velocidade de resposta. Com a Metatok, cada lead que chega é qualificado e agendado automaticamente antes mesmo da sua equipe comercial intervir.",
+        "estadoActual": [
+          "Leads de formulários e redes que levam horas para serem contatados",
+          "Reuniões marcadas com prospects sem orçamento real",
+          "Equipe comercial gastando horas com qualificação manual",
+          "Acompanhamento inconsistente após a primeira ligação"
+        ],
+        "conMetatok": [
+          "Qualificação automática de orçamento, autoridade e urgência",
+          "Agendamento direto na agenda do vendedor certo",
+          "Nutrição automática de leads que ainda não estão prontos",
+          "Relatórios sobre origem e qualidade de cada oportunidade"
+        ],
+        "resultados": {
+          "r1": "reuniões qualificadas",
+          "r2": "tempo de qualificação",
+          "r3": "captação ativa"
+        },
+        "opciones": [
+          "Roteamento automático por especialidade ou conta",
+          "Sequências de nutrição por email e WhatsApp",
+          "Dashboard de pipeline em tempo real"
+        ]
+      },
+      "despachos": {
+        "name": "Escritórios Profissionais",
+        "badgeLabel": "mais consultas fechadas",
+        "headline": "Transforme consultas em clientes, não em processos parados.",
+        "description": "Advogados, contadores e consultores perdem horas faturáveis filtrando consultas. Com a Metatok, cada caso é qualificado, documentado e agendado antes da primeira reunião.",
+        "estadoActual": [
+          "Consultas iniciais sem resposta durante o dia",
+          "Reuniões agendadas com casos fora da sua área de atuação",
+          "Documentação incompleta na primeira reunião",
+          "Acompanhamento manual e disperso entre email e WhatsApp"
+        ],
+        "conMetatok": [
+          "Filtro automático por tipo de caso e viabilidade",
+          "Coleta de documentação antes da reunião",
+          "Agendamento automático com o profissional certo",
+          "Histórico completo de cada consulta no seu CRM"
+        ],
+        "resultados": {
+          "r1": "consultas fechadas",
+          "r2": "tempo administrativo",
+          "r3": "primeiro contato"
+        },
+        "opciones": [
+          "Voicebot para linhas de atendimento ao cliente",
+          "Modelos de documentação por área de atuação",
+          "Painel de casos por prioridade e status"
+        ]
+      },
+      "hoteles": {
+        "name": "Hotéis e Hospedagem",
+        "badgeLabel": "mais reservas diretas",
+        "headline": "Transforme consultas em reservas diretas, sem comissão de OTAs.",
+        "description": "Cada consulta sem resposta no WhatsApp ou Instagram vai para outra plataforma. Com a Metatok, seu hotel confirma disponibilidade, gerencia reservas e fideliza hóspedes sem ampliar sua equipe de recepção.",
+        "estadoActual": [
+          "Consultas de disponibilidade sem resposta fora do horário",
+          "Reservas perdidas para plataformas com comissão",
+          "Recepção sobrecarregada com perguntas repetitivas de hóspedes",
+          "Upsell de serviços feito manualmente ou inexistente"
+        ],
+        "conMetatok": [
+          "Confirmação de disponibilidade e reserva direta 24/7",
+          "Respostas instantâneas às perguntas frequentes dos hóspedes",
+          "Upsell automático de serviços e experiências adicionais",
+          "Acompanhamento pós-estadia para avaliações e fidelização"
+        ],
+        "resultados": {
+          "r1": "reservas diretas",
+          "r2": "comissões a OTAs",
+          "r3": "atendimento ao hóspede"
+        },
+        "opciones": [
+          "Check-in conversacional via WhatsApp",
+          "Voicebot multilíngue para a recepção",
+          "Dashboard de ocupação e canal de reserva"
+        ]
+      }
+    }
+  },
+  "servicios": {
+    "badge": "A plataforma de agentes de IA nº 1 em resultados",
+    "eyebrow": "Serviços",
+    "titlePrefix": "Automação com IA que te leva ao",
+    "titleHighlight": "Top 1 do seu setor",
+    "description": "Enquanto sua concorrência continua perdendo leads com chatbots básicos, você implanta o mesmo ecossistema usado pelas empresas que já lideram sua categoria.",
+    "topStats": {
+      "leader": "Nº 1 em automação com IA",
+      "speed": "+400% de taxa de resposta",
+      "operation": "Operação 24/7",
+      "omnichannel": "Integração omnicanal"
+    },
+    "serviceLabel": "Serviço",
+    "flagshipBadge": "Serviço nº 1 mais contratado",
+    "activationLabel": "Ativação imediata",
+    "moreLabel": "Ver mais",
+    "items": {
+      "01": {
+        "title": "Agentes de IA Conversacional",
+        "desc": "Agentes especializados em NLP que entendem intenções, contornam objeções e executam estratégias de venda complexas em cada canal do seu negócio. O serviço mais contratado e o que mais gera receita para nossos clientes.",
+        "result": "Responde 100% dos seus leads em segundos, não em horas."
+      },
+      "02": {
+        "title": "Voicebots (Agentes de Voz)",
+        "desc": "Assistentes de voz ultrarrealistas que fazem e recebem chamadas telefônicas. Contornam objeções, qualificam e agendam como o seu melhor vendedor, sem folgas nem faltas.",
+        "result": "Atende chamadas recebidas sem tempo de espera, 24/7."
+      },
+      "03": {
+        "title": "Qualificação de Leads",
+        "desc": "Filtramos e pontuamos cada prospect em tempo real para que sua equipe só fale com quem tem real intenção de compra. Zero tempo perdido com curiosos.",
+        "result": "Aumente sua taxa de fechamento em até 3× sem mais orçamento."
+      },
+      "04": {
+        "title": "Integração com CRM",
+        "desc": "Sincronização bidirecional com seu CRM via API. Dados limpos, atualizados e acionáveis 24/7, sem duplicidades, sem falhas e sem depender de ninguém.",
+        "result": "0 horas de digitação manual de dados para sua equipe."
+      },
+      "05": {
+        "title": "Agendamento Automático",
+        "desc": "Compromissos na sua agenda sem atrito. O agente negocia o horário, confirma a reunião e envia lembretes personalizados até o cliente comparecer.",
+        "result": "Até +54% mais compromissos agendados sem intervenção humana."
+      },
+      "06": {
+        "title": "Flow-works Inteligentes",
+        "desc": "Fluxos de trabalho que disparam ações automáticas: qualificam leads, agendam reuniões, atualizam o CRM e nutrem prospects enquanto sua equipe dorme.",
+        "result": "Seu funil de vendas funciona sozinho, 24 horas por dia."
+      }
+    },
+    "leaderTitle": "Por que somos a opção nº 1",
+    "leaderDesc": "A diferença não é só tecnologia. É velocidade, cobertura e resultados que a média do mercado não consegue igualar.",
+    "leaderUsLabel": "MetaTok",
+    "leaderThemLabel": "Resto",
+    "leaderRows": {
+      "speed": {
+        "metric": "Velocidade de resposta",
+        "metatok": "< 60 segundos",
+        "market": "Horas (ou nunca)"
+      },
+      "coverage": {
+        "metric": "Cobertura de horário",
+        "metatok": "24/7/365 real",
+        "market": "Horário comercial"
+      },
+      "channels": {
+        "metric": "Canais conectados",
+        "metatok": "5+ em um só cérebro",
+        "market": "1-2 canais isolados"
+      }
+    },
+    "stackLabel": "Stack completo",
+    "stackTitle": "As empresas que já lideram seu setor automatizam com a MetaTok. E a sua?",
+    "stackDesc": "Mostramos quais módulos você precisa primeiro, qual impacto esperar e como implementar sem atrito. Sem fidelidade, sem letras miúdas.",
+    "stackCta": "Quero ser o Top 1 do meu setor",
+    "trustStrip": {
+      "secure": {
+        "title": "100% Seguro",
+        "desc": "Seus dados protegidos"
+      },
+      "fast": {
+        "title": "Implementação Rápida",
+        "desc": "Pronto em dias, não em meses"
+      },
+      "results": {
+        "title": "Resultados Reais",
+        "desc": "Métricas que impulsionam seu negócio"
+      },
+      "support": {
+        "title": "Suporte 24/7",
+        "desc": "Estamos sempre com você"
+      }
+    }
+  },
+  "comparativa": {
+    "eyebrow": "A Decisão",
+    "titlePrefix": "MetaTok AI vs.",
+    "titleHighlight": "chatbots tradicionais",
+    "description": "Uma árvore de decisões chata contra uma IA generativa orientada à conversão. A diferença entre perder um lead e fechar uma venda.",
+    "headers": {
+      "feature": "Característica",
+      "bot": "Bot Tradicional",
+      "metatok": "MetaTok AI"
+    },
+    "rows": {
+      "quality": {
+        "feature": "Qualidade da Resposta",
+        "bot": "Estática e baseada em botões (árvore de decisões)",
+        "metatok": "Fluida, humana e persuasiva (IA Generativa)"
+      },
+      "integration": {
+        "feature": "Integração",
+        "bot": "Limitada ou exige Zapier complexo",
+        "metatok": "Nativa com CRMs, apps e setor público"
+      },
+      "goal": {
+        "feature": "Objetivo Principal",
+        "bot": "Dar informação e transferir para um humano",
+        "metatok": "Superar objeções e fechar a venda ou o agendamento"
+      },
+      "setup": {
+        "feature": "Configuração",
+        "bot": "Meses mapeando fluxos intermináveis",
+        "metatok": "Em minutos, treinado com seus próprios documentos"
+      },
+      "support": {
+        "feature": "Suporte",
+        "bot": "Sistema básico de tickets",
+        "metatok": "Equipe de sucesso dedicada e otimização contínua"
+      }
+    }
+  },
+  "diagnostico": {
+    "eyebrow": "Antes e depois",
+    "titleLine1": "Essa situação",
+    "titleLine2": "parece com o seu negócio hoje?",
+    "descPrefix": "A maioria dos negócios perde entre",
+    "descHighlight": "40% e 60%",
+    "descSuffix": "dos seus leads por falta de resposta rápida e acompanhamento sistemático.",
+    "actualLabel": "Situação atual",
+    "actualSubLabel": "Sem automação",
+    "metatokLabel": "Com a Metatok",
+    "metatokSubLabel": "Automação ativa",
+    "actualItems": [
+      "Leads que não recebem resposta em menos de 5 minutos",
+      "Sua equipe perde horas com prospects que nunca vão comprar",
+      "Compromissos perdidos por falta de acompanhamento",
+      "CRM desatualizado com dados duplicados ou incompletos",
+      "Nenhuma presença ativa fora do horário comercial"
+    ],
+    "metatokItems": [
+      "Resposta imediata a cada lead, 24/7, em todos os seus canais",
+      "Você só fala com prospects prontos para comprar",
+      "Agendamento automático com confirmação e lembretes",
+      "CRM atualizado em tempo real, sem intervenção humana",
+      "Seu negócio capta e qualifica mesmo enquanto você dorme"
+    ],
+    "ctaButton": "Pare de perder leads: auditoria gratuita em 24 h",
+    "trust": {
+      "noCompromise": "Sem compromisso",
+      "noPermanence": "Sem fidelidade",
+      "response": "Resposta em menos de 24 h"
+    }
+  },
+  "academy": {
+    "badge1": "MetaTok Academy",
+    "badge2": "MetaTok Masters",
+    "titlePrefix": "Treinamento para",
+    "titleHighlight": "vender melhor",
+    "titleSuffix": "e liderar sua categoria",
+    "description": "Não entregamos apenas software. Entregamos metodologia comercial, acompanhamento e treinamento contínuo para transformar sua marca em referência de mercado.",
+    "features": {
+      "playbooks": {
+        "title": "Playbooks comerciais",
+        "desc": "Roteiros, contorno de objeções e sequências prontas para aplicar em campo."
+      },
+      "guerrilla": {
+        "title": "Marketing de guerrilha",
+        "desc": "Campanhas, conteúdo e posicionamento para acelerar a captação."
+      },
+      "scaling": {
+        "title": "Escala operacional",
+        "desc": "Rituais e métricas para crescer sem perder conversão nem qualidade."
+      }
+    },
+    "routeLabel": "Trilha de acompanhamento",
+    "routeTitle": "Do onboarding ao fechamento repetível",
+    "routeDesc": "Sessões ao vivo, workshops táticos e suporte de especialistas para que sua equipe comercial implemente rápido, meça melhor e escale sua taxa de fechamento de forma sustentável.",
+    "routeItems": [
+      "Webinars semanais, certificações e guias por vertical para equipes de vendas.",
+      "Framework de conversão com IA: prospecção, qualificação, objeções e fechamento.",
+      "Mentoria em posicionamento de marca para vender método, não só tecnologia."
+    ],
+    "ctaButton": "Quero entrar na MetaTok Academy",
+    "dashboardLabel": "Academy Dashboard",
+    "cohortLabel": "Turma ativa",
+    "moduleLabel": "Módulo",
+    "modules": {
+      "01": "Arquitetura comercial com IA",
+      "02": "Roteiros de fechamento por nicho",
+      "03": "Escala e liderança de equipe"
+    },
+    "supportTitle": "Suporte especializado",
+    "supportDesc": "Mentoria direta + playbooks acionáveis",
+    "includedLabel": "Incluído"
+  },
+  "proceso": {
+    "eyebrow": "Do diagnóstico à implementação",
+    "titlePrefix": "Um processo de",
+    "titleHighlight": "alta precisão",
+    "titleSuffix": "sem improviso",
+    "description": "Cada etapa é desenhada para gerar resultados mensuráveis e acelerar seu crescimento.",
+    "steps": {
+      "01": {
+        "title": "Auditoria de Diagnóstico",
+        "desc": "Um especialista analisa sua operação atual, detecta vazamentos de conversão e quantifica exatamente quanto você está perdendo sem automação.",
+        "tag": "Mapa claro de prioridades"
+      },
+      "02": {
+        "title": "Estratégia sob Medida",
+        "desc": "Desenhamos a arquitetura de agentes, fluxos e integrações adaptada exatamente ao seu modelo de negócio e canais atuais.",
+        "tag": "Proposta técnica personalizada"
+      },
+      "03": {
+        "title": "Orçamento Transparente",
+        "desc": "Você recebe uma proposta de preço baseada na complexidade real. Sem letras miúdas, sem custos ocultos, sem fidelidade forçada.",
+        "tag": "Investimento claro e escalável"
+      },
+      "04": {
+        "title": "Implementação Chave na Mão",
+        "desc": "Entre 15 e 30 dias: programação, treinamento dos agentes e QA completo. Sua equipe não mexe em código. Só recebe resultados.",
+        "tag": "Sistema ativo em produção"
+      }
+    },
+    "ctaButton": "Solicite sua Auditoria Gratuita"
+  },
+  "canales": {
+    "eyebrow": "Integração omnicanal",
+    "titlePrefix": "Sua IA onde",
+    "titleHighlight": "seus clientes já estão",
+    "description": "Implantamos nos canais que seus prospects já usam. Sem atrito, sem mudança de plataforma para eles.",
+    "items": {
+      "phone": {
+        "name": "Telefone",
+        "desc": "Chamadas de voz com IA"
+      },
+      "web": {
+        "name": "Site",
+        "desc": "Chat no seu site"
+      },
+      "whatsapp": {
+        "name": "WhatsApp",
+        "desc": "O canal mais usado"
+      },
+      "instagram": {
+        "name": "Instagram",
+        "desc": "DMs automatizadas"
+      },
+      "api": {
+        "name": "API",
+        "desc": "Integre qualquer sistema"
+      }
+    },
+    "otherChannel": "Usa outro canal ou sistema interno?",
+    "contactUs": "Fale conosco →"
+  },
+  "planes": {
+    "eyebrow": "Planos e Preços",
+    "titleLine1": "Invista em resultados,",
+    "titleLine2": "não em horas extras",
+    "description": "Sem fidelidade. Sem custos ocultos. Escale apenas quando precisar.",
+    "cycles": {
+      "monthly": "Mensal",
+      "quarterly": "Trimestral",
+      "yearly": "Anual",
+      "quarterlyBadge": "Economize ~16%",
+      "yearlyBadge": "Economize ~29%"
+    },
+    "perMonth": "/mês",
+    "billedNote": "Faturado conforme o ciclo escolhido",
+    "featuredBadge": "Mais Popular",
+    "plans": {
+      "starter": {
+        "name": "Starter",
+        "desc": "Ideal para equipes pequenas que querem começar com IA sem risco.",
+        "features": [
+          "1 canal integrado (Site ou WhatsApp)",
+          "Assistente de IA básico com NLP",
+          "Até 500 conversas/mês",
+          "Painel de controle básico",
+          "Qualificação automática de leads",
+          "Suporte por email"
+        ],
+        "cta": "Começar agora"
+      },
+      "business": {
+        "name": "Business",
+        "desc": "Para empresas que querem automação total e não perder nenhum lead.",
+        "features": [
+          "Até 3 canais integrados",
+          "Chatbots e voicebots premium",
+          "Acompanhamento e pontuação automáticos",
+          "Integração bidirecional com CRM",
+          "Agendamento automático com lembretes",
+          "Flow-works inteligentes",
+          "Painel de analytics avançado",
+          "Suporte prioritário 24/5"
+        ],
+        "cta": "Escalar minhas vendas"
+      },
+      "enterprise": {
+        "name": "Enterprise",
+        "desc": "Solução avançada com canais ilimitados e acompanhamento personalizado.",
+        "features": [
+          "Canais ilimitados",
+          "Fluxos e bots totalmente sob medida",
+          "Integrações avançadas via API",
+          "Gerente de conta dedicado 1:1",
+          "SLA de disponibilidade garantido",
+          "Onboarding personalizado",
+          "Suporte técnico especializado 24/7"
+        ],
+        "cta": "Solicitar proposta"
+      }
+    },
+    "footerNote": "Todos os planos incluem acesso à plataforma Metatok. Sem fidelidade nem custos ocultos.",
+    "customNeed": "Precisa de algo específico?",
+    "customCta": "Vamos falar sobre um plano sob medida →"
+  },
+  "testimonios": {
+    "eyebrow": "Histórias de Sucesso",
+    "titlePrefix": "Casos reais de negócios que já",
+    "titleHighlight": "escalaram sua captação",
+    "description": "Resultados comprovados por líderes em seus respectivos setores após integrar os agentes de IA da Metatok em sua operação.",
+    "items": {
+      "1": {
+        "role": "Diretor de Vendas, imobiliária",
+        "quote": "A Metatok.ai transformou nosso funil de vendas: assistentes humanoides atendem 24/7 e, com automações inteligentes, transformam consultas frias em compromissos fechados."
+      },
+      "2": {
+        "role": "Direção de clínica",
+        "quote": "Nosso funil de vendas agora flui sozinho: assistentes humanoides resolvem dúvidas na hora e as automações de acompanhamento recuperam compromissos que antes se perdiam."
+      },
+      "3": {
+        "role": "Gerente de Operações, marketplace digital",
+        "quote": "Escalamos o funil de vendas sem ampliar a equipe: assistentes humanoides gerenciam pedidos e devoluções, e as automações mantêm cada oportunidade ativa até a compra."
+      },
+      "4": {
+        "role": "Proprietário, \"Viagens Sem Fronteiras\"",
+        "quote": "Passamos de respostas demoradas para um funil de vendas sempre ativo: assistentes humanoides de voz atendem com um tom envolvente e as automações confirmam e reativam reservas."
+      },
+      "5": {
+        "role": "Diretor de Vendas, \"TecnoCenter\"",
+        "quote": "Nosso funil de vendas no site agora converte melhor: assistentes humanoides respondem de forma persuasiva e as automações filtram, priorizam e impulsionam leads com alta intenção."
+      },
+      "6": {
+        "role": "Advogado sócio, \"Garrido & Asociados\"",
+        "quote": "A Metatok.ai organizou completamente nosso funil de vendas: assistentes humanoides qualificam casos e as automações agendam, documentam e deixam cada consulta pronta para fechar."
+      }
+    }
+  },
+  "auditoria": {
+    "badge": "Auditoria 100% gratuita · Sem compromisso",
+    "title": "Descubra exatamente quanto você está deixando de ganhar",
+    "description": "Não é uma ligação comercial. É uma sessão técnica gratuita em que um especialista em automação analisa sua operação real e mostra — com números — quanto você pode melhorar.",
+    "checklist": [
+      "Análise dos seus canais e volume de tráfego atuais",
+      "Detecção de vazamentos de conversão no seu funil",
+      "Mapa estratégico personalizado com IA",
+      "Estimativa do impacto real no faturamento"
+    ],
+    "ctaButton": "Solicitar minha auditoria gratuita",
+    "limitedSlots": "Vagas limitadas toda semana. Resposta garantida em < 24 h.",
+    "statsLabel": "Resultados médios após 60 dias",
+    "stats": {
+      "recovered": {
+        "value": "+38%",
+        "label": "leads recuperados"
+      },
+      "saved": {
+        "value": "22h",
+        "label": "economizadas / semana"
+      },
+      "appointments": {
+        "value": "+54%",
+        "label": "compromissos agendados"
+      },
+      "conversion": {
+        "value": "+27%",
+        "label": "taxa de conversão"
+      }
+    },
+    "disclaimer": "*Médias observadas em clientes reais. Os resultados podem variar conforme o setor e o volume."
+  },
+  "faq": {
+    "eyebrow": "FAQ",
+    "title": "Perguntas frequentes",
+    "description": "Respondemos às dúvidas mais comuns sobre o serviço, a implementação e o investimento.",
+    "items": {
+      "1": {
+        "q": "Em que consiste exatamente o serviço de automação com IA?",
+        "a": "Implantamos agentes de inteligência artificial que assumem tarefas reais da sua operação: vendas, suporte, qualificação de leads, agendamento e gestão de redes sociais, nos canais que você já usa (WhatsApp, chamadas de voz, Instagram e seu site). Não é um chatbot de respostas prontas: é um sistema treinado com as informações do seu negócio que conversa, qualifica e fecha de forma autônoma."
+      },
+      "2": {
+        "q": "Como é o processo depois que eu solicito minha auditoria gratuita?",
+        "a": "Um especialista em automação analisa sua operação atual (canais, volume, funil) e entrega um diagnóstico com os vazamentos de conversão detectados. A partir daí, desenhamos a arquitetura de agentes sob medida, apresentamos uma proposta de preço transparente e implantamos o sistema completo em 15-30 dias."
+      },
+      "3": {
+        "q": "Tenho algum tipo de fidelidade contratual?",
+        "a": "Não. Todos os planos da MetaTok operam sem fidelidade nem custos ocultos. Você pode escalar, mudar de plano ou cancelar quando precisar: nosso objetivo é que você fique por resultados, não por contrato."
+      },
+      "4": {
+        "q": "Por que o orçamento é sob medida?",
+        "a": "Cada negócio tem canais, volume de conversas e integrações diferentes. Em vez de vender um pacote genérico, auditamos sua operação real e apresentamos um investimento baseado na complexidade exata do seu caso, sem letras miúdas."
+      },
+      "5": {
+        "q": "Quanto tempo leva a implementação completa?",
+        "a": "Entre 15 e 30 dias desde a auditoria inicial até o sistema ativo em produção, incluindo programação dos agentes, treinamento com as informações do seu negócio e integrações com seu CRM ou ferramentas atuais. Sua equipe não mexe em código em nenhum momento."
+      },
+      "6": {
+        "q": "Em que os seus agentes se diferenciam de um chatbot convencional?",
+        "a": "Um chatbot tradicional segue uma árvore de decisões estática e transfere para um humano assim que a conversa fica mais complexa. Os agentes da MetaTok usam IA generativa: entendem intenção e contexto, contornam objeções e são treinados para fechar a venda ou o agendamento, não só dar informações."
+      }
+    }
+  },
+  "contacto": {
+    "eyebrow": "Contato",
+    "title": "Vamos falar sobre sua próxima vantagem competitiva",
+    "description": "Escreva para nós e um técnico sênior vai entrar em contato em menos de 24 horas para agendar sua auditoria gratuita.",
+    "remoteLabel": "Atendimento remoto · Cobertura internacional",
+    "gdprLabel": "Tratamos seus dados de acordo com a LGPD",
+    "noCommitmentTitle": "Sem compromisso",
+    "noCommitmentDesc": "Não vendemos ligações comerciais. Você vai receber uma análise técnica real de como a IA pode maximizar o seu faturamento atual.",
+    "fields": {
+      "nombre": "Nome",
+      "email": "Email",
+      "empresa": "Empresa",
+      "telefono": "Telefone",
+      "web": "Site (opcional)",
+      "automatizar": "O que você quer automatizar? (opcional)"
+    },
+    "submitLabel": "Solicitar auditoria",
+    "consentText": "Ao enviar, você concorda que entremos em contato sobre a sua solicitação de auditoria.",
+    "successTitle": "Solicitação recebida!",
+    "successDesc": "Um técnico sênior da MetaTok vai entrar em contato em menos de 24 horas para agendar sua auditoria gratuita."
+  },
+  "footer": {
+    "tagline": "Um ecossistema de Agentes Autônomos de IA que vendem, atendem e gerenciam seu negócio 24/7 no WhatsApp, chamadas, Instagram e site.",
+    "columns": {
+      "solucion": {
+        "title": "Solução",
+        "links": {
+          "servicios": "Serviços",
+          "sectores": "Por setor",
+          "engine": "Motor MetaTok Engine V5",
+          "whiteLabel": "Produto White Label"
+        }
+      },
+      "explorar": {
+        "title": "Explorar",
+        "links": {
+          "academy": "MetaTok Academy",
+          "planes": "Planos e preços",
+          "testimonios": "Casos de sucesso",
+          "faq": "Perguntas frequentes"
+        }
+      },
+      "legal": {
+        "title": "Legal",
+        "links": {
+          "aviso": "Aviso Legal",
+          "privacidad": "Política de Privacidade",
+          "cookies": "Política de Cookies",
+          "terminos": "Termos e Condições"
+        }
+      }
+    },
+    "copyright": "© {year} MetaTok AI — Todos os direitos reservados."
+  },
+  "legalPages": {
+    "avisoLegal": {
+      "title": "Aviso Legal",
+      "updated": "Última atualização: setembro de 2026",
+      "sections": [
+        {
+          "heading": "1. Identificação do titular",
+          "body": [
+            "Em cumprimento dos deveres de informação aplicáveis, informa-se que o titular do site www.metatok.ai («o Site») é a MetaTok LLC («MetaTok»), sociedade de responsabilidade limitada constituída nos Estados Unidos.",
+            "Dados de contacto: info@metatok.ai."
+          ]
+        },
+        {
+          "heading": "2. Objeto e âmbito de aplicação",
+          "body": [
+            "Este Aviso Legal regula o acesso e a utilização do Site, cujo objetivo é informar sobre os serviços de agentes de inteligência artificial e automação comercial oferecidos pela MetaTok, bem como facilitar o contacto e a contratação desses serviços.",
+            "O acesso ao Site e/ou a utilização dos serviços nele oferecidos confere a condição de utilizador e implica a aceitação plena das condições incluídas neste Aviso Legal."
+          ]
+        },
+        {
+          "heading": "3. Condições de acesso e utilização",
+          "body": [
+            "O utilizador compromete-se a fazer um uso adequado e lícito do Site, bem como dos conteúdos e informações nele disponibilizados, em conformidade com a legislação aplicável, este Aviso Legal, a moral e a ordem pública.",
+            "É proibida a utilização do Site para fins ilícitos ou lesivos, ou de qualquer forma que possa causar prejuízo ou impedir o seu normal funcionamento."
+          ]
+        },
+        {
+          "heading": "4. Propriedade intelectual e industrial",
+          "body": [
+            "Todos os conteúdos do Site, incluindo textos, imagens, marcas, logótipos, designs, código-fonte e demais elementos, são propriedade da MetaTok ou de terceiros que autorizaram a sua utilização, estando protegidos pela legislação de propriedade intelectual e industrial.",
+            "É proibida a reprodução, distribuição, transformação ou comunicação pública destes conteúdos sem a autorização prévia e expressa da MetaTok."
+          ]
+        },
+        {
+          "heading": "5. Exclusão de garantias e responsabilidade",
+          "body": [
+            "A MetaTok não garante a disponibilidade, continuidade nem a infalibilidade do funcionamento do Site e, por conseguinte, exclui qualquer responsabilidade por danos decorrentes da falta de disponibilidade ou continuidade do Site e dos seus serviços.",
+            "A MetaTok também não se responsabiliza por danos decorrentes de uso ilícito ou indevido do Site por terceiros."
+          ]
+        },
+        {
+          "heading": "6. Ligações a terceiros",
+          "body": [
+            "O Site pode incluir ligações para sites de terceiros (por exemplo, plataformas de reserva ou redes sociais). A MetaTok não assume qualquer responsabilidade pelo conteúdo, políticas de privacidade ou práticas desses sites terceiros."
+          ]
+        },
+        {
+          "heading": "7. Legislação aplicável e foro",
+          "body": [
+            "Para qualquer questão litigiosa relacionada com o Site ou os serviços prestados, aplicar-se-á a legislação vigente no local de residência habitual do utilizador, sem prejuízo das normas de proteção do consumidor aplicáveis."
+          ]
+        }
+      ]
+    },
+    "privacidad": {
+      "title": "Política de Privacidade",
+      "updated": "Última atualização: setembro de 2026",
+      "sections": [
+        {
+          "heading": "1. Responsável pelo tratamento",
+          "body": [
+            "O responsável pelo tratamento dos dados pessoais recolhidos através do Site é a MetaTok LLC. Pode contactar-nos para qualquer questão relacionada com privacidade através de info@metatok.ai."
+          ]
+        },
+        {
+          "heading": "2. Dados que recolhemos",
+          "body": [
+            "Recolhemos os dados que nos fornece voluntariamente através do nosso formulário/widget de marcação de auditoria (nome, empresa, telefone, e-mail e detalhes sobre o seu negócio), bem como dados de navegação recolhidos através de cookies e ferramentas de análise web."
+          ]
+        },
+        {
+          "heading": "3. Finalidade do tratamento",
+          "body": [
+            "Utilizamos os seus dados para: (i) gerir o seu pedido de auditoria ou demonstração, (ii) contactá-lo com informação comercial sobre os nossos serviços, (iii) melhorar o Site e o seu desempenho, e (iv) cumprir obrigações legais."
+          ]
+        },
+        {
+          "heading": "4. Base legal",
+          "body": [
+            "O tratamento baseia-se no consentimento do utilizador ao enviar os seus dados através dos nossos formulários, e no interesse legítimo da MetaTok em responder a pedidos comerciais e melhorar os seus serviços."
+          ]
+        },
+        {
+          "heading": "5. Conservação dos dados",
+          "body": [
+            "Conservaremos os seus dados pessoais enquanto existir uma relação comercial ou de interesse mútuo, e posteriormente pelos prazos legalmente exigidos, após os quais serão eliminados ou anonimizados."
+          ]
+        },
+        {
+          "heading": "6. Destinatários e subcontratantes",
+          "body": [
+            "Os seus dados podem ser tratados por fornecedores tecnológicos que prestam serviços à MetaTok, como a plataforma de gestão de reservas e CRM utilizada para agendar auditorias, sempre sob as garantias contratuais adequadas e apenas para prestar esse serviço."
+          ]
+        },
+        {
+          "heading": "7. Transferências internacionais",
+          "body": [
+            "Sendo a MetaTok LLC uma entidade constituída nos Estados Unidos, os seus dados poderão ser tratados ou armazenados fora do Espaço Económico Europeu. Nesses casos, adotamos as garantias adequadas exigidas pela legislação de proteção de dados aplicável, como as Cláusulas Contratuais-Tipo."
+          ]
+        },
+        {
+          "heading": "8. Os seus direitos",
+          "body": [
+            "Pode exercer os seus direitos de acesso, retificação, apagamento, oposição, limitação do tratamento e portabilidade dos dados enviando um e-mail para info@metatok.ai, indicando o direito que pretende exercer e anexando um documento que comprove a sua identidade."
+          ]
+        },
+        {
+          "heading": "9. Alterações a esta política",
+          "body": [
+            "A MetaTok poderá atualizar esta Política de Privacidade para a adaptar a novidades legislativas ou alterações nos nossos serviços. Recomendamos que consulte esta página periodicamente."
+          ]
+        }
+      ]
+    },
+    "cookies": {
+      "title": "Política de Cookies",
+      "updated": "Última atualização: setembro de 2026",
+      "sections": [
+        {
+          "heading": "1. O que são cookies?",
+          "body": [
+            "Cookies são pequenos ficheiros de texto que um site armazena no dispositivo do utilizador para memorizar informação sobre a sua visita, como as suas preferências ou o seu comportamento de navegação."
+          ]
+        },
+        {
+          "heading": "2. Tipos de cookies que utilizamos",
+          "body": [
+            "Cookies técnicos ou necessários: essenciais para o correto funcionamento do Site.",
+            "Cookies analíticos: permitem-nos compreender como os utilizadores interagem com o Site para melhorar o seu desempenho e conteúdo.",
+            "Cookies de terceiros: utilizados por serviços integrados no Site, como o widget de marcação de auditorias, para o seu correto funcionamento."
+          ]
+        },
+        {
+          "heading": "3. Como gerir os cookies",
+          "body": [
+            "Pode permitir, bloquear ou eliminar os cookies instalados no seu dispositivo através das definições do seu navegador. Note que desativar determinados cookies pode afetar o correto funcionamento do Site."
+          ]
+        },
+        {
+          "heading": "4. Atualização desta política",
+          "body": [
+            "Esta Política de Cookies pode ser atualizada em função de alterações regulamentares ou dos serviços utilizados pelo Site. Recomendamos que a consulte periodicamente."
+          ]
+        }
+      ]
+    },
+    "terminos": {
+      "title": "Termos e Condições",
+      "updated": "Última atualização: setembro de 2026",
+      "sections": [
+        {
+          "heading": "1. Aceitação dos termos",
+          "body": [
+            "O acesso e a utilização do Site, bem como a contratação dos serviços oferecidos pela MetaTok LLC, implicam a aceitação plena destes Termos e Condições."
+          ]
+        },
+        {
+          "heading": "2. Descrição do serviço",
+          "body": [
+            "A MetaTok oferece agentes de inteligência artificial e soluções de automação comercial (WhatsApp, chamadas, redes sociais e web) para empresas, disponíveis através de planos de subscrição."
+          ]
+        },
+        {
+          "heading": "3. Condições de contratação",
+          "body": [
+            "Os preços, características e condições de cada plano estão detalhados no Site e podem ser alterados pela MetaTok, aplicando-se as condições em vigor no momento da contratação."
+          ]
+        },
+        {
+          "heading": "4. Obrigações do utilizador/cliente",
+          "body": [
+            "O cliente compromete-se a fornecer informação verdadeira e atualizada, a fazer um uso lícito do serviço e a não o utilizar para fins contrários à lei, à moral ou à ordem pública."
+          ]
+        },
+        {
+          "heading": "5. Propriedade intelectual",
+          "body": [
+            "O software, a tecnologia, a marca e os conteúdos associados aos serviços da MetaTok são propriedade da MetaTok LLC e estão protegidos pela legislação de propriedade intelectual e industrial."
+          ]
+        },
+        {
+          "heading": "6. Limitação de responsabilidade",
+          "body": [
+            "A MetaTok não será responsável por danos indiretos, perda de lucros ou de oportunidades de negócio decorrentes da utilização do serviço, exceto nos casos em que a lei aplicável não permita tal limitação."
+          ]
+        },
+        {
+          "heading": "7. Alterações",
+          "body": [
+            "A MetaTok poderá alterar estes Termos e Condições a qualquer momento, publicando a versão atualizada no Site."
+          ]
+        },
+        {
+          "heading": "8. Legislação aplicável",
+          "body": [
+            "Estes Termos e Condições regem-se pela legislação aplicável, sem prejuízo das normas de proteção do consumidor aplicáveis consoante o país de residência do cliente."
+          ]
+        }
+      ]
+    }
+  }
+}
