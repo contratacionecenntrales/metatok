@@ -9,7 +9,7 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: Diction
   const exploreHrefs = ["#academy", "#precios", "#casos", "#faq"];
 
   return (
-    <footer className="border-t border-white/10 bg-navy-deep text-white/70">
+    <footer className="border-t border-white/10 bg-black/20 text-white/70">
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-1">

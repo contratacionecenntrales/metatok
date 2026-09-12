@@ -17,7 +17,7 @@ export default function Header({ locale, dict }: { locale: Locale; dict: Diction
   ];
 
   return (
-    <header className="sticky top-0 z-50 border-b border-white/10 bg-navy-deep/90 backdrop-blur supports-[backdrop-filter]:bg-navy-deep/70">
+    <header className="glass sticky top-0 z-50">
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link href={`/${locale}`} className="flex items-center gap-2 shrink-0">
           <Image src="/images/logo-mark.svg" alt="MetaTok AI" width={32} height={32} className="rounded-lg" />
@@ -57,7 +57,7 @@ export default function Header({ locale, dict }: { locale: Locale; dict: Diction
       </div>
 
       {open && (
-        <div className="border-t border-white/10 bg-navy-deep px-4 pb-4 md:hidden">
+        <div className="glass-strong border-t border-white/10 px-4 pb-4 md:hidden">
           <nav className="flex flex-col gap-3 pt-3">
             {links.map((l) => (
               <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="text-sm font-medium text-white/80">

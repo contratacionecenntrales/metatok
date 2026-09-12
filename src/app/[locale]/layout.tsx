@@ -6,6 +6,7 @@ import { locales, isValidLocale, isRtl, siteUrl, type Locale } from "@/i18n/conf
 import { getDictionary } from "@/i18n/getDictionary";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
+import MeshBackground from "@/components/MeshBackground";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter", display: "swap" });
 const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit", display: "swap" });
@@ -95,6 +96,7 @@ export default async function LocaleLayout({
   return (
     <html lang={locale} dir={dir} className={`${inter.variable} ${outfit.variable} h-full`}>
       <body className="flex min-h-full flex-col bg-background text-foreground antialiased">
+        <MeshBackground />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(orgJsonLd) }}
