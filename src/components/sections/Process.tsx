@@ -17,8 +17,8 @@ export default function Process({ dict, locale }: { dict: Dictionary; locale: Lo
             <Reveal key={step.number} delay={i * 100}>
               <div className="bento-card glass relative h-full rounded-2xl p-6">
                 <span className="font-display text-3xl font-bold text-brand/30">{step.number}</span>
-                <h3 className="mt-3 text-base font-semibold text-white">{step.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-white/60">{step.desc}</p>
+                <h3 className="mt-3 text-base font-semibold text-foreground">{step.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{step.desc}</p>
                 <p className="mt-4 text-xs font-semibold uppercase tracking-wide text-neon">{step.tag}</p>
               </div>
             </Reveal>

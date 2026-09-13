@@ -11,10 +11,10 @@ export default function Contact({ dict }: { dict: Dictionary }) {
         <span className="glass inline-flex items-center rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-neon">
           {c.eyebrow}
         </span>
-        <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-balance text-white sm:text-4xl">
+        <h2 className="mt-4 font-display text-3xl font-semibold tracking-tight text-balance text-foreground sm:text-4xl">
           {c.title}
         </h2>
-        <p className="mt-4 text-lg leading-relaxed text-white/65">{c.subtitle}</p>
+        <p className="mt-4 text-lg leading-relaxed text-muted-foreground">{c.subtitle}</p>
 
         <a
           href={`mailto:${c.email}?subject=${subject}`}
@@ -23,14 +23,14 @@ export default function Contact({ dict }: { dict: Dictionary }) {
           {c.formSubmit}
         </a>
 
-        <p className="mt-4 text-sm font-medium text-white">{c.email}</p>
+        <p className="mt-4 text-sm font-medium text-foreground">{c.email}</p>
 
-        <div className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-white/55">
+        <div className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-2 text-sm text-muted-foreground">
           <span>{c.coverage}</span>
           <span>{c.gdpr}</span>
         </div>
 
-        <p className="mx-auto mt-6 max-w-lg text-xs text-white/40">{c.disclaimer}</p>
+        <p className="mx-auto mt-6 max-w-lg text-xs text-muted-foreground/80">{c.disclaimer}</p>
       </Reveal>
     </section>
   );

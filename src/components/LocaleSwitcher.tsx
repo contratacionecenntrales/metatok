@@ -18,7 +18,7 @@ export default function LocaleSwitcher({ locale }: { locale: Locale }) {
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
-        className="flex items-center gap-1.5 rounded-full border border-white/15 px-3 py-1.5 text-sm text-white/85 transition hover:border-white/30"
+        className="flex items-center gap-1.5 rounded-full border border-border px-3 py-1.5 text-sm text-foreground transition hover:border-brand/40"
       >
         <span>{localeFlags[locale]}</span>
         <span className="uppercase">{locale}</span>
@@ -26,14 +26,14 @@ export default function LocaleSwitcher({ locale }: { locale: Locale }) {
       {open && (
         <>
           <div className="fixed inset-0 z-10" onClick={() => setOpen(false)} />
-          <div className="absolute right-0 z-20 mt-2 w-44 overflow-hidden rounded-xl border border-white/10 bg-navy shadow-xl">
+          <div className="glass-strong absolute right-0 z-20 mt-2 w-44 overflow-hidden rounded-xl">
             {locales.map((l) => (
               <a
                 key={l}
                 href={pathFor(l)}
                 onClick={() => setOpen(false)}
-                className={`flex items-center gap-2 px-3 py-2 text-sm text-white/85 hover:bg-white/10 ${
-                  l === locale ? "bg-white/5 font-semibold text-white" : ""
+                className={`flex items-center gap-2 px-3 py-2 text-sm text-foreground hover:bg-brand/5 ${
+                  l === locale ? "bg-brand/5 font-semibold" : ""
                 }`}
               >
                 <span>{localeFlags[l]}</span>

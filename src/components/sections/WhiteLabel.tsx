@@ -16,8 +16,8 @@ export default function WhiteLabel({ dict, locale }: { dict: Dictionary; locale:
           {w.features.map((f, i) => (
             <Reveal key={f.title} delay={i * 90}>
               <div className="bento-card glass h-full rounded-2xl p-6">
-                <h3 className="text-base font-semibold text-white">{f.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-white/60">{f.desc}</p>
+                <h3 className="text-base font-semibold text-foreground">{f.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{f.desc}</p>
               </div>
             </Reveal>
           ))}
@@ -32,7 +32,7 @@ export default function WhiteLabel({ dict, locale }: { dict: Dictionary; locale:
           </a>
           <a
             href={`/${locale}#contacto`}
-            className="glass rounded-full px-6 py-3 text-sm font-semibold text-white transition hover:bg-white/10"
+            className="glass rounded-full px-6 py-3 text-sm font-semibold text-foreground transition hover:bg-white"
           >
             {w.ctaSecondary}
           </a>

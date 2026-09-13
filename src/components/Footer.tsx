@@ -9,18 +9,18 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: Diction
   const exploreHrefs = ["#academy", "#precios", "#casos", "#faq"];
 
   return (
-    <footer className="border-t border-white/10 bg-black/20 text-white/70">
+    <footer className="border-t border-border bg-muted/60 text-muted-foreground">
       <div className="mx-auto max-w-7xl px-4 py-14 sm:px-6 lg:px-8">
         <div className="grid gap-10 md:grid-cols-4">
           <div className="md:col-span-1">
             <Link href={`/${locale}`} className="flex items-center gap-2">
               <Image src="/images/logo-mark.svg" alt="MetaTok AI" width={32} height={32} className="rounded-lg" />
-              <span className="font-display text-lg font-semibold text-white">
+              <span className="font-display text-lg font-semibold text-foreground">
                 MetaTok<span className="text-brand">.ai</span>
               </span>
             </Link>
             <p className="mt-4 text-sm leading-relaxed">{dict.footer.tagline}</p>
-            <a href={`mailto:${dict.contact.email}`} className="mt-4 inline-block text-sm text-white/80 hover:text-white">
+            <a href={`mailto:${dict.contact.email}`} className="mt-4 inline-block text-sm hover:text-foreground">
               {dict.contact.email}
             </a>
           </div>
@@ -29,11 +29,11 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: Diction
           <FooterCol title={dict.footer.exploreTitle} links={dict.footer.exploreLinks} hrefs={exploreHrefs} locale={locale} />
 
           <div>
-            <h3 className="text-sm font-semibold uppercase tracking-wide text-white">{dict.footer.legalTitle}</h3>
+            <h3 className="text-sm font-semibold uppercase tracking-wide text-foreground">{dict.footer.legalTitle}</h3>
             <ul className="mt-4 space-y-3">
               {dict.footer.legalLinks.map((label, i) => (
                 <li key={label}>
-                  <Link href={`/${locale}/legal/${legalSlugs[i]}`} className="text-sm hover:text-white">
+                  <Link href={`/${locale}/legal/${legalSlugs[i]}`} className="text-sm hover:text-foreground">
                     {label}
                   </Link>
                 </li>
@@ -42,7 +42,7 @@ export default function Footer({ locale, dict }: { locale: Locale; dict: Diction
           </div>
         </div>
 
-        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-white/10 pt-6 text-sm sm:flex-row">
+        <div className="mt-12 flex flex-col items-center justify-between gap-4 border-t border-border pt-6 text-sm sm:flex-row">
           <p>© 2026 {dict.footer.rights}</p>
         </div>
       </div>
@@ -63,11 +63,11 @@ function FooterCol({
 }) {
   return (
     <div>
-      <h3 className="text-sm font-semibold uppercase tracking-wide text-white">{title}</h3>
+      <h3 className="text-sm font-semibold uppercase tracking-wide text-foreground">{title}</h3>
       <ul className="mt-4 space-y-3">
         {links.map((label, i) => (
           <li key={label}>
-            <a href={`/${locale}${hrefs[i]}`} className="text-sm hover:text-white">
+            <a href={`/${locale}${hrefs[i]}`} className="text-sm hover:text-foreground">
               {label}
             </a>
           </li>

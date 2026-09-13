@@ -1,22 +1,24 @@
 @import "tailwindcss";
 
 :root {
-  color-scheme: dark;
-  --background: #030712;
-  --foreground: #f5f7fb;
-  --muted: #0a1120;
-  --muted-foreground: #93a0b4;
-  --border: rgba(255, 255, 255, 0.09);
+  color-scheme: light;
+  --background: #f7f8fb;
+  --surface: #ffffff;
+  --foreground: #0b1220;
+  --muted: #eef1f6;
+  --muted-foreground: #5b6472;
+  --border: #e3e7ee;
   --brand: #2f66e0;
   --brand-dark: #1b3e7e;
-  --neon: #22d3ee;
-  --navy: #0a1120;
-  --navy-deep: #030712;
-  --accent: #16e0a8;
+  --neon: #0e7490;
+  --navy: #0f1b33;
+  --navy-deep: #0b1220;
+  --accent: #0f9d68;
 }
 
 @theme inline {
   --color-background: var(--background);
+  --color-surface: var(--surface);
   --color-foreground: var(--foreground);
   --color-muted: var(--muted);
   --color-muted-foreground: var(--muted-foreground);
@@ -50,11 +52,13 @@ body {
 }
 
 ::selection {
-  background: var(--neon);
-  color: #030712;
+  background: var(--brand);
+  color: white;
 }
 
 /* ---------- Mesh gradient backdrop (fixed, behind all content) ---------- */
+/* Soft, barely-there color blobs on a light ground — the "SaaS product"
+   look (Linear/Stripe-style), not the saturated dark aesthetic. */
 
 .mesh-bg {
   position: fixed;
@@ -67,8 +71,8 @@ body {
 .mesh-bg span {
   position: absolute;
   border-radius: 9999px;
-  filter: blur(80px);
-  opacity: 0.5;
+  filter: blur(90px);
+  opacity: 0.35;
   will-change: transform;
 }
 
@@ -77,7 +81,7 @@ body {
   left: -10%;
   width: 60vmax;
   height: 60vmax;
-  background: radial-gradient(circle, rgba(47, 102, 224, 0.55), transparent 70%);
+  background: radial-gradient(circle, rgba(47, 102, 224, 0.22), transparent 70%);
   animation: meshDrift1 26s ease-in-out infinite alternate;
 }
 
@@ -86,7 +90,7 @@ body {
   right: -15%;
   width: 65vmax;
   height: 65vmax;
-  background: radial-gradient(circle, rgba(34, 211, 238, 0.4), transparent 70%);
+  background: radial-gradient(circle, rgba(14, 116, 144, 0.16), transparent 70%);
   animation: meshDrift2 32s ease-in-out infinite alternate;
 }
 
@@ -95,7 +99,7 @@ body {
   right: 10%;
   width: 40vmax;
   height: 40vmax;
-  background: radial-gradient(circle, rgba(22, 224, 168, 0.25), transparent 70%);
+  background: radial-gradient(circle, rgba(15, 157, 104, 0.12), transparent 70%);
   animation: meshDrift3 22s ease-in-out infinite alternate;
 }
 
@@ -114,26 +118,29 @@ body {
   to { transform: translate(-6%, 8%) scale(0.9); }
 }
 
-/* ---------- Glass / glow surfaces ---------- */
+/* ---------- Glass / elevated surfaces ---------- */
 
 .glass {
-  background: rgba(255, 255, 255, 0.045);
+  background: rgba(255, 255, 255, 0.72);
   backdrop-filter: blur(18px);
   -webkit-backdrop-filter: blur(18px);
-  border: 1px solid rgba(255, 255, 255, 0.09);
+  border: 1px solid rgba(15, 23, 42, 0.08);
+  box-shadow: 0 1px 2px rgba(15, 23, 42, 0.04);
 }
 
 .glass-strong {
-  background: rgba(255, 255, 255, 0.07);
+  background: rgba(255, 255, 255, 0.9);
   backdrop-filter: blur(22px);
   -webkit-backdrop-filter: blur(22px);
-  border: 1px solid rgba(255, 255, 255, 0.12);
+  border: 1px solid rgba(15, 23, 42, 0.09);
+  box-shadow: 0 8px 30px rgba(15, 23, 42, 0.06);
 }
 
 /* ---------- Shimmer text ---------- */
+/* Dark heading text with a brand-blue "shine" sweeping through it. */
 
 .shimmer-text {
-  background-image: linear-gradient(100deg, #fff 30%, var(--neon) 45%, #fff 60%);
+  background-image: linear-gradient(100deg, var(--foreground) 30%, var(--brand) 45%, var(--foreground) 60%);
   background-size: 250% auto;
   background-clip: text;
   -webkit-background-clip: text;
@@ -177,11 +184,11 @@ body {
 }
 
 /* Same rotating ring, but for large glass panels: keeps the translucent
-   blurred fill instead of an opaque brand-color interior. */
+   light fill instead of an opaque brand-color interior. */
 .glow-ring {
   position: relative;
   border: 2px solid transparent;
-  background-image: linear-gradient(rgba(10, 17, 32, 0.55), rgba(10, 17, 32, 0.55)),
+  background-image: linear-gradient(rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.88)),
     conic-gradient(from var(--angle), var(--brand), var(--neon), var(--accent), var(--brand));
   background-origin: border-box;
   background-clip: padding-box, border-box;
@@ -191,8 +198,8 @@ body {
 }
 
 @keyframes glowPulse {
-  0%, 100% { box-shadow: 0 0 18px 2px rgba(34, 211, 238, 0.25), 0 0 34px 6px rgba(47, 102, 224, 0.25); }
-  50% { box-shadow: 0 0 26px 6px rgba(34, 211, 238, 0.45), 0 0 46px 10px rgba(47, 102, 224, 0.35); }
+  0%, 100% { box-shadow: 0 0 14px 1px rgba(14, 116, 144, 0.18), 0 0 28px 4px rgba(47, 102, 224, 0.16); }
+  50% { box-shadow: 0 0 20px 3px rgba(14, 116, 144, 0.3), 0 0 36px 8px rgba(47, 102, 224, 0.22); }
 }
 
 /* ---------- Pulse live dot ---------- */
@@ -259,8 +266,9 @@ body {
 }
 
 /* ---------- Traveling light line (bento cards) ---------- */
-/* A thin highlight sweeps along the card's top edge. Avoids gradient-border
-   masking tricks entirely so it renders identically everywhere. */
+/* A thin highlight sweeps along the card's top/bottom edge. Avoids
+   gradient-border masking tricks entirely so it renders identically
+   everywhere. */
 
 .bento-card {
   position: relative;
@@ -275,8 +283,8 @@ body {
   left: -35%;
   width: 45%;
   height: 1px;
-  background: linear-gradient(90deg, transparent, var(--neon), transparent);
-  filter: drop-shadow(0 0 4px var(--neon));
+  background: linear-gradient(90deg, transparent, var(--brand), transparent);
+  filter: drop-shadow(0 0 4px rgba(47, 102, 224, 0.5));
   animation: borderTravel 4.5s linear infinite;
   pointer-events: none;
 }
@@ -291,11 +299,6 @@ body {
 @keyframes borderTravel {
   from { left: -45%; }
   to { left: 100%; }
-}
-
-@keyframes borderTravel {
-  0% { background-position: 0% 0%; }
-  100% { background-position: 200% 200%; }
 }
 
 /* ---------- Floating loop (channel pills) ---------- */
@@ -348,6 +351,7 @@ body {
   .glow-btn,
   .glow-btn::before,
   .bento-card::before,
+  .bento-card::after,
   .float-loop,
   .mesh-bg span,
   .pulse-dot::after {

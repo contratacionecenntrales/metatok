@@ -16,11 +16,11 @@ export default function MoneyLeak({ dict }: { dict: Dictionary }) {
             <Reveal key={item.title} delay={i * 100}>
               <div className="bento-card glass h-full rounded-2xl p-8">
                 <span className="font-display text-sm font-semibold text-neon">0{i + 1}</span>
-                <div className="mt-3 font-display text-4xl font-bold text-white">
+                <div className="mt-3 font-display text-4xl font-bold text-foreground">
                   <AnimatedStat value={item.stat} />
                 </div>
-                <h3 className="mt-3 text-lg font-semibold text-white">{item.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-white/60">{item.desc}</p>
+                <h3 className="mt-3 text-lg font-semibold text-foreground">{item.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{item.desc}</p>
               </div>
             </Reveal>
           ))}

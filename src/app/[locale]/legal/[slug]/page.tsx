@@ -46,14 +46,14 @@ export default async function LegalPage({
       <Link href={`/${locale}`} className="text-sm font-medium text-neon hover:underline">
         ← {dict.nav.home}
       </Link>
-      <h1 className="mt-6 font-display text-3xl font-semibold text-white sm:text-4xl">{page.title}</h1>
-      <p className="mt-2 text-sm text-white/50">{page.updated}</p>
+      <h1 className="mt-6 font-display text-3xl font-semibold text-foreground sm:text-4xl">{page.title}</h1>
+      <p className="mt-2 text-sm text-muted-foreground">{page.updated}</p>
 
       <div className="mt-10 space-y-8">
         {page.sections.map((section) => (
           <section key={section.h}>
-            <h2 className="text-lg font-semibold text-white">{section.h}</h2>
-            <p className="mt-2 text-sm leading-relaxed text-white/60">{section.p}</p>
+            <h2 className="text-lg font-semibold text-foreground">{section.h}</h2>
+            <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{section.p}</p>
           </section>
         ))}
       </div>

@@ -21,14 +21,14 @@ export default function Header({ locale, dict }: { locale: Locale; dict: Diction
       <div className="mx-auto flex max-w-7xl items-center justify-between gap-4 px-4 py-3 sm:px-6 lg:px-8">
         <Link href={`/${locale}`} className="flex items-center gap-2 shrink-0">
           <Image src="/images/logo-mark.svg" alt="MetaTok AI" width={32} height={32} className="rounded-lg" />
-          <span className="font-display text-lg font-semibold text-white">
+          <span className="font-display text-lg font-semibold text-foreground">
             MetaTok<span className="text-brand">.ai</span>
           </span>
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
           {links.map((l) => (
-            <a key={l.href} href={l.href} className="text-sm font-medium text-white/80 transition hover:text-white">
+            <a key={l.href} href={l.href} className="text-sm font-medium text-muted-foreground transition hover:text-foreground">
               {l.label}
             </a>
           ))}
@@ -47,7 +47,7 @@ export default function Header({ locale, dict }: { locale: Locale; dict: Diction
         <button
           type="button"
           onClick={() => setOpen((v) => !v)}
-          className="inline-flex items-center justify-center rounded-lg p-2 text-white md:hidden"
+          className="inline-flex items-center justify-center rounded-lg p-2 text-foreground md:hidden"
           aria-label="Menu"
         >
           <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
@@ -57,10 +57,10 @@ export default function Header({ locale, dict }: { locale: Locale; dict: Diction
       </div>
 
       {open && (
-        <div className="glass-strong border-t border-white/10 px-4 pb-4 md:hidden">
+        <div className="glass-strong border-t border-border px-4 pb-4 md:hidden">
           <nav className="flex flex-col gap-3 pt-3">
             {links.map((l) => (
-              <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="text-sm font-medium text-white/80">
+              <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="text-sm font-medium text-muted-foreground">
                 {l.label}
               </a>
             ))}

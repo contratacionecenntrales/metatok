@@ -16,8 +16,8 @@ export default function EngineV5({ dict }: { dict: Dictionary }) {
           {en.features.map((f, i) => (
             <Reveal key={f.title} delay={i * 90}>
               <div className="bento-card glass h-full rounded-2xl p-7">
-                <h3 className="font-display text-lg font-semibold text-white">{f.title}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-white/60">{f.desc}</p>
+                <h3 className="font-display text-lg font-semibold text-foreground">{f.title}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{f.desc}</p>
               </div>
             </Reveal>
           ))}
@@ -30,7 +30,7 @@ export default function EngineV5({ dict }: { dict: Dictionary }) {
                 <div className="font-display text-2xl font-bold text-neon sm:text-3xl">
                   <AnimatedStat value={s.value} />
                 </div>
-                <div className="mt-1 text-xs text-white/50 sm:text-sm">{s.label}</div>
+                <div className="mt-1 text-xs text-muted-foreground sm:text-sm">{s.label}</div>
               </div>
             ))}
           </div>

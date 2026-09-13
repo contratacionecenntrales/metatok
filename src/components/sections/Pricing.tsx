@@ -13,7 +13,7 @@ export default function Pricing({ dict, locale }: { dict: Dictionary; locale: Lo
         </Reveal>
 
         <Reveal delay={100}>
-          <div className="mt-8 flex flex-wrap justify-center gap-3 text-xs font-medium text-white/60">
+          <div className="mt-8 flex flex-wrap justify-center gap-3 text-xs font-medium text-muted-foreground">
             <span className="glass rounded-full px-3 py-1.5">{p.billing.monthly}</span>
             <span className="glass rounded-full px-3 py-1.5">
               {p.billing.quarterly} · {p.billing.saveQuarterly}
@@ -37,11 +37,11 @@ export default function Pricing({ dict, locale }: { dict: Dictionary; locale: Lo
                     {p.popularLabel}
                   </span>
                 )}
-                <h3 className="font-display text-xl font-semibold text-white">{plan.name}</h3>
-                <p className="mt-2 text-sm leading-relaxed text-white/60">{plan.desc}</p>
-                <div className="mt-6 flex items-baseline gap-1 text-white">
+                <h3 className="font-display text-xl font-semibold text-foreground">{plan.name}</h3>
+                <p className="mt-2 text-sm leading-relaxed text-muted-foreground">{plan.desc}</p>
+                <div className="mt-6 flex items-baseline gap-1 text-foreground">
                   <span className="font-display text-4xl font-bold">{plan.price}</span>
-                  <span className="text-white/50">{plan.period}</span>
+                  <span className="text-muted-foreground">{plan.period}</span>
                 </div>
 
                 <ul className="mt-6 flex-1 space-y-3">
@@ -58,7 +58,7 @@ export default function Pricing({ dict, locale }: { dict: Dictionary; locale: Lo
                       >
                         <path d="M20 6L9 17l-5-5" />
                       </svg>
-                      <span className="text-white/70">{f}</span>
+                      <span className="text-muted-foreground">{f}</span>
                     </li>
                   ))}
                 </ul>
@@ -66,7 +66,7 @@ export default function Pricing({ dict, locale }: { dict: Dictionary; locale: Lo
                 <a
                   href={`/${locale}#contacto`}
                   className={`mt-8 rounded-full px-6 py-3 text-center text-sm font-semibold transition ${
-                    plan.popular ? "bg-brand text-white hover:bg-brand-dark" : "glass text-white hover:bg-white/10"
+                    plan.popular ? "bg-brand text-white hover:bg-brand-dark" : "glass text-foreground hover:bg-white"
                   }`}
                 >
                   {plan.cta}
@@ -76,7 +76,7 @@ export default function Pricing({ dict, locale }: { dict: Dictionary; locale: Lo
           ))}
         </div>
 
-        <p className="mt-8 text-center text-sm text-white/55">{p.footnote}</p>
+        <p className="mt-8 text-center text-sm text-muted-foreground">{p.footnote}</p>
         <p className="mt-2 text-center text-sm font-medium text-neon">{p.custom}</p>
       </div>
     </section>

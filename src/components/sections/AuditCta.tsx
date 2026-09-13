@@ -6,16 +6,16 @@ import AnimatedStat from "@/components/AnimatedStat";
 export default function AuditCta({ dict, locale }: { dict: Dictionary; locale: Locale }) {
   const a = dict.auditCta;
   return (
-    <section className="relative overflow-hidden py-20 sm:py-28">
+    <section className="relative overflow-hidden bg-navy-deep py-20 sm:py-28">
       <div
         aria-hidden
         className="pointer-events-none absolute inset-0"
         style={{
-          background: "radial-gradient(60% 60% at 50% 0%, rgba(34,211,238,0.18) 0%, rgba(3,7,18,0) 70%)",
+          background: "radial-gradient(60% 60% at 50% 0%, rgba(47,102,224,0.35) 0%, rgba(11,18,32,0) 70%)",
         }}
       />
       <Reveal className="relative mx-auto max-w-5xl px-4 text-center sm:px-6 lg:px-8">
-        <span className="glass inline-flex items-center gap-2 rounded-full px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white/80">
+        <span className="inline-flex items-center gap-2 rounded-full border border-white/15 bg-white/5 px-3 py-1 text-xs font-semibold uppercase tracking-wide text-white/80">
           <span className="pulse-dot" />
           {a.eyebrow}
         </span>

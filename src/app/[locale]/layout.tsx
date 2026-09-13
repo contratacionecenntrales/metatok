@@ -15,14 +15,13 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-// Brand palette (locked in): Deep Space #030712 background, Signal Cyan
-// #22d3ee as the neon accent, Electric Cobalt #2f66e0 as the primary
-// action color. themeColor tints the mobile browser chrome to match;
-// colorScheme keeps native form controls/scrollbars dark instead of
-// defaulting to a jarring light UI on top of the dark design.
+// Brand palette: light, software-product background (#f7f8fb) with
+// Electric Cobalt #2f66e0 as the primary action color and a deep teal
+// as the secondary accent. themeColor tints the mobile browser chrome
+// to match; colorScheme keeps native form controls/scrollbars light.
 export const viewport: Viewport = {
-  themeColor: "#030712",
-  colorScheme: "dark",
+  themeColor: "#f7f8fb",
+  colorScheme: "light",
 };
 
 export async function generateMetadata({
