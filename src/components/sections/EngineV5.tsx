@@ -12,7 +12,7 @@ export default function EngineV5({ dict }: { dict: Dictionary }) {
           <SectionHeading eyebrow={en.eyebrow} title={en.title} subtitle={en.subtitle} />
         </Reveal>
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-2">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2">
           {en.features.map((f, i) => (
             <Reveal key={f.title} delay={i * 90}>
               <div className="bento-card glass h-full rounded-2xl p-7">

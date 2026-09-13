@@ -32,14 +32,31 @@ export async function generateMetadata({
   const dict = await getDictionary(locale);
   const section = dict[solutionSlugToDictKey[slug]];
 
+  const url = `${siteUrl}/${locale}/soluciones/${slug}/`;
+
   return {
     title: `${section.title} | MetaTok AI`,
     description: section.subtitle,
     alternates: {
-      canonical: `${siteUrl}/${locale}/soluciones/${slug}/`,
+      canonical: url,
       languages: Object.fromEntries(locales.map((l) => [l, `${siteUrl}/${l}/soluciones/${slug}/`])),
     },
     robots: { index: true, follow: true },
+    openGraph: {
+      title: section.title,
+      description: section.subtitle,
+      url,
+      siteName: "MetaTok AI",
+      images: [{ url: "/images/logo-512.png", width: 512, height: 512 }],
+      locale,
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: section.title,
+      description: section.subtitle,
+      images: ["/images/logo-512.png"],
+    },
   };
 }
 
@@ -50,9 +67,20 @@ export default async function SolutionPage({
 }) {
   const { locale, slug } = await resolveParams(params);
   const dict = await getDictionary(locale);
+  const section = dict[solutionSlugToDictKey[slug]];
+
+  const breadcrumbJsonLd = {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: [
+      { "@type": "ListItem", position: 1, name: dict.nav.home, item: `${siteUrl}/${locale}/` },
+      { "@type": "ListItem", position: 2, name: section.title, item: `${siteUrl}/${locale}/soluciones/${slug}/` },
+    ],
+  };
 
   return (
     <article>
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbJsonLd) }} />
       <div className="mx-auto max-w-7xl px-4 pt-8 sm:px-6 lg:px-8">
         <Link href={`/${locale}`} className="text-sm font-medium text-neon hover:underline">
           ← {dict.nav.home}

@@ -1,6 +1,7 @@
 import type { MetadataRoute } from "next";
 import { locales, siteUrl } from "@/i18n/config";
 import { legalSlugs } from "@/lib/legal";
+import { solutionSlugs } from "@/lib/solutions";
 
 export const dynamic = "force-static";
 
@@ -27,5 +28,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     }))
   );
 
-  return [...homeEntries, ...legalEntries];
+  const solutionEntries: MetadataRoute.Sitemap = locales.flatMap((locale) =>
+    solutionSlugs.map((slug) => ({
+      url: `${siteUrl}/${locale}/soluciones/${slug}/`,
+      lastModified: now,
+      changeFrequency: "weekly" as const,
+      priority: 0.7,
+      alternates: {
+        languages: Object.fromEntries(locales.map((l) => [l, `${siteUrl}/${l}/soluciones/${slug}/`])),
+      },
+    }))
+  );
+
+  return [...homeEntries, ...solutionEntries, ...legalEntries];
 }

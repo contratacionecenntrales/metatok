@@ -37,7 +37,7 @@ export default function Process({ dict, locale }: { dict: Dictionary; locale: Lo
           <SectionHeading eyebrow={p.eyebrow} title={highlightTitle(p.title, locale)} subtitle={p.subtitle} />
         </Reveal>
 
-        <div className="mt-14 grid gap-6 lg:grid-cols-4">
+        <div className="mt-14 grid gap-6 sm:grid-cols-2 lg:grid-cols-4">
           {p.steps.map((step, i) => {
             const Icon = STEP_ICONS[i];
             return (
