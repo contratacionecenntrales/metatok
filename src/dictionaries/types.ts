@@ -9,7 +9,7 @@ export type Dictionary = {
   nav: {
     home: string;
     solution: string;
-    explore: string;
+    solutions: { label: string; desc: string; slug: string }[];
     contact: string;
     login: string;
     cta: string;

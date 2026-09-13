@@ -7,7 +7,22 @@ const pt: Dictionary = {
       "Automatize vendas, suporte e gestão de redes com agentes de IA 24/7 no WhatsApp, chamadas, Instagram e site. Auditoria gratuita para empresas em crescimento.",
     keywords: "agentes de IA para empresas, automação com IA, chatbot IA WhatsApp, voicebots, qualificação de leads IA, MetaTok",
   },
-  nav: { home: "Início", solution: "Solução", explore: "Explorar", contact: "Contato", login: "Entrar", cta: "Criar meu agente" },
+  nav: {
+    home: "Início",
+    solution: "Soluções",
+    solutions: [
+      { label: "Serviços", desc: "Agentes de IA, voicebots e automação comercial.", slug: "servicios" },
+      { label: "Por setor", desc: "Soluções sob medida para o seu setor.", slug: "sectores" },
+      { label: "Planos e preços", desc: "Planos flexíveis sem fidelidade.", slug: "precios" },
+      { label: "MetaTok Engine V5", desc: "A arquitetura por trás da conversão autônoma.", slug: "motor" },
+      { label: "Produto White Label", desc: "Leve o MetaTok com a sua própria marca.", slug: "white-label" },
+      { label: "MetaTok Academy", desc: "Treinamento para vender mais e melhor.", slug: "academy" },
+      { label: "Casos de sucesso", desc: "Resultados reais dos nossos clientes.", slug: "casos-de-exito" },
+    ],
+    contact: "Contato",
+    login: "Entrar",
+    cta: "Criar meu agente",
+  },
   hero: {
     eyebrow: "Ecossistema de Agentes · MetaTok AI",
     titlePrefix: "Sua equipe de",

@@ -10,8 +10,16 @@ const fr: Dictionary = {
   },
   nav: {
     home: "Accueil",
-    solution: "Solution",
-    explore: "Explorer",
+    solution: "Solutions",
+    solutions: [
+      { label: "Services", desc: "Agents IA, voicebots et automatisation commerciale.", slug: "servicios" },
+      { label: "Par secteur", desc: "Des solutions sur mesure pour votre secteur.", slug: "sectores" },
+      { label: "Offres et tarifs", desc: "Des offres flexibles sans engagement.", slug: "precios" },
+      { label: "MetaTok Engine V5", desc: "L'architecture derrière la conversion autonome.", slug: "motor" },
+      { label: "Produit White Label", desc: "Adoptez MetaTok sous votre propre marque.", slug: "white-label" },
+      { label: "MetaTok Academy", desc: "Des formations pour vendre plus et mieux.", slug: "academy" },
+      { label: "Cas de réussite", desc: "Des résultats concrets de nos clients.", slug: "casos-de-exito" },
+    ],
     contact: "Contact",
     login: "Connexion",
     cta: "Créer mon agent",

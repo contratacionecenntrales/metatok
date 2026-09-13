@@ -2,19 +2,25 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useState } from "react";
+import { useRef, useState } from "react";
+import { ChevronDown } from "lucide-react";
 import type { Locale } from "@/i18n/config";
 import type { Dictionary } from "@/dictionaries/types";
 import LocaleSwitcher from "./LocaleSwitcher";
 
 export default function Header({ locale, dict }: { locale: Locale; dict: Dictionary }) {
   const [open, setOpen] = useState(false);
+  const [solutionsOpen, setSolutionsOpen] = useState(false);
+  const [mobileSolutionsOpen, setMobileSolutionsOpen] = useState(false);
+  const closeTimer = useRef<ReturnType<typeof setTimeout> | null>(null);
 
-  const links = [
-    { href: `/${locale}#solucion`, label: dict.nav.solution },
-    { href: `/${locale}#explorar`, label: dict.nav.explore },
-    { href: `/${locale}#contacto`, label: dict.nav.contact },
-  ];
+  const openSolutions = () => {
+    if (closeTimer.current) clearTimeout(closeTimer.current);
+    setSolutionsOpen(true);
+  };
+  const scheduleCloseSolutions = () => {
+    closeTimer.current = setTimeout(() => setSolutionsOpen(false), 150);
+  };
 
   return (
     <header className="glass sticky top-0 z-50">
@@ -27,11 +33,40 @@ export default function Header({ locale, dict }: { locale: Locale; dict: Diction
         </Link>
 
         <nav className="hidden items-center gap-8 md:flex">
-          {links.map((l) => (
-            <a key={l.href} href={l.href} className="text-sm font-medium text-muted-foreground transition hover:text-foreground">
-              {l.label}
-            </a>
-          ))}
+          <div className="relative" onMouseEnter={openSolutions} onMouseLeave={scheduleCloseSolutions}>
+            <button
+              type="button"
+              onClick={openSolutions}
+              onFocus={openSolutions}
+              aria-expanded={solutionsOpen}
+              className="flex items-center gap-1 text-sm font-medium text-muted-foreground transition hover:text-foreground"
+            >
+              {dict.nav.solution}
+              <ChevronDown size={14} className={`transition-transform ${solutionsOpen ? "rotate-180" : ""}`} />
+            </button>
+
+            {solutionsOpen && (
+              <div className="glass-strong absolute left-1/2 top-full z-50 mt-3 w-[36rem] -translate-x-1/2 rounded-2xl p-3 shadow-xl">
+                <div className="grid grid-cols-2 gap-1">
+                  {dict.nav.solutions.map((s) => (
+                    <Link
+                      key={s.slug}
+                      href={`/${locale}/soluciones/${s.slug}`}
+                      onClick={() => setSolutionsOpen(false)}
+                      className="rounded-xl px-4 py-3 transition hover:bg-white/60"
+                    >
+                      <p className="text-sm font-semibold text-foreground">{s.label}</p>
+                      <p className="mt-0.5 text-xs leading-relaxed text-muted-foreground">{s.desc}</p>
+                    </Link>
+                  ))}
+                </div>
+              </div>
+            )}
+          </div>
+
+          <a href={`/${locale}#contacto`} className="text-sm font-medium text-muted-foreground transition hover:text-foreground">
+            {dict.nav.contact}
+          </a>
         </nav>
 
         <div className="hidden items-center gap-3 md:flex">
@@ -58,12 +93,37 @@ export default function Header({ locale, dict }: { locale: Locale; dict: Diction
 
       {open && (
         <div className="glass-strong border-t border-border px-4 pb-4 md:hidden">
-          <nav className="flex flex-col gap-3 pt-3">
-            {links.map((l) => (
-              <a key={l.href} href={l.href} onClick={() => setOpen(false)} className="text-sm font-medium text-muted-foreground">
-                {l.label}
-              </a>
-            ))}
+          <nav className="flex flex-col gap-1 pt-3">
+            <button
+              type="button"
+              onClick={() => setMobileSolutionsOpen((v) => !v)}
+              aria-expanded={mobileSolutionsOpen}
+              className="flex items-center justify-between py-2 text-sm font-medium text-muted-foreground"
+            >
+              {dict.nav.solution}
+              <ChevronDown size={14} className={`transition-transform ${mobileSolutionsOpen ? "rotate-180" : ""}`} />
+            </button>
+            {mobileSolutionsOpen && (
+              <div className="flex flex-col gap-1 pb-2 pl-3">
+                {dict.nav.solutions.map((s) => (
+                  <Link
+                    key={s.slug}
+                    href={`/${locale}/soluciones/${s.slug}`}
+                    onClick={() => setOpen(false)}
+                    className="py-1.5 text-sm text-muted-foreground"
+                  >
+                    {s.label}
+                  </Link>
+                ))}
+              </div>
+            )}
+            <a
+              href={`/${locale}#contacto`}
+              onClick={() => setOpen(false)}
+              className="py-2 text-sm font-medium text-muted-foreground"
+            >
+              {dict.nav.contact}
+            </a>
             <div className="pt-2">
               <LocaleSwitcher locale={locale} />
             </div>

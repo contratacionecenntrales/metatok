@@ -7,7 +7,22 @@ const de: Dictionary = {
       "Automatisieren Sie Vertrieb, Support und Social-Media-Management mit KI-Agenten rund um die Uhr auf WhatsApp, Anrufen, Instagram und im Web. Kostenloses Audit.",
     keywords: "KI-Agenten für Unternehmen, KI-Automatisierung, WhatsApp Chatbot KI, Voicebots, Lead-Qualifizierung KI, MetaTok",
   },
-  nav: { home: "Start", solution: "Lösung", explore: "Entdecken", contact: "Kontakt", login: "Anmelden", cta: "Agenten erstellen" },
+  nav: {
+    home: "Start",
+    solution: "Lösungen",
+    solutions: [
+      { label: "Leistungen", desc: "KI-Agenten, Voicebots und Vertriebsautomatisierung.", slug: "servicios" },
+      { label: "Nach Branche", desc: "Maßgeschneiderte Lösungen für Ihre Branche.", slug: "sectores" },
+      { label: "Pläne & Preise", desc: "Flexible Pläne ohne Mindestlaufzeit.", slug: "precios" },
+      { label: "MetaTok Engine V5", desc: "Die Architektur hinter der autonomen Conversion.", slug: "motor" },
+      { label: "White-Label-Produkt", desc: "MetaTok unter Ihrer eigenen Marke.", slug: "white-label" },
+      { label: "MetaTok Academy", desc: "Schulungen, um mehr und besser zu verkaufen.", slug: "academy" },
+      { label: "Erfolgsgeschichten", desc: "Echte Ergebnisse unserer Kunden.", slug: "casos-de-exito" },
+    ],
+    contact: "Kontakt",
+    login: "Anmelden",
+    cta: "Agenten erstellen",
+  },
   hero: {
     eyebrow: "Agenten-Ökosystem · MetaTok AI",
     titlePrefix: "Ihr",
