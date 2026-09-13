@@ -10,14 +10,17 @@ const es: Dictionary = {
   },
   nav: {
     home: "Inicio",
-    solution: "Soluciones",
-    solutions: [
+    solution: "Solución",
+    solutionMenu: [
       { label: "Servicios", desc: "Agentes de IA, voicebots y automatización comercial.", slug: "servicios" },
       { label: "Por sector", desc: "Soluciones a medida para tu industria.", slug: "sectores" },
-      { label: "Planes y precios", desc: "Planes flexibles sin permanencia.", slug: "precios" },
       { label: "Motor MetaTok Engine V5", desc: "La arquitectura detrás de la conversión autónoma.", slug: "motor" },
       { label: "Producto White Label", desc: "Lleva MetaTok bajo tu propia marca.", slug: "white-label" },
+    ],
+    explore: "Explorar",
+    exploreMenu: [
       { label: "MetaTok Academy", desc: "Formación para vender más y mejor.", slug: "academy" },
+      { label: "Planes y precios", desc: "Planes flexibles sin permanencia.", slug: "precios" },
       { label: "Casos de éxito", desc: "Resultados reales de nuestros clientes.", slug: "casos-de-exito" },
     ],
     contact: "Contacto",

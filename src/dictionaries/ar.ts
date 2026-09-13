@@ -9,14 +9,17 @@ const ar: Dictionary = {
   },
   nav: {
     home: "الرئيسية",
-    solution: "الحلول",
-    solutions: [
+    solution: "الحل",
+    solutionMenu: [
       { label: "الخدمات", desc: "وكلاء ذكاء اصطناعي وبوتات صوتية وأتمتة المبيعات.", slug: "servicios" },
       { label: "حسب القطاع", desc: "حلول مخصصة لقطاعك.", slug: "sectores" },
-      { label: "الخطط والأسعار", desc: "خطط مرنة بدون التزام.", slug: "precios" },
       { label: "MetaTok Engine V5", desc: "المحرك وراء التحويل الذاتي.", slug: "motor" },
       { label: "منتج العلامة البيضاء", desc: "استخدم MetaTok تحت علامتك التجارية.", slug: "white-label" },
+    ],
+    explore: "استكشف",
+    exploreMenu: [
       { label: "أكاديمية MetaTok", desc: "تدريب للبيع بشكل أكثر وأفضل.", slug: "academy" },
+      { label: "الخطط والأسعار", desc: "خطط مرنة بدون التزام.", slug: "precios" },
       { label: "قصص النجاح", desc: "نتائج حقيقية من عملائنا.", slug: "casos-de-exito" },
     ],
     contact: "تواصل معنا",
