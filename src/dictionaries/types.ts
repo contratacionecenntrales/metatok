@@ -16,7 +16,9 @@ export type Dictionary = {
   };
   hero: {
     eyebrow: string;
-    title: string;
+    titlePrefix: string;
+    rotatingWords: string[];
+    titleSuffix: string;
     subtitle: string;
     channels: string[];
     ctaPrimary: string;

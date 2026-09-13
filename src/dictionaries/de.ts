@@ -10,7 +10,9 @@ const de: Dictionary = {
   nav: { home: "Start", solution: "Lösung", explore: "Entdecken", contact: "Kontakt", login: "Anmelden", cta: "Agenten erstellen" },
   hero: {
     eyebrow: "Agenten-Ökosystem · MetaTok AI",
-    title: "Ihr Vertriebsteam im KI-Autopiloten",
+    titlePrefix: "Ihr",
+    rotatingWords: ["Vertriebs", "Support", "Marketing", "Buchhaltungs"],
+    titleSuffix: "-Team im KI-Autopiloten",
     subtitle: "Intelligente Agenten, die rund um die Uhr auf WhatsApp, Anrufen, Instagram und Web verkaufen, betreuen und qualifizieren. Ohne zusätzliches Personal.",
     channels: ["WhatsApp", "Anrufe", "Instagram", "Web"],
     ctaPrimary: "Jetzt meinen Agenten erstellen",

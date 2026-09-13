@@ -18,7 +18,9 @@ const es: Dictionary = {
   },
   hero: {
     eyebrow: "Ecosistema de Agentes · MetaTok AI",
-    title: "Tu equipo de ventas, en piloto automático con IA",
+    titlePrefix: "Tu equipo de",
+    rotatingWords: ["Ventas", "Soporte", "Marketing", "Contabilidad"],
+    titleSuffix: " en piloto automático con IA",
     subtitle:
       "Agentes inteligentes que venden, atienden y cualifican por ti las 24 horas, en WhatsApp, llamadas, Instagram y tu web. Sin ampliar plantilla.",
     channels: ["WhatsApp", "Llamadas", "Instagram", "Web"],
