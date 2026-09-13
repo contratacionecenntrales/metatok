@@ -47,25 +47,28 @@ export default function Comparison({ dict, locale }: { dict: Dictionary; locale:
           </div>
         </Reveal>
 
-        <div className="mt-10 grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
-          {c.reassurance.map((r, i) => (
-            <Reveal key={r.title} delay={i * 80}>
-              <div className="glass h-full rounded-xl p-5 text-center">
-                <p className="text-sm font-semibold text-foreground">{r.title}</p>
-                <p className="mt-1 text-xs text-muted-foreground">{r.desc}</p>
-              </div>
-            </Reveal>
-          ))}
-        </div>
+        <Reveal delay={150}>
+          <div className="glass-strong mt-10 rounded-2xl p-6 sm:p-8">
+            <div className="grid gap-4 sm:grid-cols-2 lg:grid-cols-4">
+              {c.reassurance.map((r) => (
+                <div key={r.title} className="text-center">
+                  <p className="text-sm font-semibold text-foreground">{r.title}</p>
+                  <p className="mt-1 text-xs text-muted-foreground">{r.desc}</p>
+                </div>
+              ))}
+            </div>
 
-        <div className="mt-10 text-center">
-          <a
-            href={`/${locale}#contacto`}
-            className="glow-btn inline-block rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-dark"
-          >
-            {c.cta}
-          </a>
-        </div>
+            <div className="mt-8 border-t border-border pt-8 text-center">
+              <a
+                href={`/${locale}#contacto`}
+                className="glow-btn inline-block rounded-full bg-brand px-6 py-3 text-sm font-semibold text-white transition hover:bg-brand-dark"
+              >
+                {c.cta}
+              </a>
+              <p className="mt-3 text-xs text-muted-foreground">★★★★★ 4.9/5 · +150 auditorías realizadas</p>
+            </div>
+          </div>
+        </Reveal>
       </div>
     </section>
   );

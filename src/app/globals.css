@@ -43,6 +43,19 @@ body {
   font-family: var(--font-sans), ui-sans-serif, system-ui, sans-serif;
 }
 
+/* Keeps anchor-linked sections (#contacto, #motor, etc.) from landing
+   underneath the sticky header when jumped to directly. */
+section[id] {
+  scroll-margin-top: 6rem;
+}
+
+.text-gradient {
+  background: linear-gradient(90deg, var(--brand), var(--neon));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
 .font-display {
   font-family: var(--font-display), var(--font-sans), ui-sans-serif, system-ui, sans-serif;
 }

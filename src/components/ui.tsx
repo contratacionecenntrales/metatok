@@ -15,7 +15,7 @@ export function SectionHeading({
   center = true,
 }: {
   eyebrow?: string;
-  title: string;
+  title: ReactNode;
   subtitle?: string;
   center?: boolean;
   light?: boolean;
