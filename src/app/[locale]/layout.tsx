@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Inter, Outfit } from "next/font/google";
 import { notFound } from "next/navigation";
 import "../globals.css";
@@ -14,6 +14,16 @@ const outfit = Outfit({ subsets: ["latin"], variable: "--font-outfit", display: 
 export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
+
+// Brand palette (locked in): Deep Space #030712 background, Signal Cyan
+// #22d3ee as the neon accent, Electric Cobalt #2f66e0 as the primary
+// action color. themeColor tints the mobile browser chrome to match;
+// colorScheme keeps native form controls/scrollbars dark instead of
+// defaulting to a jarring light UI on top of the dark design.
+export const viewport: Viewport = {
+  themeColor: "#030712",
+  colorScheme: "dark",
+};
 
 export async function generateMetadata({
   params,
