@@ -27,7 +27,7 @@ export async function generateMetadata({
   return {
     title: `${page.title} | MetaTok AI`,
     description: dict.meta.description,
-    alternates: { canonical: `${siteUrl}/${locale}/legal/${slug}` },
+    alternates: { canonical: `${siteUrl}/${locale}/legal/${slug}/` },
     robots: { index: true, follow: true },
   };
 }

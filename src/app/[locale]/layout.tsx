@@ -25,8 +25,8 @@ export async function generateMetadata({
   const dict = await getDictionary(locale);
 
   const languages: Record<string, string> = {};
-  for (const l of locales) languages[l] = `${siteUrl}/${l}`;
-  languages["x-default"] = `${siteUrl}/es`;
+  for (const l of locales) languages[l] = `${siteUrl}/${l}/`;
+  languages["x-default"] = `${siteUrl}/es/`;
 
   return {
     metadataBase: new URL(siteUrl),
@@ -35,13 +35,13 @@ export async function generateMetadata({
     keywords: dict.meta.keywords,
     authors: [{ name: "MetaTok AI" }],
     alternates: {
-      canonical: `${siteUrl}/${locale}`,
+      canonical: `${siteUrl}/${locale}/`,
       languages,
     },
     openGraph: {
       title: dict.meta.title,
       description: dict.meta.description,
-      url: `${siteUrl}/${locale}`,
+      url: `${siteUrl}/${locale}/`,
       siteName: "MetaTok AI",
       images: [{ url: "/images/logo-512.png", width: 512, height: 512 }],
       locale,
@@ -89,7 +89,7 @@ export default async function LocaleLayout({
     "@context": "https://schema.org",
     "@type": "WebSite",
     name: "MetaTok AI",
-    url: `${siteUrl}/${locale}`,
+    url: `${siteUrl}/${locale}/`,
     inLanguage: locale,
   };
 

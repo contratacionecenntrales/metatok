@@ -40,7 +40,7 @@ export default async function HomePage({ params }: { params: Promise<{ locale: s
     "@context": "https://schema.org",
     "@type": "BreadcrumbList",
     itemListElement: [
-      { "@type": "ListItem", position: 1, name: dict.nav.home, item: `${siteUrl}/${locale}` },
+      { "@type": "ListItem", position: 1, name: dict.nav.home, item: `${siteUrl}/${locale}/` },
     ],
   };
 
