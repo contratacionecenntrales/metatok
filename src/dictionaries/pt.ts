@@ -13,13 +13,13 @@ const pt: Dictionary = {
     solutionMenu: [
       { label: "Serviços", desc: "Agentes de IA, voicebots e automação comercial.", slug: "servicios" },
       { label: "Por setor", desc: "Soluções sob medida para o seu setor.", slug: "sectores" },
-      { label: "MetaTok Engine V5", desc: "A arquitetura por trás da conversão autônoma.", slug: "motor" },
-      { label: "Produto White Label", desc: "Leve o MetaTok com a sua própria marca.", slug: "white-label" },
+      { label: "Planos e preços", desc: "Planos flexíveis sem fidelidade.", slug: "precios" },
     ],
     explore: "Explorar",
     exploreMenu: [
+      { label: "MetaTok Engine V5", desc: "A arquitetura por trás da conversão autônoma.", slug: "motor" },
+      { label: "Produto White Label", desc: "Leve o MetaTok com a sua própria marca.", slug: "white-label" },
       { label: "MetaTok Academy", desc: "Treinamento para vender mais e melhor.", slug: "academy" },
-      { label: "Planos e preços", desc: "Planos flexíveis sem fidelidade.", slug: "precios" },
       { label: "Casos de sucesso", desc: "Resultados reais dos nossos clientes.", slug: "casos-de-exito" },
     ],
     contact: "Contato",

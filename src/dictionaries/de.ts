@@ -13,13 +13,13 @@ const de: Dictionary = {
     solutionMenu: [
       { label: "Leistungen", desc: "KI-Agenten, Voicebots und Vertriebsautomatisierung.", slug: "servicios" },
       { label: "Nach Branche", desc: "Maßgeschneiderte Lösungen für Ihre Branche.", slug: "sectores" },
-      { label: "MetaTok Engine V5", desc: "Die Architektur hinter der autonomen Conversion.", slug: "motor" },
-      { label: "White-Label-Produkt", desc: "MetaTok unter Ihrer eigenen Marke.", slug: "white-label" },
+      { label: "Pläne & Preise", desc: "Flexible Pläne ohne Mindestlaufzeit.", slug: "precios" },
     ],
     explore: "Entdecken",
     exploreMenu: [
+      { label: "MetaTok Engine V5", desc: "Die Architektur hinter der autonomen Conversion.", slug: "motor" },
+      { label: "White-Label-Produkt", desc: "MetaTok unter Ihrer eigenen Marke.", slug: "white-label" },
       { label: "MetaTok Academy", desc: "Schulungen, um mehr und besser zu verkaufen.", slug: "academy" },
-      { label: "Pläne & Preise", desc: "Flexible Pläne ohne Mindestlaufzeit.", slug: "precios" },
       { label: "Erfolgsgeschichten", desc: "Echte Ergebnisse unserer Kunden.", slug: "casos-de-exito" },
     ],
     contact: "Kontakt",

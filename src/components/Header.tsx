@@ -40,52 +40,66 @@ function DesktopDropdown({
         className="flex items-center gap-1 text-sm font-medium text-muted-foreground transition hover:text-foreground"
       >
         {label}
-        <ChevronDown size={14} className={`transition-transform ${open ? "rotate-180" : ""}`} />
+        <ChevronDown size={14} className={`transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
       </button>
 
-      {open && (
-        <div className="glass-strong absolute left-1/2 top-full z-50 mt-3 w-80 -translate-x-1/2 rounded-2xl p-3 shadow-xl">
-          <div className="flex flex-col gap-1">
-            {items.map((item) => (
-              <Link
-                key={item.slug}
-                href={`/${locale}/soluciones/${item.slug}`}
-                onClick={() => setOpen(false)}
-                className="rounded-xl px-4 py-3 transition hover:bg-white/60"
-              >
-                <p className="text-sm font-semibold text-foreground">{item.label}</p>
-                <p className="mt-0.5 text-xs leading-relaxed text-muted-foreground">{item.desc}</p>
-              </Link>
-            ))}
-          </div>
+      <div
+        className={`glass-strong absolute left-1/2 top-full z-50 mt-3 w-80 -translate-x-1/2 rounded-2xl p-3 shadow-[0_16px_48px_rgba(15,23,42,0.10)] transition-all duration-200 ease-out ${
+          open ? "pointer-events-auto translate-y-0 opacity-100" : "pointer-events-none -translate-y-1 opacity-0"
+        }`}
+      >
+        <div className="flex flex-col gap-1">
+          {items.map((item) => (
+            <Link
+              key={item.slug}
+              href={`/${locale}/soluciones/${item.slug}`}
+              onClick={() => setOpen(false)}
+              className="rounded-xl px-4 py-3 transition hover:bg-white/60"
+            >
+              <p className="text-sm font-semibold text-foreground">{item.label}</p>
+              <p className="mt-0.5 text-xs leading-relaxed text-muted-foreground">{item.desc}</p>
+            </Link>
+          ))}
         </div>
-      )}
+      </div>
     </div>
   );
 }
 
-function MobileDropdown({ label, items, locale, onNavigate }: { label: string; items: MenuItem[]; locale: Locale; onNavigate: () => void }) {
+function MobileAccordion({
+  label,
+  items,
+  locale,
+  onNavigate,
+}: {
+  label: string;
+  items: MenuItem[];
+  locale: Locale;
+  onNavigate: () => void;
+}) {
   const [open, setOpen] = useState(false);
   return (
-    <div>
+    <div className="border-b border-border/60 last:border-b-0">
       <button
         type="button"
         onClick={() => setOpen((v) => !v)}
         aria-expanded={open}
-        className="flex w-full items-center justify-between py-2 text-sm font-medium text-muted-foreground"
+        className="flex w-full items-center justify-between py-3 text-sm font-medium text-muted-foreground"
       >
         {label}
-        <ChevronDown size={14} className={`transition-transform ${open ? "rotate-180" : ""}`} />
+        <ChevronDown size={14} className={`transition-transform duration-200 ${open ? "rotate-180" : ""}`} />
       </button>
-      {open && (
-        <div className="flex flex-col gap-1 pb-2 pl-3">
-          {items.map((item) => (
-            <Link key={item.slug} href={`/${locale}/soluciones/${item.slug}`} onClick={onNavigate} className="py-1.5 text-sm text-muted-foreground">
-              {item.label}
-            </Link>
-          ))}
+      <div className={`grid transition-all duration-300 ease-out ${open ? "grid-rows-[1fr] opacity-100" : "grid-rows-[0fr] opacity-0"}`}>
+        <div className="overflow-hidden">
+          <div className="flex flex-col gap-1 pb-3 pl-3">
+            {items.map((item) => (
+              <Link key={item.slug} href={`/${locale}/soluciones/${item.slug}`} onClick={onNavigate} className="py-1.5 text-sm text-muted-foreground">
+                {item.label}
+              </Link>
+            ))}
+          </div>
         </div>
-      )}
+      </div>
     </div>
   );
 }
@@ -115,15 +129,12 @@ export default function Header({ locale, dict }: { locale: Locale; dict: Diction
         </nav>
 
         <div className="hidden items-center gap-4 md:flex">
-          <a href={`/${locale}#contacto`} className="text-sm font-medium text-muted-foreground transition hover:text-foreground">
-            {dict.nav.login}
-          </a>
           <LocaleSwitcher locale={locale} />
           <a
             href={`/${locale}#contacto`}
             className="rounded-full bg-brand px-5 py-2 text-sm font-semibold text-white shadow-lg shadow-brand/30 transition hover:bg-brand-dark"
           >
-            {dict.nav.cta}
+            {dict.nav.login}
           </a>
         </div>
 
@@ -139,41 +150,36 @@ export default function Header({ locale, dict }: { locale: Locale; dict: Diction
         </button>
       </div>
 
-      {open && (
-        <div className="glass-strong border-t border-border px-4 pb-4 md:hidden">
-          <nav className="flex flex-col gap-1 pt-3">
-            <Link href={`/${locale}`} onClick={() => setOpen(false)} className="py-2 text-sm font-medium text-muted-foreground">
-              {dict.nav.home}
-            </Link>
-            <MobileDropdown label={dict.nav.solution} items={dict.nav.solutionMenu} locale={locale} onNavigate={() => setOpen(false)} />
-            <MobileDropdown label={dict.nav.explore} items={dict.nav.exploreMenu} locale={locale} onNavigate={() => setOpen(false)} />
-            <a
-              href={`/${locale}#contacto`}
-              onClick={() => setOpen(false)}
-              className="py-2 text-sm font-medium text-muted-foreground"
-            >
-              {dict.nav.contact}
-            </a>
-            <a
-              href={`/${locale}#contacto`}
-              onClick={() => setOpen(false)}
-              className="py-2 text-sm font-medium text-muted-foreground"
-            >
-              {dict.nav.login}
-            </a>
-            <div className="pt-2">
-              <LocaleSwitcher locale={locale} />
-            </div>
-            <a
-              href={`/${locale}#contacto`}
-              onClick={() => setOpen(false)}
-              className="mt-2 rounded-full bg-brand px-5 py-2 text-center text-sm font-semibold text-white"
-            >
-              {dict.nav.cta}
-            </a>
-          </nav>
+      <div className={`grid transition-all duration-300 ease-out md:hidden ${open ? "grid-rows-[1fr]" : "grid-rows-[0fr]"}`}>
+        <div className="overflow-hidden">
+          <div className="glass-strong border-t border-border px-4 pb-4">
+            <nav className="flex flex-col pt-2">
+              <Link href={`/${locale}`} onClick={() => setOpen(false)} className="border-b border-border/60 py-3 text-sm font-medium text-muted-foreground">
+                {dict.nav.home}
+              </Link>
+              <MobileAccordion label={dict.nav.solution} items={dict.nav.solutionMenu} locale={locale} onNavigate={() => setOpen(false)} />
+              <MobileAccordion label={dict.nav.explore} items={dict.nav.exploreMenu} locale={locale} onNavigate={() => setOpen(false)} />
+              <a
+                href={`/${locale}#contacto`}
+                onClick={() => setOpen(false)}
+                className="py-3 text-sm font-medium text-muted-foreground"
+              >
+                {dict.nav.contact}
+              </a>
+              <div className="flex items-center justify-between pt-3">
+                <LocaleSwitcher locale={locale} />
+              </div>
+              <a
+                href={`/${locale}#contacto`}
+                onClick={() => setOpen(false)}
+                className="mt-3 rounded-full bg-brand px-5 py-2 text-center text-sm font-semibold text-white"
+              >
+                {dict.nav.login}
+              </a>
+            </nav>
+          </div>
         </div>
-      )}
+      </div>
     </header>
   );
 }
